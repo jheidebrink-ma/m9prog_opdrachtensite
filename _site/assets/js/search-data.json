@@ -1,0 +1,996 @@
+{"0": {
+    "doc": "Les 7",
+    "title": "Wat is een custom post type?",
+    "content": "Een post type in WordPress kun je zien als een speciaal onderdeel, standaard post types zijn: post, page, user, media. Custom Post Types zijn post types die je zelf aan WordPress toevoegt omdat je extra functionaliteit of een onderscheid nodig hebt. Zorg dat je deze introductie even rustig doorleest zodat je snapt hoe WordPress omgaat met de post types. Wat zijn custom post types binnen WordPress? . Eerst krijg je een uitleg over de normale post types, zodat je het concept post type beter gaat begrijpen. Post types zijn onderdelen binnen WordPress om verschillende soorten content te categoriseren. De twee bekendste ken je al: berichten ( posts ) en pagina’s ( pages ). Er zijn nog een aantal andere post types, maar die gaan wij nu niet behandelen. Meer informatie over post types: https://wordpress.org/documentation/article/what-is-post-type/ Custom post types zijn speciale onderdelen die je binnen jouw site wilt gebruiken. Wanneer gebruik je een custom post type? . Het antwoord is: elke keer wanneer je content toevoegt aan je website die niet in één van de standaard post types past. Een paar voorbeelden: . | products ( producten van een webshop ) | projects ( projecten op een portfolio-website ) | events ( evenementen voor een boekingswebsite ) In mijn hout website maak ik een post type wood, dit zijn straks onderdelen die een aantal unieke eigenschappen krijgen. Bedenk ondertussen wat voor een post type jij nodig hebt in jouw project. | . Custom taxonomieën . Taxonomieën worden bij WordPress gebruikt om post types te categoriseren. Zo kun je later eenvoudig gaan filteren op een bepaalde taxonomie. Voor standaard berichten zijn de twee gebruikte taxonomieën categorieën en tags. Wanneer je een custom post type registreert, kunt je kiezen om een bestaande taxonomie eraan toe te wijzen. Je kunt ook volledig nieuwe taxonomie aanmaken voor je custom post type. Ik ga in mijn voorbeeld ‘origin’ als taxonomie waar ik het land in van oorsprong in opsla. Volgende stap: . Registreren van een post type . ",
+    "url": "/m5prog_opdrachtensite/les-7/about#wat-is-een-custom-post-type",
+    
+    "relUrl": "/les-7/about#wat-is-een-custom-post-type"
+  },"1": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-7/about",
+    
+    "relUrl": "/les-7/about"
+  },"2": {
+    "doc": "Les 10",
+    "title": "Controle van jouw website",
+    "content": "Ga nu naar de url van jouw website, login en controleer de website. 1- Ga naar de admin omgeving . 1- Ga nu naar jouw gekozen domein en plaats wp-admin achter de url, bijvoorbeeld: https://xxxxxxx.hosts2.ma-cloud.nl/m5prog/wp-admin/ 2- Login met jouw gegevens die je ook lokaal gebruikte . 2- Controleer de admin omgeving . | Is het correcte thema actief? | Staan alle plugins goed? | Kloppen de pages en posts? | Heb je de correcte post types en categorieën? | . 3- Flush de permalinks` . Zorg ervoor dat de permalinks opnieuw opgebouwd worden. Ga naar instellingen en dan permalinks Je hoeft niets te doen op deze pagina, door de pagina op te roepen worden de permalinks opnieuw aangemaakt. 4- Controleer de voorkant van je website . Bekijk nu in een incoginto of privé venster jouw website. Doe dit op desktop én op mobiel. Werkt alles goed? . Dit was het. Je hebt nu een complete WordPress website ontwikkeld waarbij jij zelf een custom thema hebt gemaakt. Geniet even van dit moment en wees trots op wat je allemaal hebt gemaakt! . ",
+    "url": "/m5prog_opdrachtensite/les-10/check#controle-van-jouw-website",
+    
+    "relUrl": "/les-10/check#controle-van-jouw-website"
+  },"3": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-10/check",
+    
+    "relUrl": "/les-10/check"
+  },"4": {
+    "doc": "Les 3",
+    "title": "Activeer en controleer",
+    "content": "Je hebt nu een eerste stuk van je custom thema ontwikkeld. Activeer je nieuwe thema in de wp-admin omgeving en controleer het thema aan de voorkant van de website. 1- Activeer . Ga nu weer naar het wp-admin gedeelte van je website en selecteer jouw nieuwe thema. 2- Controleer . Klik nu op je website naam ( huisje icoon links boven ) en ga naar je website. Als het goed is zie je nu alleen maar jouw debug tekst uit je index.php . ",
+    "url": "/m5prog_opdrachtensite/les-3/check#activeer-en-controleer",
+    
+    "relUrl": "/les-3/check#activeer-en-controleer"
+  },"5": {
+    "doc": "Les 3",
+    "title": "Les 3",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-3/check",
+    
+    "relUrl": "/les-3/check"
+  },"6": {
+    "doc": "Les 2",
+    "title": "Activeer en controleer",
+    "content": "Activeer je child thema in de admin omgeving en controleer het thema aan de voorkant van de website. 1- Activeer . Ga nu weer naar het wp-admin gedeelte van je website en selecteer jouw nieuwe thema op dezelfde manier als de vorige keer bij het selecteren van een thema. 2- Controleer . Ga nu in een andere browser of in een privé tab naar jouw website en bekijk je child thema. ",
+    "url": "/m5prog_opdrachtensite/les-2/check#activeer-en-controleer",
+    
+    "relUrl": "/les-2/check#activeer-en-controleer"
+  },"7": {
+    "doc": "Les 2",
+    "title": "Les 2",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-2/check",
+    
+    "relUrl": "/les-2/check"
+  },"8": {
+    "doc": "Les 4",
+    "title": "WordPress footer template en functies",
+    "content": "Je gaat nu de footer.php instellen zodat alle pagina’s dezelfde HTML vormgeving en functionaliteit hebben. 1- Footer document aanmaken . Maak een nieuw document in je thema folder en met de naam: footer.php . 2- Footer implementeren in de index.php . In de index.php moet je nu de footer importeren onderaan het bestand. Doe dit door de php functie te gebruiken zoals je op de introductie pagina hebt gelezen. 3- Footer.php instellen . | Zorg er nu voor dat je de &lt;body&gt; en &lt;html&gt; tags afsluit in de footer.php. | Plaats boven het afsluiten van de body de volgende code: &lt;?php wp_footer() ?&gt; | Voeg een tekstje toe zodat je straks weet waar de footer op je pagina verschijnt. | . Het resultaat van je website ziet er nu mogelijk zo uit: . ",
+    "url": "/m5prog_opdrachtensite/les-4/footer#wordpress-footer-template-en-functies",
+    
+    "relUrl": "/les-4/footer#wordpress-footer-template-en-functies"
+  },"9": {
+    "doc": "Les 4",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . HTML structuur . ",
+    "url": "/m5prog_opdrachtensite/les-4/footer#commit-en-push",
+    
+    "relUrl": "/les-4/footer#commit-en-push"
+  },"10": {
+    "doc": "Les 4",
+    "title": "Les 4",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-4/footer",
+    
+    "relUrl": "/les-4/footer"
+  },"11": {
+    "doc": "Les 4",
+    "title": "WordPress header template en functies",
+    "content": "Je gaat nu de header.php instellen zodat alle pagina’s dezelfde HTML vormgeving en functionaliteit hebben. De vormgeving zal minimaal zijn, volgende les gaan we daar mee aan de slag. 1- Header document aanmaken . Maak een nieuw document in je thema folder en met de naam: header.php . 2- Header implementeren in de index.php . In de index.php moet je nu boven in het bestand ( op regel 1 ) de header importeren. Doe dit door de php functie te gebruiken zoals je op de vorige pagina hebt gelezen. 3- Header.php instellen . Zorg er nu voor dat je net zoals in het header.php voorbeeld een HTML pagina opent. De volgende tags moet je minimaal in dit document plaatsen, afsluiten van de html en body doe je in de footer. Maar mogelijk moet je ook een titel toevoegen. &lt;!doctype html&gt; &lt;html &lt;?php language_attributes() ?&gt;&gt; &lt;head&gt; &lt;meta charset=\"&lt;?php bloginfo( 'charset' ) ?&gt;\" /&gt; &lt;?php wp_head() ?&gt; &lt;/head&gt; &lt;body &lt;?php body_class() ?&gt;&gt; &lt;?php wp_body_open() ?&gt; . ",
+    "url": "/m5prog_opdrachtensite/les-4/header#wordpress-header-template-en-functies",
+    
+    "relUrl": "/les-4/header#wordpress-header-template-en-functies"
+  },"12": {
+    "doc": "Les 4",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . WordPress footer template en functies . ",
+    "url": "/m5prog_opdrachtensite/les-4/header#commit-en-push",
+    
+    "relUrl": "/les-4/header#commit-en-push"
+  },"13": {
+    "doc": "Les 4",
+    "title": "Les 4",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-4/header",
+    
+    "relUrl": "/les-4/header"
+  },"14": {
+    "doc": "Les 1",
+    "title": "HTML bestanden",
+    "content": "Nu je de structuur hebt van je project is het tijd omervoor te zorgen dat je ook iets kunt zien. 1- index.php . In je index.php bestand plaats je een HTML structuur, bijvoorbeeld: . &lt;html&gt; &lt;head&gt; &lt;title&gt;Music Library&lt;/title&gt; &lt;!-- ik laad op dit moment een simpele bootstrap css library --&gt; &lt;!-- zie: https://getbootstrap.com/docs/5.3/getting-started/introduction/ --&gt; &lt;link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\"&gt; &lt;link href=\"assets/css/style.css\" rel=\"stylesheet\"&gt; &lt;/head&gt; &lt;body&gt; &lt;div class=\"container\"&gt; &lt;header&gt; Header information &lt;/header&gt; &lt;div class=\"album py-5 bg-light\"&gt; &lt;div class=\"row\"&gt; Content of this project &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- ik laad op dit moment een simpele bootstrap JavaScript library --&gt; &lt;!-- zie: https://getbootstrap.com/docs/5.3/getting-started/introduction/ --&gt; &lt;script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\" crossorigin=\"anonymous\"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . 2- Demo data . In mijn voorbeeld maak ik gebruik van Bootstrap, hiermee kan ik snel een basis structuur voor een website opzetten. 3- css . Je ziet in de code dat ik een stylesheet bestand laad assets/css/style.css. Zorg dat je die ook aangemaakt hebt in de public folder zodat de browser bij deze bestanden kan. ",
+    "url": "/m5prog_opdrachtensite/les-1/html#html-bestanden",
+    
+    "relUrl": "/les-1/html#html-bestanden"
+  },"15": {
+    "doc": "Les 1",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . testen . ",
+    "url": "/m5prog_opdrachtensite/les-1/html#commit-en-push",
+    
+    "relUrl": "/les-1/html#commit-en-push"
+  },"16": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-1/html",
+    
+    "relUrl": "/les-1/html"
+  },"17": {
+    "doc": "Les 4",
+    "title": "De HTML pagina structuur",
+    "content": "Het is nu tijd om de html pagina in te delen. Je kunt hiervoor gebruik maken van een standaard template van bijvoorbeeld Bootstrap of een ander systeem dat je hebt gekozen tijdens de eerste les. In dit voorbeeld behandel ik Bootstrap. Voor Bootstrap kun je later ook deze plugin gebruiken om meer functionaliteit toe te voegen: wp-bootstrap-blocks/ . In een volgende les gaan wij de vormgeving optimaliseren. Voor nu is de structuur belangrijk. . 1- HTML body . Hier kun je diverse Bootstrap voorbeelden vinden: Download Bootstrap Examples Ik gebruik voor nu het voorbeeld CDN-starter Bekijk hier de complete HTML pagina: index.html . In de index.php plaats ik de basis HTML stuctuur van de content. Alleen het body gedeelte plaats in ik de index.php. &lt;main class=\"container my-5\"&gt; &lt;h1 class=\"mt-5\"&gt;Dit is mijn eerste titel&lt;/h1&gt; &lt;div class=\"col-lg-8 px-0\"&gt; &lt;p class=\"fs-5\"&gt; Intro &lt;/p&gt; &lt;p&gt; Content &lt;/p&gt; &lt;/div&gt; &lt;/main&gt; . 2- HTML in de Header . Zoals je ziet in het HTML voorbeeld moet er ook in de header.php een stuk html toegevoegd worden. Deze code plaats ik in de head om bootstrap css te laden via een CDN: . &lt;link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\"&gt; . Daarnaast is een voorbeeld menu ook wel fijn, dat doe je door deze code te plaatsen: . &lt;nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\"&gt; &lt;div class=\"container\"&gt; &lt;a class=\"navbar-brand\" href=\"#\"&gt;Navbar&lt;/a&gt; &lt;button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"&gt; &lt;span class=\"navbar-toggler-icon\"&gt;&lt;/span&gt; &lt;/button&gt; &lt;div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"&gt; &lt;ul class=\"navbar-nav me-auto mb-2 mb-lg-0\"&gt; &lt;li class=\"nav-item\"&gt; &lt;a class=\"nav-link active\" aria-current=\"page\" href=\"#\"&gt;Home&lt;/a&gt; &lt;/li&gt; &lt;li class=\"nav-item\"&gt; &lt;a class=\"nav-link\" href=\"#\"&gt;Link&lt;/a&gt; &lt;/li&gt; &lt;li class=\"nav-item dropdown\"&gt; &lt;a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\"&gt; Dropdown &lt;/a&gt; &lt;ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\"&gt; &lt;li&gt;&lt;a class=\"dropdown-item\" href=\"#\"&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a class=\"dropdown-item\" href=\"#\"&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt; &lt;hr class=\"dropdown-divider\"&gt; &lt;/li&gt; &lt;li&gt;&lt;a class=\"dropdown-item\" href=\"#\"&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=\"nav-item\"&gt; &lt;a class=\"nav-link disabled\"&gt;Disabled&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;form class=\"d-flex\" role=\"search\"&gt; &lt;input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\"&gt; &lt;button class=\"btn btn-outline-success\" type=\"submit\"&gt;Search&lt;/button&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;/nav&gt; . 3- HTML in de footer . In de footer.php moet een javascript vanaf de CDN geladen gaat worden zodat bijvoorbeeld de dropdown gaat werken. Plaats deze onderaan in je footer, boven het afsluiten van de body en html. &lt;script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\" crossorigin=\"anonymous\"&gt;&lt;/script&gt; . Om een footer element aan te maken plaats ik deze code in mijn footer: . &lt;footer class=\"footer mt-auto py-3 bg-body-tertiary\"&gt; &lt;div class=\"container\"&gt; &lt;span class=\"text-body-secondary\"&gt;Place footer content here.&lt;/span&gt; &lt;/div&gt; &lt;/footer&gt; . Vergeet niet om ook de html en body tag die je in de header hebt geopend af te sluiten in de footer. 4- Controleer . Bekijk je website nu in de browser, je hebt nu een complete website. ",
+    "url": "/m5prog_opdrachtensite/les-4/html#de-html-pagina-structuur",
+    
+    "relUrl": "/les-4/html#de-html-pagina-structuur"
+  },"18": {
+    "doc": "Les 4",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m5prog_opdrachtensite/les-4/html#commit-en-push",
+    
+    "relUrl": "/les-4/html#commit-en-push"
+  },"19": {
+    "doc": "Les 4",
+    "title": "Les 4",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-4/html",
+    
+    "relUrl": "/les-4/html"
+  },"20": {
+    "doc": "Les 5",
+    "title": "Les 5 - PHP - MySQL",
+    "content": ". Data uit de database halen en weergeven. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-5/index#les-5---php---mysql",
+    
+    "relUrl": "/les-5/index#les-5---php---mysql"
+  },"21": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/index",
+    
+    "relUrl": "/les-5/index"
+  },"22": {
+    "doc": "Les 2",
+    "title": "Les 2 - HTML Frontend",
+    "content": ". Ontwikkel een basis html site voor dit project met behulp van een front-end framework. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-2/index#les-2---html-frontend",
+    
+    "relUrl": "/les-2/index#les-2---html-frontend"
+  },"23": {
+    "doc": "Les 2",
+    "title": "Les 2",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-2/index",
+    
+    "relUrl": "/les-2/index"
+  },"24": {
+    "doc": "Les 4",
+    "title": "Les 4 - MySQL data structureren",
+    "content": ". Data in de database plaatsen en afbeeldingen op beschikbaar maken voor public. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-4/index#les-4---mysql-data-structureren",
+    
+    "relUrl": "/les-4/index#les-4---mysql-data-structureren"
+  },"25": {
+    "doc": "Les 4",
+    "title": "Les 4",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-4/index",
+    
+    "relUrl": "/les-4/index"
+  },"26": {
+    "doc": "Les 3",
+    "title": "Les 3 - Bestand structuur met PHP",
+    "content": ". Dynamische onderdelen op de website, hergebruik van bestanden. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-3/index#les-3---bestand-structuur-met-php",
+    
+    "relUrl": "/les-3/index#les-3---bestand-structuur-met-php"
+  },"27": {
+    "doc": "Les 3",
+    "title": "Les 3",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-3/index",
+    
+    "relUrl": "/les-3/index"
+  },"28": {
+    "doc": "Les 9",
+    "title": "Les 9 -",
+    "content": ". Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-9/index#les-9--",
+    
+    "relUrl": "/les-9/index#les-9--"
+  },"29": {
+    "doc": "Les 9",
+    "title": "Les 9",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-9/index",
+    
+    "relUrl": "/les-9/index"
+  },"30": {
+    "doc": "Les 10",
+    "title": "Les 10 -",
+    "content": ". Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-10/index#les-10--",
+    
+    "relUrl": "/les-10/index#les-10--"
+  },"31": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-10/index",
+    
+    "relUrl": "/les-10/index"
+  },"32": {
+    "doc": "Les 8",
+    "title": "Les 8 - Afronden",
+    "content": ". Test het project en lever het resultaat in. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-8/index#les-8---afronden",
+    
+    "relUrl": "/les-8/index#les-8---afronden"
+  },"33": {
+    "doc": "Les 8",
+    "title": "Les 8",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-8/index",
+    
+    "relUrl": "/les-8/index"
+  },"34": {
+    "doc": "Home",
+    "title": "WordPress - Home",
+    "content": "Op deze website vind je de opdrachten voor de unit M5PROG waarbij wij een custom thema voor WordPress gaan ontwikkelen. ",
+    "url": "/m5prog_opdrachtensite/#wordpress---home",
+    
+    "relUrl": "/#wordpress---home"
+  },"35": {
+    "doc": "Home",
+    "title": "Opdrachten en uitleg",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/#opdrachten-en-uitleg",
+    
+    "relUrl": "/#opdrachten-en-uitleg"
+  },"36": {
+    "doc": "Home",
+    "title": "Les 1:  Development omgeving instellen",
+    "content": "Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env . Start . ",
+    "url": "/m5prog_opdrachtensite/#les-1--development-omgeving-instellen",
+    
+    "relUrl": "/#les-1--development-omgeving-instellen"
+  },"37": {
+    "doc": "Home",
+    "title": "Les 2:  HTML Frontend",
+    "content": "Deze les komt binnenkort online. Vanaf 19-09-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-2--html-frontend",
+    
+    "relUrl": "/#les-2--html-frontend"
+  },"38": {
+    "doc": "Home",
+    "title": "Les 3:  Bestand structuur met PHP",
+    "content": "Deze les komt binnenkort online. Vanaf 26-09-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-3--bestand-structuur-met-php",
+    
+    "relUrl": "/#les-3--bestand-structuur-met-php"
+  },"39": {
+    "doc": "Home",
+    "title": "Les 4:  MySQL data structureren",
+    "content": "Deze les komt binnenkort online. Vanaf 03-10-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-4--mysql-data-structureren",
+    
+    "relUrl": "/#les-4--mysql-data-structureren"
+  },"40": {
+    "doc": "Home",
+    "title": "Les 5:  PHP - MySQL",
+    "content": "Deze les komt binnenkort online. Vanaf 10-10-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-5--php---mysql",
+    
+    "relUrl": "/#les-5--php---mysql"
+  },"41": {
+    "doc": "Home",
+    "title": "Les 6:  SEO",
+    "content": "Deze les komt binnenkort online. Vanaf 17-10-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-6--seo",
+    
+    "relUrl": "/#les-6--seo"
+  },"42": {
+    "doc": "Home",
+    "title": "Les 7:  Zoeken",
+    "content": "Deze les komt binnenkort online. Vanaf 24-10-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-7--zoeken",
+    
+    "relUrl": "/#les-7--zoeken"
+  },"43": {
+    "doc": "Home",
+    "title": "Les 9:  Afronden",
+    "content": "Deze les komt binnenkort online. Vanaf 24-10-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-9--afronden",
+    
+    "relUrl": "/#les-9--afronden"
+  },"44": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/",
+    
+    "relUrl": "/"
+  },"45": {
+    "doc": "Les 6",
+    "title": "Les 6 - SEO",
+    "content": ". Slug / SEO friendly url, titels . Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-6/index#les-6---seo",
+    
+    "relUrl": "/les-6/index#les-6---seo"
+  },"46": {
+    "doc": "Les 6",
+    "title": "Les 6",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-6/index",
+    
+    "relUrl": "/les-6/index"
+  },"47": {
+    "doc": "Les 1",
+    "title": "Les 1 - Development omgeving instellen",
+    "content": ". Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env . Maak de opdrachten voor deze les . | Start | Development omgeving opzetten | HTML bestanden | Testen | . ",
+    "url": "/m5prog_opdrachtensite/les-1/#les-1---development-omgeving-instellen",
+    
+    "relUrl": "/les-1/#les-1---development-omgeving-instellen"
+  },"48": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-1/",
+    
+    "relUrl": "/les-1/"
+  },"49": {
+    "doc": "Les 7",
+    "title": "Les 7 - Zoeken",
+    "content": ". Zoeken door de database vanuit de front-end . Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-7/index#les-7---zoeken",
+    
+    "relUrl": "/les-7/index#les-7---zoeken"
+  },"50": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-7/index",
+    
+    "relUrl": "/les-7/index"
+  },"51": {
+    "doc": "Les 5",
+    "title": "De WordPress loop in de index",
+    "content": "Wij gaan nu de dynamische content in de pagina plaatsen. In het wp-admin gedeelte heb je al wat data toegevoegd, deze gaan wij nu aan de voorkant laten zien. Voorbereiding . Voordat voordat je de informatie kunt weergeven moet je eerst twee extra blog posts aanmaken, dit heb je nodig om straks te kunnen testen. 1- Posts aanmaken . Ga in het wp-admin gedeelte naar posts toe, en voeg een nieuwe post toe. Vergeet niet om op publish te klikken. Maak minimaal 2 posts aan. 2- Pagina aanmaken . Vervolgens maak je een page ( pagina ) die je gebruikt om de posts / je blog te kunnen zien. Voer in deze pagina alleen een titel toe, bijvoorbeeld blog, verder mag hij leeg zijn. Doe dit door onder pages te klikken op new . 3- Posts pagina selecteren . Ga naar de instellingen / settings Selecteer hier reading Selecteer onder de optie Posts page jouw net aangemaakte blog pagina Als je nu in je nu in je browser naar deze blog pagina toe gaat dan zie je nog niet een overzicht van de berichten, dat klopt! Je bent nu klaar om aan deze les te beginnen. 1- De header . Het is wel zo netjes als in de titel van de pagina ook de naam van de pagina en de site titel staat. Pas daarom de &lt;title&gt; tag aan in de header.php De titel van de pagina laat je zien door deze code te gebruiken: . &lt;?php the_title() ?&gt; . De titel van de site haal je op deze manier op: . &lt;?php bloginfo('title') ?&gt; . 2- De index.php . In de index.php zie je straks mogelijk meerdere berichten onder elkaar staan. Daarom is het belangrijk om in de index.php pagina een loop te plaatsen. Wij gaan gebruik maken van een while loop. Eerst controleren wij of er wel een post is door te controleren op de volgende waarde: . have_posts() . Als de pagina minimaal één post heeft voer je de loop uit, anders geef je een melding dat er geen data is gevonden. Dat kun je uitproberen door een pagina aan te roepen die niet bestaat zoals: /ik_ben_er_niet . Nu moet je een while loop maken binnen deze if statement, voer deze loop uit zolang have_posts() true terug geeft. Zodra je de while loop opent is het belangrijk om eerst de post informatie op te halen zodat je verderop de juiste data weergeeft. Hiervoor gebruik je dit commando: . the_post(); . Daarna kun je verschillende onderdelen van de post ophalen én weergeven met commando’s zoals: the_title(), the_excerpt() en the_content() . Alles bij elkaar zal je code er ongeveer zo uit zien. // Start with a if statement if ( have_posts() ) : // Loop trough the posts while ( have_posts() ) : // Load the data post data the_post(); ?&gt; &lt;main class=\"container my-5\"&gt; &lt;h1 class=\"mt-5\"&gt;&lt;?php the_title() ?&gt;&lt;/h1&gt; &lt;div class=\"col-lg-8 px-0\"&gt; &lt;?php the_excerpt() ?&gt; &lt;/div&gt; &lt;/main&gt; &lt;?php endwhile; else: echo 'Volgens mij zoek je iets dat er niet is'; endif; . 3- Controleer . Bekijk je website nu in de browser. Als het goed is zie je nu de content / data die je een vorige les hebt ingevoerd in het wp-admin gedeelte. Dit was toen waarschijnlijk een pagina of een blog post. ",
+    "url": "/m5prog_opdrachtensite/les-5/index_loop#de-wordpress-loop-in-de-index",
+    
+    "relUrl": "/les-5/index_loop#de-wordpress-loop-in-de-index"
+  },"52": {
+    "doc": "Les 5",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende pagina ga je één enkele pagina of blog item weergeven. Single page en blog implementatie . ",
+    "url": "/m5prog_opdrachtensite/les-5/index_loop#commit-en-push",
+    
+    "relUrl": "/les-5/index_loop#commit-en-push"
+  },"53": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/index_loop",
+    
+    "relUrl": "/les-5/index_loop"
+  },"54": {
+    "doc": "Les 9",
+    "title": "Installatie van WP CLI",
+    "content": "Het installeren en testen van WP CLI gebeurt in een paar korte stappen. Alle terminal commando’s worden uitgevoerd in de wordpress docker container. 1- Installeer WP via Curl . Eerst installeren wij WP via curl door dit commando uit te voeren in de terminal: . curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar . Controleer nu of het gelukt is met dit commando: . php wp-cli.phar --info . Als het goed is zie je geen foutmelding, maar wel informatie over onder andere de WP-CLI version. 2- Shortcut to wp . Het is onhandig om steeds php wp-cli.phar in te moeten tikken voordat je een commando kunt uitvoeren. Daarom verplaatsen wij deze naar een plek binnen je PATH folder. ( waar de terminal altijd in kijkt om commando’s uit te voeren) Dat die je met deze commando’s: . chmod +x wp-cli.phar mv wp-cli.phar /usr/local/bin/wp . Nu kun je WP CLI commandos’s als volgt uitvoeren: . wp --info . Het kan echter zijn dat er een waarschuwing over een sudo user in beeld is, in dit geval moet je de volgende optie na elk commando invoeren: . --allow-root . 3- Controle en update . Bekijk maar eens of je de laatste versie en update indien noodzakelijk hebt met dit commando: . wp cli update . Links . | wordpress cli handbook | . Volgende stap: . Gebruik van WP CLI . ",
+    "url": "/m5prog_opdrachtensite/les-9/install#installatie-van-wp-cli",
+    
+    "relUrl": "/les-9/install#installatie-van-wp-cli"
+  },"55": {
+    "doc": "Les 9",
+    "title": "Les 9",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-9/install",
+    
+    "relUrl": "/les-9/install"
+  },"56": {
+    "doc": "Les 1",
+    "title": "Development omgeving starten",
+    "content": "We gaan een Docker container samenstellen. Deze omgeving gaan wij tijdens deze gehele module gebruiken. ",
+    "url": "/m5prog_opdrachtensite/les-1/installatie#development-omgeving-starten",
+    
+    "relUrl": "/les-1/installatie#development-omgeving-starten"
+  },"57": {
+    "doc": "Les 1",
+    "title": "Requirements",
+    "content": "Er zijn een aantal vereisten aan dit project: . | Je hebt een werkende Docker Desktop installatie. | De volgende poorten zijn niet in gebruik: . | 80 | 3305 | 8805 | . | Je hebt een werkende IDE waarmee je websites kunt ontwikkelen, bijvoorbeeld Visual Code of PhpStorm | . 1- Repository . 1- Maak een nieuwe repository aan in GitHub voor m5prog-music_library, zorg dat de repository private is. 2- Navigeer op je computer naar de folder waar je project straks komt te staan, niet een nieuwe lege folder aanmaken. 3- Clone je github project zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen. 2- Docker container initialiseren . | Start eerst Docker Desktop | Navigeer naar de repo folder die je net gekloond hebt | Maak een nieuw bestand aan met de naam: docker-compose.yml | maak de structuur van dit yml bestand services: NAAM: image: WELKE IMAGE HEB JE NODIG container_name: prog_m5_TYPE environment: title: waarde INTERNE CONSTANTEN ports: - EXTERN:INTERN - 9999:80 links: - IS DEZE CONTAINER GEKOPPELD AAN EEN ANDERE CONTAINER? volumes: - './:/var/www/html' depends_on: - HEEFT DEZE CONTAINER EEN ANDERE CONTAINER NODIG? . | . 3- Definieer de volgende containers: . | php met image: wodby/php:latest | nginx met de image: nginx:latest en de externe poort 80 | mariadb met de image: mariadb:latest | phpmyadmin met de image: phpmyadmin:latest en de externe poort 8805 | De Nginx container link je aan php | De Mariadb container heeft de volgende environment constanten nodig: MYSQL_DATABASE: '${DB_NAME}' MYSQL_USER: '${DB_USERNAME}' MYSQL_PASSWORD: '${DB_PASSWORD}' MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}' . | De PhpMyAdmin container heeft de volgende environment constanten nodig: PMA_HOST: '${DB_HOST}' PMA_USER: '${DB_USERNAME}' PMA_PASSWORD: '${DB_PASSWORD}' . | . 4- Variabele in een .env file . Vanaf dit project zorg je dat de credentials niet meer in de repo terecht komen. | maak een voorbeeld .env file aan met de naam: .env.example | plaats hierin de variabele die je straks gaat gebruiken: DB_NAME= DB_USERNAME= DB_PASSWORD= DB_ROOT_PASSWORD= . | dupliceer dit bestand naar: .env | vul de waardes in deze .env file | . 5- Negeren van bestanden via de .gitignore . Maak nu een .gitignore file aan om te zorgen dat niet alles naar git gaat. Hierbij een voorbeeld inhoud: . ### Node an Vendor files node_modules/ vendor/ ### JetBrains .idea ### Linux *~ .Trash-* ### Windows Thumbs.db ehthumbs.db Desktop.ini $RECYCLE.BIN/ *.cab *.msi *.msm *.msp *.lnk ### OSX .DS_Store .AppleDouble .LSOverride .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns ### Application .env _sources . 6- Public folder . Maak een public folder aan waarin de bestanden komen die de browser mag benaderen. | in de root van je project plaats je een folder met de naam: public | plaats in deze folder een bestand index.php | . ",
+    "url": "/m5prog_opdrachtensite/les-1/installatie#requirements",
+    
+    "relUrl": "/les-1/installatie#requirements"
+  },"58": {
+    "doc": "Les 1",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . html bestanden . ",
+    "url": "/m5prog_opdrachtensite/les-1/installatie#commit-en-push",
+    
+    "relUrl": "/les-1/installatie#commit-en-push"
+  },"59": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-1/installatie",
+    
+    "relUrl": "/les-1/installatie"
+  },"60": {
+    "doc": "Les 9",
+    "title": "Wat is WP-CLI en hoe kun je het gebruiken?",
+    "content": "Met WP-CLI kun je via een terminal je WordPress website, thema’s en plugins beheren. Sommige acties gaan sneller en veiliger via deze tool. 1- Wat is WP-CLI? . WP-CLI is de afkorting van WordPress Command-Line Interface. Het geeft je de mogelijkheid om alle onderdelen van je WordPress website te beheren via een command-line interface die via terminal te bereiken is. In Laravel hadden wij php artisan, daar is dit mee te vergelijken. 2- Wat heb je nodig om WP-CLI te kunnen gebruiken? . Om WP-CLI te kunnen gebruiken zal WP-CLI ook op je server geïnstalleerd moeten worden. Omdat wij lokaal Docker gebruiken hebben wij de mogelijkheid om dit te installeren binnen de Docker omgeving. Op een server van jouw hosting organisatie is dat niet altijd mogelijk. Links . | wordpress cli | . Volgende stap: . Installeer WP CLI . ",
+    "url": "/m5prog_opdrachtensite/les-9/intro#wat-is-wp-cli-en-hoe-kun-je-het-gebruiken",
+    
+    "relUrl": "/les-9/intro#wat-is-wp-cli-en-hoe-kun-je-het-gebruiken"
+  },"61": {
+    "doc": "Les 9",
+    "title": "Les 9",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-9/intro",
+    
+    "relUrl": "/les-9/intro"
+  },"62": {
+    "doc": "Les 8",
+    "title": "Wat is lokalisatie binnen WordPress?",
+    "content": "Een WordPress thema of plugin kan een eigen vertaling hebben voor verschillende onderdelen zoals buttons, labels en andere vaste onderdelen. Binnen WordPress kun je redelijk eenvoudig een thema of plugin vertalen, dit noemen wij Lokalisatie. Lokalisatie wordt afgekort als l10n (omdat er 10 letters tussen de l en de n staan). 1- Text-domein instellen . In de style.css kun je het text-domein instellen. Dit is een string waarin je de naam van het thema aangeeft. Binnen je thema gebruik je deze string al op verschillende plekken. Dat doe je met deze regel: . Text Domain: m5prog-custom . Die waarde gebruik je overal waar je een vertaalde tekst wilt terug geven ( return ). Dit heb je al een paar keer gedaan, bijvoorbeeld hier: . __( 'Header Menu', 'm5prog-custom' ) . Of als je direct iets wilt weergeven ( echo ) . _e( 'Header Menu', 'm5prog-custom' ) . 2- Thema vertalen . Er zijn verschillende tools om een thema of plugin te vertalen. In mijn voorbeeld maak ik gebruik van Poeedit Deze tool kan alle bestanden van je thema of plugin laten controleren en zie precies wat je moet vertalen. Nadat je het *.pot bestand vertaald hebt en opgeslagen heb je een *.po én een *.mo bestand. Deze bestanden bevatten jouw echte vertalingen. Maak nu een nederlandse vertaling van je project (nl_NL). 3- Locatie van de vertalingen instellen . WordPress weet niet standaard waar de vertalingen staan, daarom moeten wij een via een action-hook aangeven waar de bestanden staan. Door een nieuwe actie toe te voegen aan de after_setup_theme hook zullen de vertalingen geladen worden nadat WordPress het thema heeft geïnitialiseerd. Dat doe je door deze code toe te voegen aan je functions.php: . /** * Tell WordPress where the localization files are * * @return void */ function load_custom_textdomain() { load_theme_textdomain( 'm5prog-custom', get_template_directory() . '/languages' ); } add_action('after_setup_theme', 'load_custom_textdomain'); . 4- Vertaling controleren . In wp-admin kun je naar jouw profiel gaan door rechtsboven op je naam te klikken. Halverwege deze pagina kun je een taal selecteren, selecteer hier nu Nederlands en sla de wijzigingen op. Als je nu in de wp-admin omgeving naar het Widgets onderdeel gaat dan zie je nu dat de onderdelen in het Nederlands zijn. Links . | developer.wordpress.org localization | Poeedit | . ",
+    "url": "/m5prog_opdrachtensite/les-8/localization#wat-is-lokalisatie-binnen-wordpress",
+    
+    "relUrl": "/les-8/localization#wat-is-lokalisatie-binnen-wordpress"
+  },"63": {
+    "doc": "Les 8",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m5prog_opdrachtensite/les-8/localization#commit-en-push",
+    
+    "relUrl": "/les-8/localization#commit-en-push"
+  },"64": {
+    "doc": "Les 8",
+    "title": "Les 8",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-8/localization",
+    
+    "relUrl": "/les-8/localization"
+  },"65": {
+    "doc": "Les 5",
+    "title": "De WordPress loop structuur",
+    "content": "Zorg dat je deze introductie even rustig doorleest zodat je snapt hoe WordPress omgaat met de header en footer. ",
+    "url": "/m5prog_opdrachtensite/les-5/loop_explain#de-wordpress-loop-structuur",
+    
+    "relUrl": "/les-5/loop_explain#de-wordpress-loop-structuur"
+  },"66": {
+    "doc": "Les 5",
+    "title": "Templates",
+    "content": "WordPress gebruikt zeven hoofdtypes pagina’s, de flow kun je in de afbeelding hieronder zien. In deze sectie bespreken lopen wij er even doorheen, in de volgende les gaan wij aan de slag met de index (frond end ). Dit zijn de verschillenden pagina types: . | Frontpagina | Single Posts | Single Pages | Custom Post Types | Zoekresultaat pagina’s | Categorie, taxonomy- en tag pagina’s | 404 error pagina’s | . 1- Frontpagina . Je WordPress homepagina is vaak de eerste plek die gebruikers zien als zij je website bezoeken. Voordat de juiste pagina geladen is zal WordPress in de volgende volgorde zoeken naar deze drie templatebestanden: . | front-page.php | home.php | index.php Als je thema geen front-page.php templatebestand heeft, gebruikt WordPress standaard de tweede optie, enzovoort. Het index.php bestand de laatste stop die WordPress maakt in deze beslissingsboom van templates waardoor dit altijd de default is. | . 2- Single Posts . Individuele WordPress artikelen gebruiken de single post. Voor elk blogbericht zoekt WordPress naar de volgende bestanden: . | single.php | singular.php | index.php Als je naar het lijstje kijkt over de templates, zal je echter zien dat in sommige gevallen er een complexere hiërarchie is. Dat komt omdat je met WordPress aparte template bestanden kan toewijzen voor de verschillende individuele berichten en single categorieën, en het pas op single.php overstapt als het geen van deze opties vindt. | . 3- Single Pages . Na de index zijn voor de meeste WordPress sites ook single pagina’s enorm belangrijk. In de meeste gevallen is dit een andere template dan de homepagina. Zo ziet de hiërarchie van de template van een single page eruit: . | page.php | singular.php | index.php Hoewel de template hiërarchie voor single berichten en pagina’s vergelijkbaar is, zijn er enkele belangrijke verschillen, de belangrijkste: Je kunt ook de template maken voor specifieke slugs en ID’s. Als je een page-{slug}.php of een page-{id}.php bestand hebt zal WordPress deze eerder laden dan de standaard page.php. | . 4- Custom Post Types . Je kan custom post-types maken om een specifiek type content aan te geven. Custom post-types zorgen voor betere organisatie van je content en hebben ook hun eigen template-hiërarchie: Voor de overzicht pagina’s: . | archive-{post_type}.php | archive.php | index.php Voor de enkele pagina’s | single-{post_type}.php | single.php | singular.php | index.php De template-hiërarchie voor custom berichttypes is minder complex dan volledige pagina’s of berichten. Met WordPress kun je template bestanden maken voor elk custom berichttype, omdat ze niet exact dezelfde lay-outs hoeven te delen. | . 5- Zoekresultaat pagina’s . Binnen WordPress is er een standaard pagina die zoekresultaten weergeeft. Zo ziet de hiërarchie van de template van een zoek page eruit: . | search.php | index.php Binnen een zoekpagina hoef je waarschijnlijk niet veel elementen op te nemen behalve de resultaten zelf. | . 6- Categorie-, taxonomie- en tagpagina’s . Hoewel veel websites er niet rechtstreeks naar linken, genereert WordPress collectieve pagina’s voor je tags, taxonomies en categorieën. Er zijn ook specifieke subpagina’s voor elk item binnen die taxonomie. Doordat de taxonomie erg complex kan worden voor websites met veel content, omvat deze hiërarchie meer ‘stappen’ dan normaal: . | category–{slug}.php | category-{id}.php | category.php | archive.php | index.php Categorieën, taxonomies en tags worden op dezelfde manier verwerkt in WordPress. In de bovenstaande structuur vervang je voor alleen category door tag of taxonomy. | . ",
+    "url": "/m5prog_opdrachtensite/les-5/loop_explain#templates",
+    
+    "relUrl": "/les-5/loop_explain#templates"
+  },"67": {
+    "doc": "Les 5",
+    "title": "7- 404 error pagina’s",
+    "content": "Soms proberen bezoekers toegang te krijgen tot een pagina die niet bestaat. Wanneer dat gebeurt retourneert WordPress net als bij andere websites een 404 error pagina. Standaard biedt WordPress geen mogelijkheden om het uiterlijk van deze pagina aan te passen zodat deze mooi in stijl is van je website. De template-hiërarchie is vrij kort: . | 404.php | index.php Zo kun je bijvoorbeeld ook een zoekformulier toevoegen aan de 404 pagina om bezoekers te helpen de juiste pagina te vinden. | . ",
+    "url": "/m5prog_opdrachtensite/les-5/loop_explain#7--404-error-paginas",
+    
+    "relUrl": "/les-5/loop_explain#7--404-error-paginas"
+  },"68": {
+    "doc": "Les 5",
+    "title": "Dit was even een flink verhaal, maar het is de basis van WordPress dus erg belangrijk dat je de flow snapt.",
+    "content": ". Links . | Meer informatie over de hiërarchie | . Volgende stap: . WordPress loop implementeren in de index . ",
+    "url": "/m5prog_opdrachtensite/les-5/loop_explain#dit-was-even-een-flink-verhaal-maar-het-is-de-basis-van-wordpress-dus-erg-belangrijk-dat-je-de-flow-snapt",
+    
+    "relUrl": "/les-5/loop_explain#dit-was-even-een-flink-verhaal-maar-het-is-de-basis-van-wordpress-dus-erg-belangrijk-dat-je-de-flow-snapt"
+  },"69": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/loop_explain",
+    
+    "relUrl": "/les-5/loop_explain"
+  },"70": {
+    "doc": "Les 5",
+    "title": "Het WordPress menu",
+    "content": "Binnen WordPress is er een uitgebreid menu systeem, dat gaan wij nu implementeren in onze template. Zo kan de beheerder zelf het menu beheren en hoef jij niet na te denken over welk item actief is. ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#het-wordpress-menu",
+    
+    "relUrl": "/les-5/menu#het-wordpress-menu"
+  },"71": {
+    "doc": "Les 5",
+    "title": "Actions and Filters",
+    "content": "Tijdens deze les gaan wij actions en filters gebruiken, daarom eerst een uitleg. Actie_hooks Actie_hooks (Action Hooks) stellen je in staat om je eigen code uit te voeren op specifieke punten tijdens de uitvoering van WordPress. Bijvoorbeeld: je zou een actie_hook kunnen gebruiken om een functie uit te voeren wanneer een post wordt gepubliceerd of wanneer een pagina wordt geladen. Binnen WordPress worden op verschillende momenten acties uitgevoerd waarop je kunt inhaken. Zie hier een overzicht van de actions_hooks: WordPress action reference Hier vind je meer informatie over de action_hook: WordPress add_action Filter_hooks Naast actions_hooks zijn er ook filter_hook, hiermee kun je een verwerkt resultaat aanpassen. Als je bijvoorbeeld overal waar een titel staat deze zo wilt aanpassen dat de eerste letter altijd een kapitaal is dan kun je inhaken op de the_title filter. Zie hier een overzicht van de filter_hooks: WordPress filter reference Hier vind je meer informatie over de filter_hook: WordPress add_filter . ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#actions-and-filters",
+    
+    "relUrl": "/les-5/menu#actions-and-filters"
+  },"72": {
+    "doc": "Les 5",
+    "title": "1- Menu ondersteuning toevoegen",
+    "content": "In de functions.php moet je even aangeven jouw thema menu functionaliteit ondersteunt. Dit doe je door in te haken op de init action van WordPress. function register_my_menus() { register_nav_menus( [ 'header' =&gt; __( 'Header Menu', 'Text_Domain' ), 'other' =&gt; __( 'Other Menu', 'Text_Domain' ), ] ); } add_action( 'init', 'register_my_menus' ); . ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#1--menu-ondersteuning-toevoegen",
+    
+    "relUrl": "/les-5/menu#1--menu-ondersteuning-toevoegen"
+  },"73": {
+    "doc": "Les 5",
+    "title": "2- Extra filters",
+    "content": "Omdat ik in mijn voorbeeld gebruik maak van Bootstrap moet ik een extra aanpassing doen om het menu te laten voldoen aan het Bootstrap formaat. Daarom voeg ik ook deze filters toe aan functions.php . /** * Function to add extra classes to the menu list element * @usage: * Add 'add_li_class' =&gt; 'nav-item', * as an extra option to wp_nav_menu() * * @param $classes * @param $item * @param $args * * @return mixed */ function add_additional_class_on_li($classes, $item, $args) { if(isset($args-&gt;add_li_class)) { $classes[] = $args-&gt;add_li_class; } return $classes; } add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3); /** * Function to add extra classes to the menu anchor element * @usage: * Add 'add_li_class' =&gt; 'nav-item', * as an extra option to wp_nav_menu() * * @param $attributes * @param $item * @param $args * * @return mixed * / */ function add_additional_class_on_a($attributes, $item, $args) { if ( empty( $attributes['class'] ) ) { $attributes['class'] = ''; } if(isset($args-&gt;add_a_class)) { $attributes['class'] .= ' ' . $args-&gt;add_a_class; } return $attributes; } add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3); . ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#2--extra-filters",
+    
+    "relUrl": "/les-5/menu#2--extra-filters"
+  },"74": {
+    "doc": "Les 5",
+    "title": "3- Aanmaken van een menu",
+    "content": "In het wp-admin gedeelte kun je onder Appearance en dan het kopje menus een nieuw menu aanmaken. Geef ook aan op welke Display location deze moet verschijnen. ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#3--aanmaken-van-een-menu",
+    
+    "relUrl": "/les-5/menu#3--aanmaken-van-een-menu"
+  },"75": {
+    "doc": "Les 5",
+    "title": "4- Menu weergeven in de header",
+    "content": "Nu je een menu hebt aangemaakt wil je hem natuurlijk ook weergeven aan de voorkant van je website. In de header heb je al een statisch menu, nu gaan wij het statische code vervangen door een dynamische. Bekijk hier de configuratie opties: https://developer.wordpress.org/reference/functions/wp_nav_menu/ Ik heb twee extra opties toegevoegd die ik kan gebruiken door de filters die hierboven staan. Dit is de code om het header menu weer te geven volgens het bootstrap format door de filters te gebruiken. &lt;?php wp_nav_menu( [ 'menu' =&gt; 'header', 'link_before' =&gt; '', 'link_after' =&gt; '', 'menu_class' =&gt; 'navbar-nav me-auto mb-2 mb-lg-0', 'container' =&gt; 'div', 'container_class' =&gt; 'collapse navbar-collapse', 'container_id' =&gt; 'navbarSupportedContent', 'add_li_class' =&gt; 'nav-item', 'add_a_class' =&gt; 'nav-link', ] ); ?&gt; . ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#4--menu-weergeven-in-de-header",
+    
+    "relUrl": "/les-5/menu#4--menu-weergeven-in-de-header"
+  },"76": {
+    "doc": "Les 5",
+    "title": "5- Andere menu",
+    "content": "Waarschijnlijk heb je ook nog een ‘other menu’ gemaakt. Zorg dat je deze ook weergeeft op je website, bijvoorbeeld in je footer of aan de zijkant. Als je hem niet gebruikt moet je dit extra menu niet aanmaken. ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#5--andere-menu",
+    
+    "relUrl": "/les-5/menu#5--andere-menu"
+  },"77": {
+    "doc": "Les 5",
+    "title": "6- Controleer",
+    "content": "Bekijk je website nu in de browser en zie dat je een mooi menu hebt. ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#6--controleer",
+    
+    "relUrl": "/les-5/menu#6--controleer"
+  },"78": {
+    "doc": "Les 5",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Widgets implementeren . ",
+    "url": "/m5prog_opdrachtensite/les-5/menu#commit-en-push",
+    
+    "relUrl": "/les-5/menu#commit-en-push"
+  },"79": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/menu",
+    
+    "relUrl": "/les-5/menu"
+  },"80": {
+    "doc": "Les 1",
+    "title": "Muziek bibliotheek",
+    "content": "In deze periode gaan een Muziek bibliotheek maken op basis van Docker en php. Het doel is om te leren hoe je bestanden op een server moet structureren. 1- Onderzoek wat er gedaan moet worden . | Lees eerst de project omschrijving zodat je weet wat er van je verwacht wordt. | . 2- Verzamel data . Verzamel minimaal 5 muziek nummers die je wilt gebruiken in je website. Verzamel hiervan de volgende onderdelen: . | Titel van het nummer | Naam van de artiest | Genre | Duur van het nummer | Release datum ( jaar is goed genoeg ) | Afbeelding van het nummer | Afbeelding van de artiest | . Volgende stap: . Development omgeving opzetten . ",
+    "url": "/m5prog_opdrachtensite/les-1/onderwerp#muziek-bibliotheek",
+    
+    "relUrl": "/les-1/onderwerp#muziek-bibliotheek"
+  },"81": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-1/onderwerp",
+    
+    "relUrl": "/les-1/onderwerp"
+  },"82": {
+    "doc": "Les 10",
+    "title": "Voorbereiding",
+    "content": "Nu gaan wij ons project voorbereiden om in productie te brengen door alle stappen te doorlopen. 1- FTP toegang . Je hebt als het goed is al ftp toegang tot deze omgeving, anders hierbij jouw gegevens: Protocol: SFTP Domain: mediacollege-hosts-st2.cust.webslice.eu Username: je ma gebruikersnaam Password: je ma wachtwoord . 2a- Basis WordPress installatie op de ma-cloud omgeving . Indien je geen gebruik maakt van ma-cloud kun je direct naar stap 2b gaan. In dit voorbeeld maak ik gebruik van jouw eigen ma-cloud omgeving. | Login op: panel.ma-cloud.nl | Klik op Sites | Vervolgens op Available packages | Daarna op WordPress | En nu op Install this package | Geef een subfolder op, bijvoorbeeld m5prog | Genereer een wachtwoord ( onthoud deze ) | Accepteer de licentie | Installeer | . Nu moet je even wachten totdat de package actief is. Als de package actief is dan is het goed mogelijk dat de versie WordPress te oud is en niet werkt, in dat geval moet je stap 2b doorlopen. Voordat je WordPress handmatig installeert moet je de database gegevens uit de wp-config.php die online staat wel even lokaal opslaan. Zo zien de database gegevens er ongeveer uit: . /** The name of the database for WordPress */ define('DB_NAME', 'XXXXXXXXXX'); /** MySQL database username */ define('DB_USER', 'XXXXXXXXXX'); /** MySQL database password */ define('DB_PASSWORD', 'XXXXXXXXXX'); /** MySQL hostname */ define('DB_HOST', '127.0.0.1:3306'); /** Database Charset to use in creating database tables. */ define('DB_CHARSET', 'utf8'); /** The Database Collate type. Don't change this if in doubt. */ define('DB_COLLATE', ''); . 2b- Handmatige WordPress installatie op de externe omgeving . Downloaden WordPress en upload alle bestanden via de ftp naar correcte (sub)folder op jouw server. Nadat je alle bestanden hebt geupload en eventueel overschreven, open je de wp-config.php en plak je jouw oude database gegevens erin. Heb je geen wp-config.php dan hernoem je wp-config-sample.php naar wp-config.php en voer je daar de correcte database gegevens in. Ga nu naar de url van jouw WordPress installatie en voeg daar wp-admin achter, bijvoorbeeld: https://XXXXXXXX.hosts2.ma-cloud.nl/m5prog/wp-admin/ Je kunt nu inloggen met de gegevens die je aan het begin van deze stap hebt ingevoerd. Je hebt nu een complete WordPress installatie. 3- Database dump waarbij het domein vervangen is door het nieuwe domein . Hiervoor maak ik gebruik van WP CLI, ik doe dit in 4 stappen: 1- Export eerst de huidige locale database, dit is het origineel: Ga naar phpmyadmin en exporteer de complete database wp_db 2- Pas het domein in de huidige lokale database aan. Als voorbeeld is mijn nieuwe domein: m5prog.nl. Dit is niet jouw domein naam en zul je moeten aanpassen! Het commando om te testen: . wp search-replace \"http://locahost\" \"https://m5prog.nl\" --dry-run --allow-root . Voer dit nu uit door de --dry-run te verwijderen. 3- Exporteer weer de database, deze dump ga je straks uploaden naar productie. 4- Verwijder alle tabellen uit de locale database 5- Importeer de eerste database dump. Volgende stap: . Uploaden van je database, media bestanden, thema en plugins . ",
+    "url": "/m5prog_opdrachtensite/les-10/preparation#voorbereiding",
+    
+    "relUrl": "/les-10/preparation#voorbereiding"
+  },"83": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-10/preparation",
+    
+    "relUrl": "/les-10/preparation"
+  },"84": {
+    "doc": "Project omschrijving",
+    "title": "Project omschrijving",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/project_description.html",
+    
+    "relUrl": "/project_description.html"
+  },"85": {
+    "doc": "Project omschrijving",
+    "title": "Als een bezoeker van de website wil ik een overzicht van muziek singles hebben waar ik doorheen kan zoeken.",
+    "content": "Op een web pagina wil ik een overzicht van minimaal 5 verschillende muziek singles waar ik door middel van een zoek formulier kan aangeven wat ik wil zien. Elke single heeft een eigen detail pagina. ",
+    "url": "/m5prog_opdrachtensite/project_description.html#als-een-bezoeker-van-de-website-wil-ik-een-overzicht-van-muziek-singles-hebben-waar-ik-doorheen-kan-zoeken",
+    
+    "relUrl": "/project_description.html#als-een-bezoeker-van-de-website-wil-ik-een-overzicht-van-muziek-singles-hebben-waar-ik-doorheen-kan-zoeken"
+  },"86": {
+    "doc": "Project omschrijving",
+    "title": "Muziek bibliotheek",
+    "content": "Dit project bestaat uit verschillende onderdelen die samen één geheel gaan vormen, de informatie van de singles zal in een database staan. Dit is geen CRUD applicatie, aanpassingen doen wij direct in de database. ",
+    "url": "/m5prog_opdrachtensite/project_description.html#muziek-bibliotheek",
+    
+    "relUrl": "/project_description.html#muziek-bibliotheek"
+  },"87": {
+    "doc": "Project omschrijving",
+    "title": "Doel",
+    "content": "Aan het eind van dit project heb je een website ontwikkeld en weet je hoe bestanden op een server gestructureerd moeten worden. ",
+    "url": "/m5prog_opdrachtensite/project_description.html#doel",
+    
+    "relUrl": "/project_description.html#doel"
+  },"88": {
+    "doc": "Project omschrijving",
+    "title": "Omschrijving",
+    "content": "Er komen in dit project 3 verschillende type pagina’s: . | overzicht pagina, met een overzicht van muziek singles | detail pagina met informatie over het nummer | informatie pagina met statische tekst | . Op het een overzicht pagina zijn minimaal 5 singles van minimaal 3 verschillende artiesten zichtbaar. Per item is minimaal het volgende zichtbaar: . | Titel van het nummer | Naam van de artiest | Genre | Afbeelding | . Ergens op de home pagina komt een formulier met een zoek functie waardoor het resultaat gefilterd wordt, dit zoeken kan op basis van een drop-down én een open zoekveld. Als je de home pagina op een muziek item klikt, kom je op een vervolg pagina waar meer informatie over dit item staat: . | Titel van het nummer | Naam van de artiest | Genre | Duur van het nummer | Release datum ( jaar is goed genoeg ) | Lijst met andere nummers van deze artiest | Afbeelding van het nummer | . De informatie tekst pagina’s zijn standaard tekst pagina’s voor de volgende twee pagina’s: . | informatie over dit systeem | algemene voorwaarden | . ",
+    "url": "/m5prog_opdrachtensite/project_description.html#omschrijving",
+    
+    "relUrl": "/project_description.html#omschrijving"
+  },"89": {
+    "doc": "Project omschrijving",
+    "title": "Validatie",
+    "content": ". | Als een gebruiker zoekt op een niet bestaande term dan moet dit weergegeven worden. | Als er een pagina opgevraagd wordt die niet gevonden is dan moet dit duidelijk gemaakt worden aan de bezoeker. | . ",
+    "url": "/m5prog_opdrachtensite/project_description.html#validatie",
+    
+    "relUrl": "/project_description.html#validatie"
+  },"90": {
+    "doc": "Project omschrijving",
+    "title": "Randvoorwaarden:",
+    "content": ". | De applicatie moet ontwikkeld worden in PHP eventueel in combinatie met JavaScript. | Het lokaal ontwikkelen van dit project gaat via een Docker container. | De data wordt in de database opgeslagen | Er moet een error afhandeling zijn die de gebruiker informeert waarom een zoek actie wel of niet informatie terug geeft. | Deze module moet functioneren in de laatste versies van Chrome, Safari, Firefox en Edge | . ",
+    "url": "/m5prog_opdrachtensite/project_description.html#randvoorwaarden",
+    
+    "relUrl": "/project_description.html#randvoorwaarden"
+  },"91": {
+    "doc": "Project omschrijving",
+    "title": "Optioneel",
+    "content": ". | Is het mogelijk om ook een afbeelding van de artiest weer te geven? | Als je in het overzicht op een single klikt, kun je dan de detail pagina in een modal ( popup ) weergeven? | . ",
+    "url": "/m5prog_opdrachtensite/project_description.html#optioneel",
+    
+    "relUrl": "/project_description.html#optioneel"
+  },"92": {
+    "doc": "Les 7",
+    "title": "Registreren van een custom post type",
+    "content": "In deze les ga je een custom post type registreren. Ik gebruik wood als voorbeeld, jij moet voor jezelf een ander type gaan gebruiken. 1- Structuur . Om mijn project gestructureerd te houden heb ik eerst een folder aangemaakt in CammelCase met de naam van het thema. In mijn geval M8progCustom Hierin plaats ik de functionaliteiten, om te beginnen met post-types, daarom heb ik daarom het volgende php document aangemaakt: PostType.php Dit bestand moet je natuurlijk wel laden, dat doe je door deze via de php require_once te implementeren in de functions.php. 2- Labels . Voordat wij gaan registreren definiëer ik de labels van dit post-type zodat straks dit element goed terug kan vinden. Dit doe ik door in mijn PostType.php document de volgende code te plaatsen. ",
+    "url": "/m5prog_opdrachtensite/les-7/register#registreren-van-een-custom-post-type",
+    
+    "relUrl": "/les-7/register#registreren-van-een-custom-post-type"
+  },"93": {
+    "doc": "Les 7",
+    "title": "Let op dat je de juiste term en text-domein gebruikt!",
+    "content": "$labels = [ 'name' =&gt; __( 'Woods', 'Text_Domain' ), 'singular_name' =&gt; __( 'Wood', 'Text_Domain' ), 'add_new' =&gt; __( 'New Wood', 'Text_Domain' ), 'add_new_item' =&gt; __( 'Add New Wood', 'Text_Domain' ), 'edit_item' =&gt; __( 'Edit Wood', 'Text_Domain' ), 'new_item' =&gt; __( 'New Wood', 'Text_Domain' ), 'view_item' =&gt; __( 'View Wood', 'Text_Domain' ), 'search_items' =&gt; __( 'Search Wood', 'Text_Domain' ), 'not_found' =&gt; __( 'No Wood Found', 'Text_Domain' ), 'not_found_in_trash' =&gt; __( 'No Wood found in Trash', 'Text_Domain' ), ]; . 3- Definiëren van de argumenten voor je custom post type . De volgende stap is het definiëren van de argumenten. Eén van de argumenten is de array met labels die we al toegevoegd hebben. Onder de labels, en nog steeds binnen de haken, voeg je dit toe: . $args = [ 'labels' =&gt; $labels, 'has_archive' =&gt; true, 'public' =&gt; true, 'hierarchical' =&gt; false, 'supports' =&gt; [ 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail', 'page-attributes', ], 'rewrite' =&gt; [ 'slug' =&gt; 'wood' ], 'show_in_rest' =&gt; true, ]; . Laten we eens kijken wat deze allemaal doen: . | Labels: de array met labels die we al eerder definieerden. | has_archive: zorgt dat je een post type archief voor je custom post type kunt maken. | public: zorgt dat het post type ook verschijnt binnen de zoekresultaten. Dit staat standaard uit en wil ik graag inschakelen. | hierarchical waarde hangt af van hoe je precies je custom post type wilt gaan gebruiken. Als je dit op true zet, zal het post type zich gedragen als het pagina-type, waarbij je een hiërarchie kunt aanbrengen met parent en child-berichten. Als je dit op false zet, zal het zich gedragen als een gewoon bericht, zonder hiërarchie. | supports array definieert een aantal features van post types die dit custom type kan ondersteunen. Verschillende opties zijn: ‘title’, ‘editor’, ‘comments’, ‘revisions’, ‘trackbacks’, ‘author’, ‘excerpt’, ‘page-attributes’, ‘thumbnail’, ‘custom-fields’, en ‘post-formats’. | rewrite kun je gebruiken om je taxonomie een andere te geven. | show_in_rest zorgt ervoor dat het post type toegankelijk is via de REST API en de admin interface. Hier vind je de complete uitleg: https://developer.wordpress.org/reference/functions/register_post_type/ | . 4- Registratie . Het registreren is nadat je alles hebt ingesteld super simpel, je hoeft alleen de post-type en de argumenten door te geven. register_post_type( 'wood', $args ); . 3- Controleer . Ga nu naar je admin omgeving en zie dat in het menu een nieuw item is toegevoegd. Voeg nu minimaal 2 custom post types toe aan je website. Links . https://developer.wordpress.org/reference/functions/register_post_type/ https://developer.wordpress.org/reference/functions/register_taxonomy/ . ",
+    "url": "/m5prog_opdrachtensite/les-7/register#let-op-dat-je-de-juiste-term-en-text-domein-gebruikt",
+    
+    "relUrl": "/les-7/register#let-op-dat-je-de-juiste-term-en-text-domein-gebruikt"
+  },"94": {
+    "doc": "Les 7",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je een categorie toevoegen. Registreren van een taxonomie . ",
+    "url": "/m5prog_opdrachtensite/les-7/register#commit-en-push",
+    
+    "relUrl": "/les-7/register#commit-en-push"
+  },"95": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-7/register",
+    
+    "relUrl": "/les-7/register"
+  },"96": {
+    "doc": "Les 2",
+    "title": "Selecteer een thema",
+    "content": "Je gaat in deze les een basis thema selecteren dat je in de volgende les gaat uitbreiden met speciale features. 1- Ingelogd . Als het goed is ben je momenteel ingelogd als je naar je localhost gaat. Zie je bovenaan niet een admin menu, voeg dan dit endpoint toe aan de url: /wp-admin . 2- Selecteer een thema in het dashboard . Aan de linker kant vind je een optie Appearance. Hieronder vind je een Themes optie waarna je een thema kunt selecteren of uploaden. Wil je een simpel basis thema hebben dan kun je die hier downloaden: cue.1.0.0.zip en vervolgens uploaden via de add new theme en daarna de upload knop. Selecteer nu een thema dat je wilt gebruiken. 3- Pas het thema aan . Via de customizer optie uit het menu kun je het thema zo aanpassen dat je een unieke website hebt. Speelt maar even 15 minuten met deze customizer en alle instellingen om te zien wat er mogelijk is. 4- Controleer . Bekijk de website in je browser en zie dat het nieuwe thema actief is. Controleer ook even in een privé-venster waarbij je niet bent ingelogd. ",
+    "url": "/m5prog_opdrachtensite/les-2/select#selecteer-een-thema",
+    
+    "relUrl": "/les-2/select#selecteer-een-thema"
+  },"97": {
+    "doc": "Les 2",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Maak de structuur van je child thema . ",
+    "url": "/m5prog_opdrachtensite/les-2/select#commit-en-push",
+    
+    "relUrl": "/les-2/select#commit-en-push"
+  },"98": {
+    "doc": "Les 2",
+    "title": "Les 2",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-2/select",
+    
+    "relUrl": "/les-2/select"
+  },"99": {
+    "doc": "Les 5",
+    "title": "De WordPress single page",
+    "content": "Je hebt net een fallback en overzicht pagina gemaakt. Nu ga je een pagina maken waarbij je de content van één page of blog post weergeeft. 1- Aanmaken van page.php . Dupliceer de index.php pagina en noem hem page.php Deze pagina gaat straks een de informatie van één pagina weergeven. 2- Elementen in de page.php . Je hoeft nu niet meer gebruik te maken van een if statement of een loop. Je kunt direct in de pagina de verschillende elementen weergeven. Het is wel handig om aan het begin van je pagina de onderstaande functie aan te roepen zodat alle data klaar staat om te gebruiken. &lt;?php the_post(); ?&gt; . Doe je dat niet, dan weet WordPress bij sommige functies niet welke post je bekijkt en krijg je geen of onverwachte data terug. Zorg ervoor dat je de hele content van het bericht weergeeft, niet alleen de intro ( the excerpt ). 3- Single.php . Om de blogs / posts items netjes weer te geven in dezelfde vormgeving kun je nu de page.php dupliceren naar single.php. Voeg een aantal elementen toe die specifiek zijn voor een blog item ( nieuws bericht ). Hier kun je verschillende functies vinden die je binnen WordPress kunt gebruiken https://developer.wordpress.org/reference/functions/ Een paar voorbeelden: . | php &lt;?php the_date() ?&gt; geeft de datum weer dat het bericht gemaakt is. | php &lt;?php the_modified_date() ?&gt; geeft de datum weer dat het bericht geupdate is. | php &lt;?php echo get_avatar( get_the_author_meta('user_email'), '80', '-' ); ?&gt; geeft de avatar weer van de auteur. | php &lt;?php the_author_meta('description') ?&gt; geeft de bio weer van de auteur. | . Wil je ook een volgende en vorige knop om te navigeren tussen de blog posts, dan kun je de onderstaande code gebruiken. Text_Domain moet je dan vervangen door jouw Text-Domain zoals je hebt ingesteld in style.css. // Previous/next post navigation. the_post_navigation( [ 'next_text' =&gt; __( 'Next post', 'Text_Domain' ), 'prev_text' =&gt; __( 'Previous post:', 'Text_Domain' ), ] ); . 3- Controleer . Bekijk je website nu in de browser. Als het goed is zie je nu de content die je ingesteld hebt in het wp-admin gedeelte. ",
+    "url": "/m5prog_opdrachtensite/les-5/single_page#de-wordpress-single-page",
+    
+    "relUrl": "/les-5/single_page#de-wordpress-single-page"
+  },"100": {
+    "doc": "Les 5",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je zelf een dynamisch menu implementeren. Menu implementeren . ",
+    "url": "/m5prog_opdrachtensite/les-5/single_page#commit-en-push",
+    
+    "relUrl": "/les-5/single_page#commit-en-push"
+  },"101": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/single_page",
+    
+    "relUrl": "/les-5/single_page"
+  },"102": {
+    "doc": "Les 10",
+    "title": "In productie brengen van een WordPress website",
+    "content": "Voordat je de website in productie kan brengen zijn er een aantal onderdelen die je nodig hebt. | Zorg voor een hosting met ftp toegang | Basis WordPress installatie op de externe omgeving | Database dump waarbij het domein vervangen is door het nieuwe domein | Toegang tot een MySQL interface | Stabiel internet | . Eerste stap: . Voorbereiding . ",
+    "url": "/m5prog_opdrachtensite/les-10/steps#in-productie-brengen-van-een-wordpress-website",
+    
+    "relUrl": "/les-10/steps#in-productie-brengen-van-een-wordpress-website"
+  },"103": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-10/steps",
+    
+    "relUrl": "/les-10/steps"
+  },"104": {
+    "doc": "Les 4",
+    "title": "De WordPress pagina structuur",
+    "content": "Zorg dat je deze introductie even rustig doorleest zodat je snapt hoe WordPress omgaat met de header en footer. Binnen een WordPress thema vind je vaak een header.php én een footer.php document. Twee voorbeeld bestanden kun je hier downloaden: header.php footer.php Dit zijn voorbeeld bestanden ter inspiratie. Maak zelf een header.php én een footer.php bestand aan in je thema folder, hiermee zorg je dat alle pagina’s dezelfde stijl hebben. Als je de header van een specifiek post-type anders wilt hebben dan de andere pagina’s dan maak je een bestand met een andere naam. Bijvoorbeeld: header-customposttype.php. Header . In vorige php projecten gebruikte je include(), require() of @import() functies om een bepaald document in te laden. Binnen WordPress is er voor de header en footer een uitzondering. De header template kun je laden met het volgende php commando: . get_header(); . Binnen de header.php moet je minimaal de onderstaande php functie aanroepen. Deze moet je laden binnen de html &lt;head&gt; om diverse functies uit te voeren zoals het laden van CSS en JavaScripts. &lt;?php wp_head(); ?&gt; . Binnen de header voeg je diverse HTML elementen toe: . | Open de html tag | Open en sluit de head tag | Voeg de meta tags toe aan de head | Voer binnen de head de php functie wp_head() uit | Open de body tag en voeg daar de body_class aan toe: &lt;body &lt;?php body_class(); ?&gt;&gt; | Implementeer de navigatie. | . Footer . Het idee van de footer is hetzelfde als de titel, alleen sluit je nu de html af. De footer template wordt geladen met de volgende php functie: . get_footer(); . Binnen de footer moet je minimaal deze php functie aanroepen net voor je de body tag afsluit. Deze php functie zorgt ervoor dat er diverse acties uitgevoerd worden zoals het laden van JavaScripts en extra toevoegingen aan de HTML pagina. &lt;?php wp_footer(); ?&gt; . Binnen de footer voeg je diverse HTML elementen toe: . | Voer net voor het afsluiten van de body de php functie wp_footer() uit | Sluit de body tag | Sluit de html tag | . Body data . Alle andere informatie zoals een titel, intro, omschrijving worden straks geladen in onder andere de index.php. In de volgende opdracht ga je zelf een header.php en footer.php maken. Volgende stap: . WordPress header template en functies . ",
+    "url": "/m5prog_opdrachtensite/les-4/structure#de-wordpress-pagina-structuur",
+    
+    "relUrl": "/les-4/structure#de-wordpress-pagina-structuur"
+  },"105": {
+    "doc": "Les 4",
+    "title": "Les 4",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-4/structure",
+    
+    "relUrl": "/les-4/structure"
+  },"106": {
+    "doc": "Les 3",
+    "title": "Maak de structuur van je custom theme",
+    "content": "Veel bedrijven maken een custom WordPress thema voor een specifieke klant of event. Jij gaat nu een WordPress thema maken voor een specifieke klant. Door gebruik te maken van WordPress hoef je je geen zorgen te maken over CRUD-functionaliteit of database verbindingen. ",
+    "url": "/m5prog_opdrachtensite/les-3/structure#maak-de-structuur-van-je-custom-theme",
+    
+    "relUrl": "/les-3/structure#maak-de-structuur-van-je-custom-theme"
+  },"107": {
+    "doc": "Les 3",
+    "title": "Thema naam",
+    "content": "Op de plekken waar je ziet staan: ‘M5PROG_THEME_NAME’ moet straks natuurlijk naam van jouw eigen thema plaatsen. 1- Structuur van de thema folder . | Maak een nieuwe folder aan in de thema folder met de naam voor jouw thema, (gebruik geen kapitalen en spaties) | Plaats hierin een nieuw bestand met de naam style.css | Plaats hierin een nieuw bestand met de naam index.php | Plaats hierin een nieuw bestand met de naam functions.php | Plaats hierin een nieuw bestand met de naam screenshot.png Meer informatie over thema’s: https://codex.wordpress.org/Theme_Development | . 2- screenshot.png . Dit bestand is een screenshot of het design van jouw eigen thema zodat je straks makkelijker het thema kunt kiezen. Plaats hierin een afbeelding. 3- functions.php . Hier komt diverse functies voor dit thema net zoals bij het child thema. Begin met het laden van de style. function m5prog_enqueue_styles() { wp_enqueue_style( 'm5prog-style', get_stylesheet_uri() ); } add_action( 'wp_enqueue_scripts', 'm5prog_enqueue_styles' ); . Voeg ook alvast de featured image functionaliteit toe zodat je straks eenvoudig afbeeldingen kunt toevoegen aan posts: . add_theme_support( 'post-thumbnails' ); . 4- index.php . Hier komen straks de codes in die je pagina’s weergeven. Plaats nu tijdelijk even een voorbeeld tekst in dit document, geen opmaak, alleen een test. Als je niets kunt verzinnen gebruik dan deze dump: . &lt;?php echo '&lt;pre style=\"background:#0f0; padding: 2rem; width:100%;\"&gt;'; print_r( 'dit is mijn index pagina' ); echo '&lt;/pre&gt;'; die(__FILE__.':'.__LINE__); . 5- Hiërarchie . De opzet van WordPress gaat volgens een bepaalde structuur, net als bij andere frameworks, meer informatie vind je hier: https://kinsta.com/nl/blog/template-hierarchie-van-wordpress/ Of als je liever een rustgevende video wilt bekijken: https://learn.wordpress.org/tutorial/a-beginners-guide-to-the-wordpress-template-hierarchy/ . ",
+    "url": "/m5prog_opdrachtensite/les-3/structure#thema-naam",
+    
+    "relUrl": "/les-3/structure#thema-naam"
+  },"108": {
+    "doc": "Les 3",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Stel de style.css in . ",
+    "url": "/m5prog_opdrachtensite/les-3/structure#commit-en-push",
+    
+    "relUrl": "/les-3/structure#commit-en-push"
+  },"109": {
+    "doc": "Les 3",
+    "title": "Les 3",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-3/structure",
+    
+    "relUrl": "/les-3/structure"
+  },"110": {
+    "doc": "Les 2",
+    "title": "Maak de structuur van je child theme",
+    "content": "Je gaat nu de structuur maken van een nieuw child thema zodat je aanpassingen in de code kunt maken zonder het originele thema aan te passen. 1- Folder en bestand structuur . | Maak een nieuwe folder aan in de thema folder, (gebruik géén kapitalen en géén spaties) | Plaats hierin een nieuw bestand met de naam style.css | Plaats hierin een nieuw bestand met de naam functions.php | Plaats hierin een nieuw bestand met de naam screenshot.png Meer informatie over child themes: developer.wordpress.org/themes/advanced-topics/child-themes | . 2- screenshot.png . Dit bestand is een screenshot of het design van jouw eigen thema zodat je straks makkelijker het thema kunt kiezen. Plaats hier willekeurige maar wel Safe For Work afbeelding in. 3- functions.php . Hier komt diverse functies voor dit thema. Action hooks Met action hooks kan je een functionaliteit aanvullen of uitschakelen. WordPress heeft vaste momenten dat er een action aangeroepen wordt, daar kun jij met je code op inhaken. Bijvoorbeeld als alle plugins geladen zijn, of als de styles geladen moeten worden. Zie voor meer informatie: WP Action Reference . Voor nu kun je jouw css te laden via een action hook. function m5prog_enqueue_styles() { wp_enqueue_style( 'm5prog-style', get_stylesheet_uri() ); } add_action( 'wp_enqueue_scripts', 'm5prog_enqueue_styles' ); . ",
+    "url": "/m5prog_opdrachtensite/les-2/structure#maak-de-structuur-van-je-child-theme",
+    
+    "relUrl": "/les-2/structure#maak-de-structuur-van-je-child-theme"
+  },"111": {
+    "doc": "Les 2",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Stel de style.css in . ",
+    "url": "/m5prog_opdrachtensite/les-2/structure#commit-en-push",
+    
+    "relUrl": "/les-2/structure#commit-en-push"
+  },"112": {
+    "doc": "Les 2",
+    "title": "Les 2",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-2/structure",
+    
+    "relUrl": "/les-2/structure"
+  },"113": {
+    "doc": "Les 3",
+    "title": "Stel de style.css in",
+    "content": "In het style.css bestand geef je nu wat informatie over dit thema weer. 1- style.css . In dit bestand geef je aan hoe je thema heet en wat de parent is. In dit voorbeeld heb ik een nieuw thema gemaakt met de naam M5PROG_THEME_NAME Zie voor alle opties: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ . ",
+    "url": "/m5prog_opdrachtensite/les-3/style_css#stel-de-stylecss-in",
+    
+    "relUrl": "/les-3/style_css#stel-de-stylecss-in"
+  },"114": {
+    "doc": "Les 3",
+    "title": "Dit is een voorbeeld, let op dat je wel de juiste versie van php én WordPress instelt, anders werkt het thema niet.",
+    "content": "/** * Theme Name: M5PROG_THEME_NAME * Theme URI: https://ma-web.nl * Description: This is a custom WordPress theme * Version: 0.0.1 * Author: Jasper Heidebrink * Author URI: https://ma-web.nl * Tags: m5prog * Text Domain: M5PROG_THEME_NAME * Domain Path: /languages * Tested up to: 6.5 * Requires at least: 6.4 * Requires PHP: 8.2 * License: GNU General Public License v2.0 or later * License URI: https://www.gnu.org/licenses/gpl-2.0.html */ . Hier kun je zien welke versie van WordPress php je gebruikt: /wp-admin/site-health.php?tab=debug De items Text Domain en Domain Path gaan wij later gebruiken voor de vertalingen. ",
+    "url": "/m5prog_opdrachtensite/les-3/style_css#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-%C3%A9n-wordpress-instelt-anders-werkt-het-thema-niet",
+    
+    "relUrl": "/les-3/style_css#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-én-wordpress-instelt-anders-werkt-het-thema-niet"
+  },"115": {
+    "doc": "Les 3",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Activeer en controleer dit thema . ",
+    "url": "/m5prog_opdrachtensite/les-3/style_css#commit-en-push",
+    
+    "relUrl": "/les-3/style_css#commit-en-push"
+  },"116": {
+    "doc": "Les 3",
+    "title": "Les 3",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-3/style_css",
+    
+    "relUrl": "/les-3/style_css"
+  },"117": {
+    "doc": "Les 2",
+    "title": "Stel de style.css in",
+    "content": "In het style.css bestand kun je aangeven hoe het thema heet en wie hem gemaakt heeft. 1- style.css . In dit bestand geef je aan hoe je thema heet en wat de parent is. In dit voorbeeld heb ik een nieuw thema gemaakt met de naam M5PROG Zie voor alle opties: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ Dit zijn de minimale instellingen voor een gewoon thema . /* Theme Name: M5PROG Author: Jasper */ . Dit zijn de minimale instellingen voor een gewoon child thema . /* Theme Name: M5PROG Author: Jasper Template: cue */ . Hierbij een uitgebreide lijst met instellingen, bekijk deze maar eens om te zien wat je zelf wilt gebruiken. /** * Theme Name: M5PROG Child theme * Theme URI: https://ma-web.nl * Description: This is a custom child theme * Version: 1.0.0 * Template: cue * Author: Jasper Heidebrink * Author URI: https://ma-web.nl * Tags: m5prog * Text Domain: m5prog * Domain Path: /languages * Tested up to: 6.4 * Requires at least: 6.2 * Requires PHP: 7.4 * License: GNU General Public License v2.0 or later * License URI: https://www.gnu.org/licenses/gpl-2.0.html */ . ",
+    "url": "/m5prog_opdrachtensite/les-2/style_css#stel-de-stylecss-in",
+    
+    "relUrl": "/les-2/style_css#stel-de-stylecss-in"
+  },"118": {
+    "doc": "Les 2",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Activeer en controleer dit thema . ",
+    "url": "/m5prog_opdrachtensite/les-2/style_css#commit-en-push",
+    
+    "relUrl": "/les-2/style_css#commit-en-push"
+  },"119": {
+    "doc": "Les 2",
+    "title": "Les 2",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-2/style_css",
+    
+    "relUrl": "/les-2/style_css"
+  },"120": {
+    "doc": "Les 7",
+    "title": "Registreren van een custom post type",
+    "content": "Nu ga je een taxonomy registreren zodat je custom post type onderverdeeld kan worden in categorieën. 1- Labels . Voordat wij gaan registreren definiëer ik de labels van deze taxonomy. Dit doe ik door in mijn PostType.php document de volgende code te plaatsen. ",
+    "url": "/m5prog_opdrachtensite/les-7/taxonomy#registreren-van-een-custom-post-type",
+    
+    "relUrl": "/les-7/taxonomy#registreren-van-een-custom-post-type"
+  },"121": {
+    "doc": "Les 7",
+    "title": "Let op dat je de juiste term en text-domein gebruikt!",
+    "content": "$labels = [ 'name' =&gt; _x( 'Origins', 'taxonomy general name', 'Text_Domain' ), 'singular_name' =&gt; _x( 'Origin', 'taxonomy singular name', 'Text_Domain' ), 'search_items' =&gt; __( 'Search Origins', 'Text_Domain' ), 'popular_items' =&gt; __( 'Popular Origins', 'Text_Domain' ), 'all_items' =&gt; __( 'All Origins', 'Text_Domain' ), 'parent_item' =&gt; __( 'Parent Origin', 'Text_Domain' ), 'parent_item_colon' =&gt; __( 'Parent Origin:', 'Text_Domain' ), 'edit_item' =&gt; __( 'Edit Origin', 'Text_Domain' ), 'update_item' =&gt; __( 'Update Origin', 'Text_Domain' ), 'add_new_item' =&gt; __( 'Add New Origin', 'Text_Domain' ), 'new_item_name' =&gt; __( 'New Origin Name', 'Text_Domain' ), 'menu_name' =&gt; __( 'Origins', 'Text_Domain' ), ]; . 2- Definiëren van de argumenten voor je taxonomy . De volgende stap is het definiëren van de argumenten. Eén van de argumenten is de array met labels die we al toegevoegd hebben. Onder de labels, en nog steeds binnen de haken, voeg je dit toe: . $args = [ 'hierarchical' =&gt; true, 'labels' =&gt; $labels, 'show_ui' =&gt; true, 'show_admin_column' =&gt; true, 'query_var' =&gt; true, 'show_in_rest' =&gt; true, 'rewrite' =&gt; [ 'slug' =&gt; 'origin' ], ]; . Laten we eens kijken wat deze allemaal doen: . | hierarchical waarde hangt af van hoe je precies je custom post type wilt gaan gebruiken. Als je dit op true zet, zal het post type zich gedragen als het pagina-type, waarbij je een hiërarchie kunt aanbrengen met parent en child-berichten. Als je dit op false zet, zal het zich gedragen als een gewoon bericht, zonder hiërarchie. | labels: de array met labels die we al eerder definieerden. | show_ui is dit onderdeel wel of niet zichtbaar in de admin omgeving | show_admin_column in het admin overzicht van mijn custom post types kan er een kolom bij komen met deze taxonomy | query_var mag dit element wel of niet opgehaald worden via de wp-query | show_in_rest zorgt ervoor dat het post type toegankelijk is via de REST API en de admin interface. | rewrite wil je dat de slug voor deze taxonomy niet gelijk is aan de naam? Hier vind je de complete uitleg: https://developer.wordpress.org/reference/functions/register_taxonomy/ | . 3- Registratie . Het registreren is nadat je alles hebt ingesteld super simpel, je hoeft alleen de post-type en de argumenten door te geven. register_taxonomy( 'origin', 'wood', $args ); . 3- Controleer . Ga nu naar je admin omgeving en zie dat in het menu een nieuw item is toegevoegd. En dat je bij het bewerken van een custom post type item een categorie kunt selecteren of aanmaken. Voeg nu minimaal 2 taxonomies toe en koppel deze aan een of meerdere custom post types. Links . https://developer.wordpress.org/reference/functions/register_post_type/ https://developer.wordpress.org/reference/functions/register_taxonomy/ . ",
+    "url": "/m5prog_opdrachtensite/les-7/taxonomy#let-op-dat-je-de-juiste-term-en-text-domein-gebruikt",
+    
+    "relUrl": "/les-7/taxonomy#let-op-dat-je-de-juiste-term-en-text-domein-gebruikt"
+  },"122": {
+    "doc": "Les 7",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je deze taxonomy én post type weergeven op jouw site. Weergeven van een Custom post type . ",
+    "url": "/m5prog_opdrachtensite/les-7/taxonomy#commit-en-push",
+    
+    "relUrl": "/les-7/taxonomy#commit-en-push"
+  },"123": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-7/taxonomy",
+    
+    "relUrl": "/les-7/taxonomy"
+  },"124": {
+    "doc": "Les 1",
+    "title": "Testen",
+    "content": "Na de installatie kun je jouw website testen. 1- Controle website . Ga in je browser naar http://localhost en bekijk jouw website. 2- Controle database . Ga in je browser naar http://localhost:8805 en controleer of je geen errors ziet in de phpmyadmin omgeving . ",
+    "url": "/m5prog_opdrachtensite/les-1/testen#testen",
+    
+    "relUrl": "/les-1/testen#testen"
+  },"125": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-1/testen",
+    
+    "relUrl": "/les-1/testen"
+  },"126": {
+    "doc": "Les 10",
+    "title": "Uploaden van je database, media bestanden, thema en plugins",
+    "content": "Je bent er bijna, nu ga je jouw lokale website in productie brengen. Eerst de database en dan de bestanden ( het mag ook andersom of tegelijk ) . 1- Importeren van de database . 1- Ga nu naar de admin omgeving van jouw online database. Bijvoorbeeld: https://mediacollege-hosts-st1.cust.webslice.eu/ma-pma/ Login met je database gegevens. In het geval van ma-cloud zijn dit de gegevens uit je wp-config.php 2- Verwijder alle tabellen uit deze online database 3- Importeer de tweede database dump. Met een beetje geluk werkt alles perfect, anders moet je eerst de dump aanpassen zodat deze geïmporteerd kan worden. Ik moest overal ` COLLATE=utf8mb4_unicode_520_ci` verwijderen uit de dump. 2- Uploaden van de media bestanden . Upload alle folders uit je uploads folder van jouw omgeving naar de uploads folder op de ftp server. 3- Uploaden van de plugins . Upload alle folders uit je lokale plugins omgeving naar de plugins folder op de ftp server. 4- Uploaden van je custom thema . Upload het de custom thema folder vanaf jouw lokale omgeving naar de themes folder op de ftp server. Volgende stap: . Controle van je website . ",
+    "url": "/m5prog_opdrachtensite/les-10/upload#uploaden-van-je-database-media-bestanden-thema-en-plugins",
+    
+    "relUrl": "/les-10/upload#uploaden-van-je-database-media-bestanden-thema-en-plugins"
+  },"127": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-10/upload",
+    
+    "relUrl": "/les-10/upload"
+  },"128": {
+    "doc": "Les 9",
+    "title": "Gebruik van WP CLI",
+    "content": "Nu je WP CLI geïnstalleerd hebt is het tijd om het te gaan gebruiken. Lees deze hele pagina, maar voer alleen stap 1 en 2 uit. Stap 4 is een voorbereiding voor de volgende les. Note . De toevoeging --allow-root is, zoals eerder aangegeven, alleen noodzakelijk als je WP via sudo uitvoert. 1- Geef alle plugins weer . Via WP CLI kun je diverse acties uitveren om je WordPress site te beheren. Zo kun je bijvoorbeeld een plugin installeren, verwijderen of activeren. Of een complete lijst ophalen van alle geïnstalleerde plugins: . wp plugin list --allow-root . Zie voor meer commando’s over de plugins: WP CLI plugin list . 2- Updaten van WordPress, Plugins en Thema’s . Het updaten van een WordPress site kun je ook doen via de WP CLI interface. Core . Met het volgende commando kun je controleren of de WP core geupdate moet worden: . wp core check-update --allow-root . Met het volgende commando kun je de core updaten: . wp core update --allow-root . Plugins . Voor het updaten van je alle plugins gebruik je dit commando: . wp plugin update --all --allow-root . Thema’s . Voor het updaten van je alle thema’s gebruik je dit commando: . wp theme update --all --allow-root . 3- Transients legen . Binnen WordPress kun he gebruik maken van Transients, hiermee kun je gegevens tijdelijk in de database opslaan om zo je site te versnellen. Dit is een database cache. WP Transients Om alle transients te verwijderen uit de database gebruik je dit commando: . wp transient delete --all --allow-root . 4- Search and replace . Binnen WordPress wil je wel eens iets zoeken en vervangen, bijvoorbeeld als je domein naam verandert. Je kunt een query in de database uitvoeren, maar daarbij heb je ook kans dat er onderdelen stuk gaan. Een veilige tool is search-replace van WP CLI De structuur van dit commando is: . wp search-replace &lt;old&gt; &lt;new&gt; &lt;table&gt; --dry-run --all-tables . Er zijn verschillende toevoegingen, een paar zijn: &lt;old&gt; Dit is de string die je zoekt in de database &lt;new&gt; Dit is de nieuwe string in de database [--dry-run] Als je dit toevoegd wordt de database niet aangepast, zo kun je een commando testen [--all-tables-with-prefix] Wil je alleen speciale tabellen aanpassen? [--all-tables] Hiermee geef je aan dat alle tabellen binnen de database aangepast moeten worden. Als ik bijvoorbeeld mijn website live wil zetten dan verandert mijn domein naam van localhost naar m5prog.nl Daarvoor ga ik eerst een test doen, ik pas de database nog niet aan. wp search-replace localhost m5prog.nl --dry-run --allow-root . Ik zie nu wat er allemaal aangepast zou moeten worden. Om het zoeken en vervangen echt uit te voeren, moet ik hetzelfde commando uitvoeren, maar dan zonder --dry-run. 5- Vertaling maken . Ook dit is een functie die je kunt uitvoeren met WP CLI. De structuur van dit commando is: . wp i18n make-pot path/to/your-plugin-directory . ",
+    "url": "/m5prog_opdrachtensite/les-9/usage#gebruik-van-wp-cli",
+    
+    "relUrl": "/les-9/usage#gebruik-van-wp-cli"
+  },"129": {
+    "doc": "Les 9",
+    "title": "Let op, je moet wel de correcte folder opgeven.",
+    "content": "Dit kan ongeveer jouw commando zijn ( THEMA_NAAM is dan jouw eigen thema ): . wp i18n make-pot wp-content/themes/THEMA_NAAM --allow-root . Je ziet nun in de thema folder een languages folder met daarin een *.pot file. Deze kunt je weer vertalen via PoeEdit of een online tool als: Po editor . Links . | WP CLI handboek | WP CLI command0’s | WP CLI core commando’s | WP CLI thema commando’s | WP CLI vertalignen commando’s | WP CLI zoeken en vervangen | WP CLI Transients | . ",
+    "url": "/m5prog_opdrachtensite/les-9/usage#let-op-je-moet-wel-de-correcte-folder-opgeven",
+    
+    "relUrl": "/les-9/usage#let-op-je-moet-wel-de-correcte-folder-opgeven"
+  },"130": {
+    "doc": "Les 9",
+    "title": "Les 9",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-9/usage",
+    
+    "relUrl": "/les-9/usage"
+  },"131": {
+    "doc": "Les 7",
+    "title": "Weergeven van custom post types",
+    "content": "Uiteindelijk is het doel om deze items weer te geven aan de voorkant van je website. In het wp-admin gedeelte heb je alvast een paar items toegevoegd, deze kunnen wij nu gaan weergeven. Dit gaan wij op verschillende manieren doen: . | via het menu | via een widget | via de categorie | de pagina zelf | . 1- De post type toevoegen aan het menu . Dit is eigenlijk de makkelijkste omdat je hier geen code voor hoeft te schrijven. | ga in het admin menu naar het menu onderdeel toe. | selecteer aan de zijkant je custom post type | klik op view all en selecteer je post type | klik op ‘Add to Menu’ | Sla het menu op | Bekijk nu je website in je browser en zie dat je een nieuw menu item hebt. | . 2- De post type toevoegen aan een widget . In het wp-admin gedeelte kun je via de customizer of direct naar het widgets menu gaan. Hier kun je een tekst plaatsen met een link naar de slug van jouw custom post type, bij mij is dat \\wood. Gebruik hiervoor de link knop, of schrijf dit zelf in HTML. 3- Weergave van de categorie . Jouw custom post type is te bereiken door de slug als endpoint in de browser toe te voegen, in mijn geval: localhost/wood Om een mooi overzicht te krijgen maak ik hier ook een speciale archief pagina van door de index te dupliceren naar archive-wood.php ( bij jou is dat natuurlijk niet wood, maar jouw eigen post type ) In dit overzicht heb ik bijvoorbeeld de thumbnails weergegeven en een titel toegevoegd. Op dezelfde manier kunnen wij ook de categorie weergeven, nu alleen met de categorie in de titel. Ik kopieer nu de archive-wood.php naar taxonomy-origin.php Het enige dat ik voorlopig aanpas is de titel, daarvan maak ik: . &lt;h1&gt; Dit is mijn categorie: &lt;?php single_term_title() ?&gt; &lt;/h1&gt; . 4- Controleer . Als je nu naar jouw website gaat in de browser dan zie je dat je op verschillende manieren naar jouw custom post type kan gaan. Ook zie je dat je overzicht pagina’s hebt en verschillende enkele pagina’s. Het klopt dat er nu hier en daar duplicated code is, maar daar gaan wij een volgende stap mee aan de slag. ",
+    "url": "/m5prog_opdrachtensite/les-7/view#weergeven-van-custom-post-types",
+    
+    "relUrl": "/les-7/view#weergeven-van-custom-post-types"
+  },"132": {
+    "doc": "Les 7",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m5prog_opdrachtensite/les-7/view#commit-en-push",
+    
+    "relUrl": "/les-7/view#commit-en-push"
+  },"133": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-7/view",
+    
+    "relUrl": "/les-7/view"
+  },"134": {
+    "doc": "Les 6",
+    "title": "Webpack integreren met WordPress",
+    "content": "Deze les een stuk minder verschillende stappen, dus heb je meer tijd om een mooie website te maken. Om onze SASS en JavaScipt te compilen maak ik gebruik van npm in combinatie met webpack om de assets te renderen. ",
+    "url": "/m5prog_opdrachtensite/les-6/webpack#webpack-integreren-met-wordpress",
+    
+    "relUrl": "/les-6/webpack#webpack-integreren-met-wordpress"
+  },"135": {
+    "doc": "Les 6",
+    "title": "Let op, straks wordt er een node_modules folder gegenereerd, deze mag niet in git.",
+    "content": ". 1- Structuur . Eerst heb je een structuur nodig. Maak in je thema map een aantal folders en bestanden die je als basis nodig hebt: . | src/js ( dit is de locatie van je javascripts die niet minified zijn ) | src/js/main.js ( dit is je js bestand met minimaal een console.log() functie erin ) | src/scss ( hierin staan je SASS bestanden ) | src/scss/main.scss ( je scss bestand met bijvoorbeeld je sass code ) | package.json ( hier staat in welke packages er nodig zijn zoals een sass compiler ) | webpack.config.js ( hier zijn de functies gedefinieerd voor het compilen van de sass ) Je kunt een voorbeeld van dit pakket bestanden ook hier downloaden: example | . 2- package.json . In de package.json kun je aangeven hoe je project heet en wat de locatie van webpack.config.js is. Je vind ook diverse dependencies die nodig zijn voor het compilen van dit project. Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoorbeeld dev . 3- webpack.config.js . In de webpack.config.js vind je de acties die uitgevoerd worden tijdens het compilen. 4- Packages installeren . Het installeren van de packages doe je via npm. Navigeer daarvoor in de terminal naar je thema folder en voer het volgende commando uit: . npm i . ( npm install ) Je ziet nu een node_modules folder in je thema folder. Note: Zorg ervoor dat je de node_modules in je .gitignore hebt staan zodat deze niet gepushed wordt naar je repo. 5- Packages compilen . Om de sass en de javascripts te compilen en in een dist folder te plaatsen kun je het volgende commando uitvoeren: . npm run dev . 6- Scripts toevoegen aan de website . Voor het laden van de javascripts en styles maak je binnen WordPress gebruik van een enqueue functie. Zie voor de scripts: https://developer.wordpress.org/reference/functions/wp_enqueue_script/ En voor de styles: https://developer.wordpress.org/reference/functions/wp_enqueue_style/ Hierdoor worden ook eventuele dependencies geladen en worden de scripts op de juiste plek geladen. Let even goed op welke parameters er zijn. Plaats daarvoor deze code in je functions.php: . function add_style_and_js() { wp_enqueue_script( 'm5prog', get_template_directory_uri() . '/dist/js/main.js', [ 'jquery' ], '1.0.0', [ 'strategy' =&gt; 'defer', 'in_footer' =&gt; true, ] ); wp_register_style( 'm5prog_styles', get_template_directory_uri() . '/dist/css/main.min.css', [], '1.0.0' ); wp_enqueue_style( 'm5prog_styles' ); } add_action( 'wp_enqueue_scripts', 'add_style_and_js' ); . 7- Thema opruimen . Omdat je nu gebruik maakt van de wp_enqueue_script en wp_enqueue_style hoef je de style en scripts niet meer los te laden in je header en footer. Mocht je dat nog wel doen dan moet je die regels verwijderen. 8- Controleer . Bekijk je website nu in de browser. 9- Customize . Pas nu de scss en templates nu aan zodat de website voldoet aan de eisen van jouw project. ",
+    "url": "/m5prog_opdrachtensite/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git",
+    
+    "relUrl": "/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git"
+  },"136": {
+    "doc": "Les 6",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m5prog_opdrachtensite/les-6/webpack#commit-en-push",
+    
+    "relUrl": "/les-6/webpack#commit-en-push"
+  },"137": {
+    "doc": "Les 6",
+    "title": "Les 6",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-6/webpack",
+    
+    "relUrl": "/les-6/webpack"
+  },"138": {
+    "doc": "Les 5",
+    "title": "Wat zijn WordPress-widgets?",
+    "content": "In WordPress kun je stukjes content maken die je buiten de artikelen en bijbehorende inhoud beheert, dit noemen wij widgets. Widgets kunnen diverse type informatie bevatten zoals statische HTML, navigatiegegevens of andere data die niet direct verbonden is aan de huidige pagina. In de meeste gevallen wordt een widget op elke pagina van je site weergegeven, maar je kan ook widget gebieden toevoegen voor specifieke pagina’s, zoals je homepagina. Om een widget aan je site toe te voegen, moet je deze koppelen aan een widget-gebied. 1- Widget ondersteuning toevoegen aan thema . Widget-gebieden kun je definiëren in het thema als je hier gebruik van wilt maken. In de functions.php ga ik aangeven dat mijn thema een widget gebied heeft zodat ik deze in het wp-admin gedeelte kan beheren. Dit doe je door in te haken op de widgets_init action van WordPress. ",
+    "url": "/m5prog_opdrachtensite/les-5/widgets#wat-zijn-wordpress-widgets",
+    
+    "relUrl": "/les-5/widgets#wat-zijn-wordpress-widgets"
+  },"139": {
+    "doc": "Les 5",
+    "title": "Let op dat je bij de id een duidelijke ‘key’ aanmaakt, bijvoorbeeld ‘footer-widget-area’.",
+    "content": "/** * Initialize the widget area * * @return void */ function add_theme_widgets() { register_sidebar( [ 'name' =&gt; __( 'Footer Widget Area', 'Text_Domain' ), 'id' =&gt; 'referentie_id', 'description' =&gt; __( 'A widget area located in the footer.', 'Text_Domain' ), 'before_widget' =&gt; '&lt;div id=\"%1$s\" class=\"widget-container %2$s\"&gt;', 'after_widget' =&gt; '&lt;/div&gt;', 'before_title' =&gt; '&lt;h3 class=\"widget-title\"&gt;', 'after_title' =&gt; '&lt;/h3&gt;', ] ); } add_action( 'widgets_init', 'add_theme_widgets' ); . 2- Instellen van een widget . In het wp-admin gedeelte kun je onder ‘Appearance’ en dan het kopje widgets je widgets beheren. 3- Widget weergeven in de footer . Nu je een widget hebt ingesteld wil je hem natuurlijk ook weergeven aan de voorkant van je website. In het &lt;footer&gt; element ga ik een widget weergeven. Bekijk hier de configuratie opties: https://developer.wordpress.org/reference/functions/register_sidebar/ Dit is de code om een widget weer te geven, waarbij de parameter gelijk is aan de ID bij het registreren. &lt;?php if ( is_active_sidebar( 'ref-id' ) ) : ?&gt; &lt;?php dynamic_sidebar( 'ref-id' ); ?&gt; &lt;?php endif; ?&gt; . Je kunt natuurlijk ook meerdere gebieden aanmaken waarin je widgets verschijnen. Zo kun je eenvoudig de footer van je project beheren vanuit de wp-admin omgeving. 4- Controleer . Bekijk je website nu in de browser en zie dat je extra data in de content hebt. Je hebt ondertussen een basis thema gemaakt voor WordPress waarbij je diverse dynamische elementen hebt toegevoegd. In de volgende les ga je met de vormgeving aan de slag. ",
+    "url": "/m5prog_opdrachtensite/les-5/widgets#let-op-dat-je-bij-de-id-een-duidelijke-key-aanmaakt-bijvoorbeeld-footer-widget-area",
+    
+    "relUrl": "/les-5/widgets#let-op-dat-je-bij-de-id-een-duidelijke-key-aanmaakt-bijvoorbeeld-footer-widget-area"
+  },"140": {
+    "doc": "Les 5",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m5prog_opdrachtensite/les-5/widgets#commit-en-push",
+    
+    "relUrl": "/les-5/widgets#commit-en-push"
+  },"141": {
+    "doc": "Les 5",
+    "title": "Les 5",
+    "content": " ",
+    "url": "/m5prog_opdrachtensite/les-5/widgets",
+    
+    "relUrl": "/les-5/widgets"
+  }
+}
