@@ -3,5 +3,5 @@
 
 1. [Start](onderwerp)
 2. [Development omgeving opzetten](installatie)
-3. [HTML bestanden](html)
+3. [Initialiseren van WordPress](initialiseren)
 4. [Testen](testen)

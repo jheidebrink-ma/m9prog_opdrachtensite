@@ -5,11 +5,11 @@ permalink: :path/:basename
 nav_exclude: true
 ---
 
-## Muziek bibliotheek
+## Stage blog en portfolio
 {: .text-green-100 .fs-6 }
-In deze periode gaan een Muziek bibliotheek maken op basis van Docker en php.  
-Het doel is om te leren hoe je bestanden op een server moet structureren.
-
+Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren.  
+Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling.  
+Deze onderdelen gaan wij teijdens de PROG lessen ontwikkelen.  
 ---
 ### 1- Onderzoek wat er gedaan moet worden
 - Lees eerst de [project omschrijving](project_description.md) zodat je weet wat er van je verwacht wordt.

@@ -5,7 +5,7 @@ email: j.heidebrink@ma-web.nl
 github_username:  jheidebrink-ma
 
 # Build settings
-baseurl: "/m5prog_opdrachtensite"
+baseurl: "/m9prog_opdrachtensite"
 url: "https://jheidebrink-ma.github.io"
 remote_theme: "pmarsceill/just-the-docs"
 #theme: minima
