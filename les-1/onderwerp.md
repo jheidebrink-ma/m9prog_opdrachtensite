@@ -15,16 +15,22 @@ Deze onderdelen gaan wij teijdens de PROG lessen ontwikkelen.
 - Lees eerst de [project omschrijving](project_description.md) zodat je weet wat er van je verwacht wordt.
 
 ---
-### 2- Verzamel data
-Verzamel minimaal 5 muziek nummers die je wilt gebruiken in je website. 
-Verzamel hiervan de volgende onderdelen:
-- Titel van het nummer
-- Naam van de artiest
-- Genre
-- Duur van het nummer
-- Release datum ( jaar is goed genoeg )
-- Afbeelding van het nummer
-- Afbeelding van de artiest
+### 2- Requirements
+Maak een overzicht van de vereisten die dit project nodig hebben.  
+Denk hierbij aan:  
+- computer
+- werkendeIDE
+- server met de volgende services ....
+- etc.
+
+---
+### 3- Structuur
+Maak een overzicht van waar je de verschillende requirements van daan gaat halen.  
+Denk hierbij aan:
+- docker, een oude docker setup
+- html structuur...
+- etc.
+
 
 ---
 ### Volgende stap:

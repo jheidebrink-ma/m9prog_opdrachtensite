@@ -83,7 +83,7 @@ jtd.getTheme = function() {
 
 jtd.setTheme = function(theme) {
   var cssFile = document.querySelector('[rel="stylesheet"]');
-  cssFile.setAttribute('href', '/m5prog_opdrachtensite/assets/css/just-the-docs-' + theme + '.css');
+  cssFile.setAttribute('href', '/m9prog_opdrachtensite/assets/css/just-the-docs-' + theme + '.css');
 }
 
 // Note: pathname can have a trailing slash on a local jekyll server

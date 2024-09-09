@@ -1,4 +1,4 @@
-# M5PROG — Backend Programming (BAP)
+# M9PROG — Backend Programming (BAP)
 
 Deze site maakt gebruik van het Jekyll Theme: [Just the Docs](https://pmarsceill.github.io/just-the-docs/)
 Referentie: [just-the-docs.com](https://just-the-docs.com/docs/utilities/)  
@@ -19,4 +19,4 @@ De website is dan te zien op:
 
 ----
 Na pushen van de master branch worden wijzigingen **automatisch** gepubliceerd op:
-[http://jheidebrink-ma.github.io/m5prog_opdrachtensite](http://jheidebrink-ma.github.io/m78rog_opdrachtensite)
+[http://jheidebrink-ma.github.io/m9prog_opdrachtensite](http://jheidebrink-ma.github.io/m9prog_opdrachtensite)

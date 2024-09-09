@@ -5,7 +5,7 @@ permalink: :path/:basename
 nav_exclude: true
 ---
 
-## Development omgeving starten
+## Development omgeving instellen
 {: .text-green-100 .fs-6 }
 
 We gaan een Docker container samenstellen.  
@@ -13,6 +13,7 @@ Deze omgeving gaan wij tijdens deze gehele module gebruiken.
 
 ## Requirements
 {: .text-red-100 .fs-6 }
+In de vorige les heb je een aantal requirements samengesteld, een aantal daarvan gaan wij nu instellen.  
 Er zijn een aantal vereisten aan dit project:
 1. Je hebt een werkende Docker Desktop installatie.
 2. De volgende poorten zijn niet in gebruik:
@@ -23,7 +24,7 @@ Er zijn een aantal vereisten aan dit project:
 
 ---
 ### 1- Repository
-1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m5prog-music_library**, zorg dat de repository _private_ is.  
+1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m9prog-blog**, zorg dat de repository _private_ is.  
 2- Navigeer op je computer naar de folder waar je project straks komt te staan, _niet een nieuwe lege folder aanmaken_.   
 3- [Clone je github project](https://git-scm.com/docs/git-clone) zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen.
 
@@ -54,17 +55,28 @@ services:
 
 ---
 ### 3- Definieer de volgende containers:
-- **php** met image: wodby/php:latest
-- **nginx** met de image: nginx:latest en de externe poort **80**
+- **wordpress** met image: wordpress:latest
 - **mariadb** met de image: mariadb:latest
 - **phpmyadmin** met de image: phpmyadmin:latest en de externe poort **8805**
-- De Nginx container link je aan php
+- De wordpress container heeft de volgende environment constanten nodig:
+```yml
+    WORDPRESS_DB_HOST: '${DB_HOST}'
+    WORDPRESS_DB_NAME: '${DB_NAME}'
+    WORDPRESS_DB_USER: '${DB_USERNAME}'
+    WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
+```
+- De wordpress container heeft de volgende environment constanten nodig:
+```yml
+    - ./themes:/var/www/html/wp-content/themes
+    - ./plugins:/var/www/html/wp-content/plugins
+    - ./uploads:/var/www/html/wp-content/uploads
+```
 - De Mariadb container heeft de volgende environment constanten nodig: 
 ```yml
-   MYSQL_DATABASE: '${DB_NAME}'
-   MYSQL_USER: '${DB_USERNAME}'
-   MYSQL_PASSWORD: '${DB_PASSWORD}'
-   MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
+    MYSQL_DATABASE: '${DB_NAME}'
+    MYSQL_USER: '${DB_USERNAME}'
+    MYSQL_PASSWORD: '${DB_PASSWORD}'
+    MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
 ```
 - De PhpMyAdmin container heeft de volgende environment constanten nodig: 
 ```yml
@@ -75,7 +87,7 @@ services:
 
 ---
 ### 4- Variabele in een .env file
-Vanaf dit project zorg je dat de credentials niet meer in de repo terecht komen.
+Zoals in andere projecten maak je ook nu weer een .env file
 - maak een voorbeeld .env file aan met de naam: `.env.example`
 - plaats hierin de variabele die je straks gaat gebruiken:
 ```env
@@ -131,10 +143,13 @@ _sources
 ```
 
 ---
-### 6- Public folder 
-Maak een public folder aan waarin de bestanden komen die de browser mag benaderen.
-1. in de root van je project plaats je een folder met de naam: `public`
-2. plaats in deze folder een bestand `index.php`
+### 6- Folders 
+Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaatsen:  
+- themes
+- plugins
+- uploads
+
+
 
 ---
 {% include commit_push.md %}
