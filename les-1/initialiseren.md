@@ -68,12 +68,13 @@ get_footer();
 Plaats hierin de benodigde functies, laat het leeg als je nog geen nieuwe filters of functies hebt.
 
 ---
-### 6- screenshot
+### 6- screenshot.png
 Zorg dat dit een afbeelding is waar te zien is hoe je website eruit gaat zien.
 
 ---
 ### 7- initialisatie
 Nu je de structuur hebt ingesteld is het eindelijk tijd om **docker te starten** en naar je browser te gaan om WordPress te initialiseren.   
+![Setup.png](img%2FSetup.png)
 
 ---
 {% include commit_push.md %}

@@ -1,47 +1,37 @@
 services:
 
-    # PHP FPM Service
-    php:
-        image: wodby/php:latest
-        container_name: prog_m5_php
-        volumes:
-            - './:/var/www/html'
-        depends_on:
-            - mariadb
-
-    # Nginx Service
-    nginx:
-        image: nginx:latest
-        container_name: prog_m5_nginx
+    # Wordpress, nginx and php
+    wordpress:
+        image: wordpress:latest
         ports:
             - 80:80
-        links:
-            - 'php'
+        environment:
+            WORDPRESS_DB_HOST: '${DB_HOST}'
+            WORDPRESS_DB_NAME: '${DB_NAME}'
+            WORDPRESS_DB_USER: '${DB_USERNAME}'
+            WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
         volumes:
-            - './:/var/www/html'
-            - './docker:/etc/nginx/conf.d'
-        depends_on:
-            - php
+            - ./themes:/var/www/html/wp-content/themes
+            - ./plugins:/var/www/html/wp-content/plugins
+            - ./uploads:/var/www/html/wp-content/uploads
 
-    # MariaDB Service
+    # Database
     mariadb:
         image: mariadb:latest
-        container_name: prog_m5_mariadb
         environment:
             MYSQL_DATABASE: '${DB_NAME}'
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
-    #    ports:
-    #      - 3305:3306
-
-    # phpmyadmin in an external image
+        ports:
+            - 3310:3306
+            -
+    # PhpMyAdmin
     phpmyadmin:
-        image: phpmyadmin:latest
-        container_name: prog_m5_phpmyadmin
+        image: phpmyadmin
         environment:
             PMA_HOST: '${DB_HOST}'
             PMA_USER: '${DB_USERNAME}'
             PMA_PASSWORD: '${DB_PASSWORD}'
         ports:
-            - 8805:80
+            - "1089:80"

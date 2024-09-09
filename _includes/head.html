@@ -5,8 +5,8 @@
     {% unless site.plugins contains "jekyll-seo-tag" %}
     <title>{{ page.title }} - {{ site.title }}</title>
 
-    {% if page.description %}
-    <meta name="Description" content="{{ page.description }}">
+    {% if site.description %}
+    <meta name="Description" content="{{ site.description }}">
     {% endif %}
     {% endunless %}
 
