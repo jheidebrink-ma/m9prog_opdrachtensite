@@ -149,8 +149,6 @@ Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaats
 - plugins
 - uploads
 
-
-
 ---
 {% include commit_push.md %}
 
