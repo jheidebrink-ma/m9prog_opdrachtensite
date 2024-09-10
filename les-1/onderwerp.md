@@ -12,7 +12,7 @@ Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage be
 Deze onderdelen gaan wij teijdens de PROG lessen ontwikkelen.  
 ---
 ### 1- Onderzoek wat er gedaan moet worden
-- Lees eerst de [project omschrijving](project_description.md) zodat je weet wat er van je verwacht wordt.
+- Lees eerst de [project omschrijving](project_description) zodat je weet wat er van je verwacht wordt.
 
 ---
 ### 2- Requirements
