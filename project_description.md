@@ -7,8 +7,9 @@ nav_order: 1
 # Project omschrijving
 
 ## Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lesen om je goed te kunnen begeleiden tijdens de stage. 
-Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is.  
-Elke keer als er een nieuwe post is moeten alle abonnees een mail krijgen dat er een nieuwe post is.  
+- Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is.  
+- Elke keer als er een nieuwe post is moeten alle abonnees een mail krijgen dat er een nieuwe post is.
+- Het is voor de stagebegeleider mogelijk om comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin
 
 ## Blog
 Voor deze blog kun je de standaard functionaliteit van WordPress gebruiken.  

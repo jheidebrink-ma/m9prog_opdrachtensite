@@ -505,7 +505,7 @@
   },"72": {
     "doc": "Les 1",
     "title": "Commit en push",
-    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . html bestanden . ",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Initialiseren van WordPress . ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#commit-en-push",
     
     "relUrl": "/les-1/installatie#commit-en-push"
@@ -645,7 +645,7 @@
   },"92": {
     "doc": "Les 1",
     "title": "Stage blog en portfolio",
-    "content": "Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren. Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling. Deze onderdelen gaan wij teijdens de PROG lessen ontwikkelen. — . 1- Onderzoek wat er gedaan moet worden . | Lees eerst de project omschrijving zodat je weet wat er van je verwacht wordt. | . 2- Requirements . Maak een overzicht van de vereisten die dit project nodig hebben. Denk hierbij aan: . | computer | werkendeIDE | server met de volgende services …. | etc. | . 3- Structuur . Maak een overzicht van waar je de verschillende requirements van daan gaat halen. Denk hierbij aan: . | docker, een oude docker setup | html structuur… | etc. | . Volgende stap: . Development omgeving opzetten . ",
+    "content": "Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren. Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling. Deze onderdelen gaan wij tijdens de PROG en BO lessen ontwikkelen. — . 1- Onderzoek wat er gedaan moet worden . | Lees eerst de project omschrijving zodat je weet wat er van je verwacht wordt. | . 2- Requirements . Maak een overzicht van de vereisten die dit project nodig hebben. Denk hierbij aan: . | computer | werkendeIDE | server met de volgende services …. | etc. | . 3- Structuur . Maak een overzicht van hoe je de verschillende requirements gaat verzamelen. Denk hierbij aan: . | docker, een oude docker setup | html structuur, heb ik vorig jaar gemaakt / W3Schools … | etc. | . Volgende stap: . Development omgeving opzetten . ",
     "url": "/m9prog_opdrachtensite/les-1/onderwerp#stage-blog-en-portfolio",
     
     "relUrl": "/les-1/onderwerp#stage-blog-en-portfolio"
@@ -666,7 +666,7 @@
   },"95": {
     "doc": "Project omschrijving",
     "title": "Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lesen om je goed te kunnen begeleiden tijdens de stage.",
-    "content": "Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is. Elke keer als er een nieuwe post is moeten alle abonnees een mail krijgen dat er een nieuwe post is. ",
+    "content": ". | Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is. | Elke keer als er een nieuwe post is moeten alle abonnees een mail krijgen dat er een nieuwe post is. | Het is voor de stagebegeleider mogelijk om comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin | . ",
     "url": "/m9prog_opdrachtensite/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lesen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage",
     
     "relUrl": "/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lesen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage"

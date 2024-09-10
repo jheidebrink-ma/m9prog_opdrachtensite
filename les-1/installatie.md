@@ -157,4 +157,4 @@ Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaats
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-[html bestanden](html)
+[Initialiseren van WordPress](initialiseren)
