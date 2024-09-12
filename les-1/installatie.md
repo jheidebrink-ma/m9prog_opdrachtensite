@@ -65,7 +65,7 @@ services:
     WORDPRESS_DB_USER: '${DB_USERNAME}'
     WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
 ```
-- De wordpress container heeft de volgende environment constanten nodig:
+- De wordpress container heeft de volgende volumes nodig:  
 ```yml
     - ./themes:/var/www/html/wp-content/themes
     - ./plugins:/var/www/html/wp-content/plugins
