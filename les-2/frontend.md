@@ -17,4 +17,4 @@ Bekijk hier welk framework het beste bij jou past: [framework](frameworks)
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-[NPM Compilers](npmcompiler)
+[NPM Compilers](compiler)
