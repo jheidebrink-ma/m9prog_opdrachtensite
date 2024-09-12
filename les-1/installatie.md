@@ -65,11 +65,11 @@ services:
     WORDPRESS_DB_USER: '${DB_USERNAME}'
     WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
 ```
-- De wordpress container heeft de volgende volumes nodig:  
+- De wordpress container heeft de volgende volumes nodig: _(vergeet niet om een - teken voor elke regel te plaatsen)_  
 ```yml
-    - ./themes:/var/www/html/wp-content/themes
-    - ./plugins:/var/www/html/wp-content/plugins
-    - ./uploads:/var/www/html/wp-content/uploads
+   ./themes:/var/www/html/wp-content/themes
+   ./plugins:/var/www/html/wp-content/plugins
+   ./uploads:/var/www/html/wp-content/uploads
 ```
 - De Mariadb container heeft de volgende environment constanten nodig: 
 ```yml

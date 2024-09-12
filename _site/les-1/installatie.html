@@ -18,7 +18,10 @@
   <span class="na">WORDPRESS_DB_NAME</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_NAME}'</span>
   <span class="na">WORDPRESS_DB_USER</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_USERNAME}'</span>
   <span class="na">WORDPRESS_DB_PASSWORD</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_PASSWORD}'</span>
-</code></pre></div> </div> </li> <li>De wordpress container heeft de volgende environment constanten nodig: ```yml <ul> <li>./themes:/var/www/html/wp-content/themes</li> <li>./plugins:/var/www/html/wp-content/plugins</li> <li>./uploads:/var/www/html/wp-content/uploads ```</li> </ul> </li> <li>De Mariadb container heeft de volgende environment constanten nodig: <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">MYSQL_DATABASE</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_NAME}'</span>
+</code></pre></div> </div> </li> <li>De wordpress container heeft de volgende volumes nodig: <em>(vergeet niet om een - teken voor elke regel te plaatsen)</em> <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="s">./themes:/var/www/html/wp-content/themes</span>
+ <span class="s">./plugins:/var/www/html/wp-content/plugins</span>
+ <span class="s">./uploads:/var/www/html/wp-content/uploads</span>
+</code></pre></div> </div> </li> <li>De Mariadb container heeft de volgende environment constanten nodig: <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">MYSQL_DATABASE</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_NAME}'</span>
   <span class="na">MYSQL_USER</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_USERNAME}'</span>
   <span class="na">MYSQL_PASSWORD</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_PASSWORD}'</span>
   <span class="na">MYSQL_ROOT_PASSWORD</span><span class="pi">:</span> <span class="s1">'</span><span class="s">${DB_ROOT_PASSWORD}'</span>
