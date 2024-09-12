@@ -150,6 +150,11 @@ Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaats
 - uploads
 
 ---
+### 7- Start container
+Start nu je docker container om je project in de browser te kunnen testen.  
+```docker compose up```
+
+---
 {% include commit_push.md %}
 
 ---
