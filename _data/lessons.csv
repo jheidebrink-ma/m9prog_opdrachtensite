@@ -1,7 +1,7 @@
 "number","week","datum","title","description",
 1,"2","10-9-2024","Local development setup","Docker en structuur instellen, IDE inrichten voor gebruik met WordPress, localhost inclusief database starten",
 2,"3","12-9-2024","Custom theme","Welke front-end gebruik je, NPM Compilers instellen, Cache negeren in frontend en in php-fpm",
-3,"4","24-9-2024","Deployment","Keuze van hosting, deployment methodes, inrichten van hosting en CI/CD flow",
+3,"4","23-9-2024","Deployment","Keuze van hosting, deployment methodes, inrichten van hosting en CI/CD flow",
 4,"5","1-10-2024","Inloggen zonder admin account","Wat als je van je klant alleen ftp gegevens krijgt, hoe kom je dan bij de database en wp-admin",
 5,"6","8-10-2024","Plugin ontwikkelen","Maak een custom plugin om pagina's af te schermen en mails te versturen bij updates",
 6,"7","15-10-2024","Custom post types","Implementatie van custom portfolio type",

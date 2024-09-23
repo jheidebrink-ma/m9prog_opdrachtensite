@@ -11,6 +11,11 @@ Op deze website vind je de opdrachten voor de unit M5PROG waarbij wij een custom
 
 ---
 
+## Planning
+[![Planning m9.png](Planning%20m9.png)](Planning%20m9.pdf)
+
+---
+
 ## Opdrachten en uitleg
 
 {% for lesson in site.data.lessons %}
