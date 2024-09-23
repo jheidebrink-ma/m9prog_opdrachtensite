@@ -3,5 +3,4 @@
 
 1. [Deployment uitleg](deployment)
 2. [Keuze voor hosting](hosting)
-3. [Deploy methode](methode)
-4. [Hosting inrichten](inrichten)
+3. [Hosting inrichten](inrichten)
