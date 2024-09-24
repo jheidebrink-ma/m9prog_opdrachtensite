@@ -29,7 +29,7 @@ De keuze voor een type hosting hangt af van de grootte van de website en de tech
 ---
 ### 1- Hosting
 Sluit een hosting af en doorloop de stappen vor het instellen van een domein.  
-Bijvoorbeeld bij [hostinger.nl](https://cart.hostinger.com/pay/6b698ecc-d213-4c28-89fa-e2609d23c607?_ga=GA1.3.942352702.1711283207)
+Bijvoorbeeld bij [hostinger.nl](https://hostinger.nl?REFERRALCODE=1JASPER14)
 
 ---
 ### Volgende stap:
