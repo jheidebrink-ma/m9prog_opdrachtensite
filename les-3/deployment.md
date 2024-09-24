@@ -9,7 +9,6 @@ nav_exclude: true
 {: .text-green-100 .fs-6 }
 
 
-
 ---
 # Presentatie
 {: .text-red-100 .fs-6 }
