@@ -92,7 +92,7 @@ function my_custom_field_data($post_id) {
 }
 ``` 
 
-Later kun je controleren bij het opslaan of een post bepaalde meta data heeft en aan de hand daarvan kun je wel of niet een mail sturen.  
+Later kun je controleren bij het opslaan of een post bepaalde meta data heeft en of je aan de hand daarvan een moet mail versturen.  
 
 
 ---

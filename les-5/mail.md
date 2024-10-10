@@ -34,8 +34,14 @@ if(wp_mail($to, $subject, $message, $headers)) {
 ```
 
 ---
+### 2- Implementeer de mail functionaliteit
+1. Maak nu in jouw php bestand een nieuwe functie.
+2. Plaats in deze functie jouw mail code.
+3. Roep deze functie bij het opslaan van de post _( dus bij de 'save_post' action )_ 
+
+---
 ### 2- Test en controleer
-Kijk nu eens of je mails kunt versturen.k
+Kijk nu eens of je mails kunt versturen.
 
 ---
 
