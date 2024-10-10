@@ -35,7 +35,7 @@ if(wp_mail($to, $subject, $message, $headers)) {
 
 ---
 ### 2- Test en controleer
-Kijk nu eens of je mails kunt versturen.
+Kijk nu eens of je mails kunt versturen.k
 
 ---
 
