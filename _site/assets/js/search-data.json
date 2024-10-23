@@ -351,7 +351,7 @@
   },"50": {
     "doc": "Home",
     "title": "Les 8:  Presentatie",
-    "content": "Deze les komt binnenkort online. Vanaf 24-10-2024 online . ",
+    "content": "Laatste les voor de afronding van dit project zodat je op stage kunt . Start . ",
     "url": "/m9prog_opdrachtensite/#les-8--presentatie",
     
     "relUrl": "/#les-8--presentatie"
@@ -379,333 +379,340 @@
   },"54": {
     "doc": "Les 8",
     "title": "Les 8 - Presentatie",
-    "content": ". Laatste les voor de afronding van dit project zodat je op stage kunt . Deze opdracht komt binnenkort beschikbaar. ",
+    "content": ". Laatste les voor de afronding van dit project zodat je op stage kunt . ",
     "url": "/m9prog_opdrachtensite/les-8/index#les-8---presentatie",
     
     "relUrl": "/les-8/index#les-8---presentatie"
   },"55": {
+    "doc": "Les 8",
+    "title": "De opdrachten",
+    "content": ". | Project presentatie | . ",
+    "url": "/m9prog_opdrachtensite/les-8/index#de-opdrachten",
+    
+    "relUrl": "/les-8/index#de-opdrachten"
+  },"56": {
     "doc": "Les 8",
     "title": "Les 8",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-8/index",
     
     "relUrl": "/les-8/index"
-  },"56": {
+  },"57": {
     "doc": "Les 1",
     "title": "Les 1 - Local development setup",
     "content": ". Docker en structuur instellen, IDE inrichten voor gebruik met WordPress, localhost inclusief database starten . Maak de opdrachten voor deze les . | Start | Development omgeving opzetten | Initialiseren van WordPress | Testen | . ",
     "url": "/m9prog_opdrachtensite/les-1/#les-1---local-development-setup",
     
     "relUrl": "/les-1/#les-1---local-development-setup"
-  },"57": {
+  },"58": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/",
     
     "relUrl": "/les-1/"
-  },"58": {
+  },"59": {
     "doc": "Les 6",
     "title": "Les 6 - Custom post types",
     "content": ". Implementatie van custom portfolio type . Maak de opdrachten voor deze les . | Bootstrap via Sass en Webpack | . ",
     "url": "/m9prog_opdrachtensite/les-6/index#les-6---custom-post-types",
     
     "relUrl": "/les-6/index#les-6---custom-post-types"
-  },"59": {
+  },"60": {
     "doc": "Les 6",
     "title": "Les 6",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-6/index",
     
     "relUrl": "/les-6/index"
-  },"60": {
+  },"61": {
     "doc": "Les 3",
     "title": "Les 3 - Deployment",
     "content": ". Keuze van hosting, deployment methodes, inrichten van hosting en CI/CD flow . Maak de opdrachten voor deze les . | Deployment uitleg | Keuze voor hosting | Hosting inrichten | . ",
     "url": "/m9prog_opdrachtensite/les-3/index#les-3---deployment",
     
     "relUrl": "/les-3/index#les-3---deployment"
-  },"61": {
+  },"62": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/index",
     
     "relUrl": "/les-3/index"
-  },"62": {
+  },"63": {
     "doc": "Les 4",
     "title": "Les 4 - Inloggen zonder admin account",
     "content": ". Wat als je van je klant alleen ftp gegevens krijgt, hoe kom je dan bij de database en wp-admin . Maak de opdrachten voor deze les . | WP Admin user | SSH | . ",
     "url": "/m9prog_opdrachtensite/les-4/index#les-4---inloggen-zonder-admin-account",
     
     "relUrl": "/les-4/index#les-4---inloggen-zonder-admin-account"
-  },"63": {
+  },"64": {
     "doc": "Les 4",
     "title": "Les 4",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-4/index",
     
     "relUrl": "/les-4/index"
-  },"64": {
+  },"65": {
     "doc": "Les 5",
     "title": "Les 5 - Plugin ontwikkelen",
     "content": ". Maak een custom plugin om pagina’s af te schermen en mails te versturen bij updates . Maak de opdrachten voor deze les . | Plugin ontwikkeling | Mails versturen bij update | . ",
     "url": "/m9prog_opdrachtensite/les-5/index#les-5---plugin-ontwikkelen",
     
     "relUrl": "/les-5/index#les-5---plugin-ontwikkelen"
-  },"65": {
+  },"66": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/index",
     
     "relUrl": "/les-5/index"
-  },"66": {
+  },"67": {
     "doc": "Les 2",
     "title": "Les 2 - Custom theme",
     "content": ". Welke front-end gebruik je, NPM Compilers instellen, Cache negeren in frontend en in php-fpm . Maak de opdrachten voor deze les . | Keuze front-end framework | Compilers | Cache | . ",
     "url": "/m9prog_opdrachtensite/les-2/index#les-2---custom-theme",
     
     "relUrl": "/les-2/index#les-2---custom-theme"
-  },"67": {
+  },"68": {
     "doc": "Les 2",
     "title": "Les 2",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/index",
     
     "relUrl": "/les-2/index"
-  },"68": {
+  },"69": {
     "doc": "Les 1",
     "title": "HTML bestanden",
     "content": "Nu je de server structuur hebt van je project is het tijd je thema klaar te zetten. 1- Thema folder . Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je thema, (gebruik geen kapitalen en spaties). 2- Structuur van de thema folder . | Plaats hierin een nieuw bestand met de naam style.css | Plaats hierin een nieuw bestand met de naam index.php | Plaats hierin een nieuw bestand met de naam functions.php | Plaats hierin een nieuw bestand met de naam screenshot.png Meer informatie over thema’s: https://codex.wordpress.org/Theme_Development | . 3- style.css . Weet je nog hoe het werkt? In dit bestand geef je aan hoe je thema heet. In dit voorbeeld heb ik een nieuw thema gemaakt met de naam M9PROG_VOORBEELD_NAAM Zie voor alle opties: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ . ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren#html-bestanden",
     
     "relUrl": "/les-1/initialiseren#html-bestanden"
-  },"69": {
+  },"70": {
     "doc": "Les 1",
     "title": "Dit is een voorbeeld, let op dat je wel de juiste versie van php én WordPress instelt, anders werkt het thema niet.",
     "content": "/** * Theme Name: M9PROG_VOORBEELD_NAAM * Theme URI: https://ma-web.nl * Description: This is a custom WordPress theme example * Version: 0.0.1 * Author: Jasper Heidebrink * Author URI: https://ma-web.nl * Tags: m9prog * Text Domain: M9PROG_VOORBEELD_NAAM * Domain Path: /languages * Tested up to: 6.5 * Requires at least: 6.4 * Requires PHP: 8.2 * License: GNU General Public License v2.0 or later * License URI: https://www.gnu.org/licenses/gpl-2.0.html */ . 4- index.php . Plaats hierin de basis elementen zoals: . get_header(); . De while loop . get_footer(); . 5- functions.php . Plaats hierin de benodigde functies, laat het leeg als je nog geen nieuwe filters of functies hebt. 6- screenshot.png . Zorg dat dit een afbeelding is waar te zien is hoe je website eruit gaat zien. 7- initialisatie . Nu je de structuur hebt ingesteld is het eindelijk tijd om docker te starten en naar je browser te gaan om WordPress te initialiseren. ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-%C3%A9n-wordpress-instelt-anders-werkt-het-thema-niet",
     
     "relUrl": "/les-1/initialiseren#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-én-wordpress-instelt-anders-werkt-het-thema-niet"
-  },"70": {
+  },"71": {
     "doc": "Les 1",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . testen . ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren#commit-en-push",
     
     "relUrl": "/les-1/initialiseren#commit-en-push"
-  },"71": {
+  },"72": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren",
     
     "relUrl": "/les-1/initialiseren"
-  },"72": {
+  },"73": {
     "doc": "Les 3",
     "title": "Inrichten",
     "content": "Voordat je website automatisch deployed word op de server moet je een aantal stappen doorlopen. Je maakt straks eerst een placeholder website aan, stelt de beveiliging tussen de host en git in en daarna stel je de git flow in. 1- Wordpress installatie . Stel nu een standaard WordPress installatie in op deze server zodat de structuur en database ingericht zijn. Na het doorlopen vna de installatie kun je inloggen via ftp of via de file browser om alle inhoud uit de wp-content te verwijderen. Dit is belangrijk omdat je straks een repository gaat koppelen en deployen. 2- Negeer uploads folder . Uploads op de server mogen niet overschreven worden door jouw lokale uploads omdat dit variabele bestanden zijn afhankelijk van de omgeving waar het project staat. Daarom mag de uploads folder straks niet overschreven worden door de inhoud uit git. Verwijder deze upload folder in github lokaal of via de web interface. Stel in .gitignore in dat de uploads folder niet bijgehouden mag worden door git. 3- Negeer plugin folder . Plugins op de server mogen niet overschreven worden door jouw lokale plugin folder omdat dit variabele bestanden zijn afhankelijk van de omgeving waar het project staat. Verwijder deze plugins folder in github lokaal of via de web interface. Stel in .gitignore in dat de plugins folder niet bijgehouden mag worden door git. 4- SSH-sleutel . Voeg de SSH-Key van de server toe aan git. | Genereer een SSH-Key | ga nu naar gighub.com en zoek jouw repository op in het overzicht. | ga naar de tab ‘settings’ en maak een nieuwe deploy key aan waar je de SSH-Key van de host aan toevoegt. | Plak in het veld voor de SSH-Key de key van de hosting. | Vanaf dit moment heeft de hosting server toegang tot jouw git omgeving. | . 5- Link de repository . Ga nu weer naar de hosting partij en vul de gegevens voor het koppelen van een Repository in door het formulier van Create a New Repository in te vullen. | gebruik bij de url de beveiligde url uit git ( begint met git@github.com: ) | de master branch/tak heet bij jou waarschijnlijk main | de folder is wp-content | . 6- testen . Log nu in op jouw website ( wp-admin ) en voeg een nieuwe pagina toe inclusief een afbeelding. 7- CD ( Continues Delivery ) . Wil je het voor jouw zelf nog makkelijker maken? Stel dan de auto deployment in, volg hiervoor de stappen die je ziet als je klikt op ‘auto deployment’ . 8- testen . Test nogmaals door lokaal een aanpassing te doen in jouw thema, commit en push deze wijziging en zie dat dit direct is doorgevoerd op de live website. ",
     "url": "/m9prog_opdrachtensite/les-3/inrichten#inrichten",
     
     "relUrl": "/les-3/inrichten#inrichten"
-  },"73": {
+  },"74": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/inrichten",
     
     "relUrl": "/les-3/inrichten"
-  },"74": {
+  },"75": {
     "doc": "Les 1",
     "title": "Development omgeving instellen",
     "content": "We gaan een Docker container samenstellen. Deze omgeving gaan wij tijdens deze gehele module gebruiken. ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#development-omgeving-instellen",
     
     "relUrl": "/les-1/installatie#development-omgeving-instellen"
-  },"75": {
+  },"76": {
     "doc": "Les 1",
     "title": "Requirements",
     "content": "In de vorige les heb je een aantal requirements samengesteld, een aantal daarvan gaan wij nu instellen. Er zijn een aantal vereisten aan dit project: . | Je hebt een werkende Docker Desktop installatie. | De volgende poorten zijn niet in gebruik: . | 80 | 3305 | 8805 | . | Je hebt een werkende IDE waarmee je websites kunt ontwikkelen, bijvoorbeeld Visual Code of PhpStorm | . 1- Repository . 1- Maak een nieuwe repository aan in GitHub voor m9prog-blog, zorg dat de repository private is. 2- Navigeer op je computer naar de folder waar je project straks komt te staan, niet een nieuwe lege folder aanmaken. 3- Clone je github project zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen. 2- Docker container initialiseren . | Start eerst Docker Desktop | Navigeer naar de repo folder die je net gekloond hebt | Maak een nieuw bestand aan met de naam: docker-compose.yml | maak de structuur van dit yml bestand services: NAAM: image: WELKE IMAGE HEB JE NODIG container_name: prog_m5_TYPE environment: title: waarde INTERNE CONSTANTEN ports: - EXTERN:INTERN - 9999:80 links: - IS DEZE CONTAINER GEKOPPELD AAN EEN ANDERE CONTAINER? volumes: - './:/var/www/html' depends_on: - HEEFT DEZE CONTAINER EEN ANDERE CONTAINER NODIG? . | . 3- Definieer de volgende containers: . | wordpress met image: wordpress:latest | mariadb met de image: mariadb:latest | phpmyadmin met de image: phpmyadmin:latest en de externe poort 8805 | De wordpress container heeft de volgende environment constanten nodig: WORDPRESS_DB_HOST: '${DB_HOST}' WORDPRESS_DB_NAME: '${DB_NAME}' WORDPRESS_DB_USER: '${DB_USERNAME}' WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}' . | De wordpress container heeft de volgende volumes nodig: (vergeet niet om een - teken voor elke regel te plaatsen) ./themes:/var/www/html/wp-content/themes ./plugins:/var/www/html/wp-content/plugins ./uploads:/var/www/html/wp-content/uploads . | De Mariadb container heeft de volgende environment constanten nodig: MYSQL_DATABASE: '${DB_NAME}' MYSQL_USER: '${DB_USERNAME}' MYSQL_PASSWORD: '${DB_PASSWORD}' MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}' . | De PhpMyAdmin container heeft de volgende environment constanten nodig: PMA_HOST: '${DB_HOST}' PMA_USER: '${DB_USERNAME}' PMA_PASSWORD: '${DB_PASSWORD}' . | . 4- Variabele in een .env file . Zoals in andere projecten maak je ook nu weer een .env file . | maak een voorbeeld .env file aan met de naam: .env.example | plaats hierin de variabele die je straks gaat gebruiken: DB_NAME= DB_USERNAME= DB_PASSWORD= DB_ROOT_PASSWORD= . | dupliceer dit bestand naar: .env | vul de waardes in deze .env file | . 5- Negeren van bestanden via de .gitignore . Maak nu een .gitignore file aan om te zorgen dat niet alles naar git gaat. Hierbij een voorbeeld inhoud: . ### Node an Vendor files node_modules/ vendor/ ### JetBrains .idea ### Linux *~ .Trash-* ### Windows Thumbs.db ehthumbs.db Desktop.ini $RECYCLE.BIN/ *.cab *.msi *.msm *.msp *.lnk ### OSX .DS_Store .AppleDouble .LSOverride .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns ### Application .env _sources . 6- Folders . Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaatsen: . | themes | plugins | uploads | . 7- Start container . Start nu je docker container om je project in de browser te kunnen testen. docker compose up . ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#requirements",
     
     "relUrl": "/les-1/installatie#requirements"
-  },"76": {
+  },"77": {
     "doc": "Les 1",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Initialiseren van WordPress . ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#commit-en-push",
     
     "relUrl": "/les-1/installatie#commit-en-push"
-  },"77": {
+  },"78": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/installatie",
     
     "relUrl": "/les-1/installatie"
-  },"78": {
+  },"79": {
     "doc": "Les 5",
     "title": "Mails versturen",
     "content": "Binnen php kun je gebruik maken van een mail functie waarmee je mails kunt sturen naar een klant. Deze functie werkt alleen niet op alle servers, daar moet je rekening mee houden. Binnen WordPress kun je gebruik maken van de wp_mail() functie, zie: https://developer.wordpress.org/reference/functions/wp_mail/ . 1- Implementatie mail functie . Met de volgende code kun je mails versturen via wp_mail(). Waarbij $to het mail adres van de ontvanger is. Gebruik als afzender hetzelfde domain als waar de site staat om spam issues te voorkomen. // Headers instellen voor HTML e-mail $headers = array('Content-Type: text/html; charset=UTF-8'); // Extra headers, zoals van wie de mail afkomstig is $headers[] = 'From: Jouw Naam &lt;jouwnaam@voorbeeld.com&gt;'; // Verstuur de e-mail if(wp_mail($to, $subject, $message, $headers)) { echo \"E-mail succesvol verzonden via wp_mail!\"; } else { echo \"Er is een fout opgetreden bij het verzenden van de e-mail.\"; } . 2- Implementeer de mail functionaliteit . | Maak nu in jouw php bestand een nieuwe functie. | Plaats in deze functie jouw mail code. | Roep deze functie bij het opslaan van de post ( dus bij de ‘save_post’ action ) | . 2- Test en controleer . Kijk nu eens of je mails kunt versturen. ",
     "url": "/m9prog_opdrachtensite/les-5/mail#mails-versturen",
     
     "relUrl": "/les-5/mail#mails-versturen"
-  },"79": {
+  },"80": {
     "doc": "Les 5",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
     "url": "/m9prog_opdrachtensite/les-5/mail#commit-en-push",
     
     "relUrl": "/les-5/mail#commit-en-push"
-  },"80": {
+  },"81": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/mail",
     
     "relUrl": "/les-5/mail"
-  },"81": {
+  },"82": {
     "doc": "Les 1",
     "title": "Stage blog en portfolio",
     "content": "Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren. Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling. Deze onderdelen gaan wij tijdens de PROG en BO lessen ontwikkelen. — . 1- Onderzoek wat er gedaan moet worden . | Lees eerst de project omschrijving zodat je weet wat er van je verwacht wordt. | . 2- Requirements . Maak een overzicht van de vereisten die dit project nodig hebben. Denk hierbij aan: . | computer | werkendeIDE | server met de volgende services …. | etc. | . 3- Structuur . Maak een overzicht van hoe je de verschillende requirements gaat verzamelen. Denk hierbij aan: . | docker, een oude docker setup | html structuur, heb ik vorig jaar gemaakt / W3Schools … | etc. | . Volgende stap: . Development omgeving opzetten . ",
     "url": "/m9prog_opdrachtensite/les-1/onderwerp#stage-blog-en-portfolio",
     
     "relUrl": "/les-1/onderwerp#stage-blog-en-portfolio"
-  },"82": {
+  },"83": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/onderwerp",
     
     "relUrl": "/les-1/onderwerp"
-  },"83": {
+  },"84": {
     "doc": "Les 5",
     "title": "WordPress plugins",
     "content": "Binnen verschillende frameworks heb je diverse plugins, soms heten deze extensies en soms plugins. In alle gevallen bereiden ze het bestaande framework uit met nieuwe functionaliteit. Wij gaan nu een WordPress plugin ontwikkelen, volgens deze structuur kun je straks zelf ook plugins ontwikkelen en uiteindelijk beschikbaar maken voor ander developers. Afhankelijk van jouw doel kun je hier ook geld mee verdienen. 1- Structuur . Begin met het opzetten van de structuur. | Maak een nieuwe folder in je plugins folder en geef deze de naam van jouw plugin. | Plaats een php bestand in deze folder met dezelfde naam als jouw folder. | . 2- Definieer de plugin . Net als bij het thema heb je een DocBlok waar de informatie over dit thema in staat. Dit doe je nu bovenin het php bestand. Bijvoorbeeld in mijn geval heb ik een blog plugin. /** * @package blog_plugin * @version 1.7.2 */ /* Plugin Name: Blog Plugin Plugin URI: https://mediacollege.rocks/blog Description: Dit is een voorbeeld plugin Author: Jasper Heidebrink Version: 1.0.0 Author URI: https://mediacollege.rocks */ . 3- Voeg functionaliteit . Voeg nu een extra metabox toe aan de post page waar iemand kan aanvinken of de pagina of post geblokkeerd moet zijn en of er een mail verstuurd moet worden. Hiervoor kun je de volgende hooks gebruiken: . | admin_init (action) | save_post (action) En de volgende fucnties: | add_meta_box | wp_verify_nonce | . Bijvoorbeeld: . // register the meta box add_action( 'add_meta_boxes', 'my_custom_field_checkboxes' ); function my_custom_field_checkboxes() { add_meta_box( 'my_meta_box_id', // this is HTML id of the box on edit screen 'My Plugin Checkboxes', // title of the box 'my_customfield_box_content', // function to be called to display the checkboxes, see the function below 'post', // on which edit screen the box should appear 'normal', // part of page where the box should appear 'default' // priority of the box ); } // display the metabox function my_customfield_box_content() { echo '&lt;input type=\"checkbox\" name=\"my_plugin_blocked\" value=\"1\" /&gt; blocked content &lt;br /&gt;'; echo '&lt;input type=\"checkbox\" name=\"my_plugin_mail\" value=\"1\" /&gt; send a mail on update'; } // save data from checkboxes add_action( 'save_post', 'my_custom_field_data' ); function my_custom_field_data($post_id) { // check if this isn't an auto save if ( defined( 'DOING_AUTOSAVE' ) &amp;&amp; DOING_AUTOSAVE ) return; // now store data in custom fields based on checkboxes selected if ( isset( $_POST['my_plugin_blocked'] ) ) update_post_meta( $post_id, 'my_plugin_blocked', 1 ); else update_post_meta( $post_id, 'my_plugin_blocked', 0 ); if ( isset( $_POST['my_plugin_mail'] ) ) update_post_meta( $post_id, 'my_plugin_mail', 1 ); else update_post_meta( $post_id, 'my_plugin_mail', 0 ); } . Later kun je controleren bij het opslaan of een post bepaalde meta data heeft en of je aan de hand daarvan een moet mail versturen. 4- Controleer . Bekijk je website nu in de browser. Als het goed is zie je nu een extra element in je edit scherm van de post. ",
     "url": "/m9prog_opdrachtensite/les-5/plugin#wordpress-plugins",
     
     "relUrl": "/les-5/plugin#wordpress-plugins"
-  },"84": {
+  },"85": {
     "doc": "Les 5",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende pagina ga je één enkele pagina of blog item weergeven. Mails versturen . ",
     "url": "/m9prog_opdrachtensite/les-5/plugin#commit-en-push",
     
     "relUrl": "/les-5/plugin#commit-en-push"
-  },"85": {
+  },"86": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/plugin",
     
     "relUrl": "/les-5/plugin"
-  },"86": {
+  },"87": {
     "doc": "Les 8",
     "title": "Project presentatie",
     "content": "Vandaag ga je laten zien wat jij allemaal gemaakt hebt en hoe goed jij moeilijkheden hebt opgelost. De presentatie duurt 3 tot 8 minuten per persoon. Wat te presenteren. De volgende onderdelen moet je tijdens je presentatie behandelen: . | welk thema heb je gebruikt | welke plugins heb je gebruikt | waar liep je tegenaan | hoe heb je dit opgelost | waar ben je trots op | . Samenvatting . Zorg dat je in een readme.md deze samenvatting hebt staan en lever dit in bij je project. &lt;/m9PROG&gt; . ",
     "url": "/m9prog_opdrachtensite/les-8/presentation#project-presentatie",
     
     "relUrl": "/les-8/presentation#project-presentatie"
-  },"87": {
+  },"88": {
     "doc": "Les 8",
     "title": "Les 8",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-8/presentation",
     
     "relUrl": "/les-8/presentation"
-  },"88": {
+  },"89": {
     "doc": "Project omschrijving",
     "title": "Project omschrijving",
     "content": " ",
     "url": "/m9prog_opdrachtensite/project_description.html",
     
     "relUrl": "/project_description.html"
-  },"89": {
+  },"90": {
     "doc": "Project omschrijving",
     "title": "Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lezen om je goed te kunnen begeleiden tijdens de stage.",
     "content": ". | Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is. | Elke keer als er een nieuw bericht is moeten alle abonnees een mail krijgen dat er een nieuw bericht is. | Het is voor de stagebegeleider mogelijk om bij een bericht comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin | . ",
     "url": "/m9prog_opdrachtensite/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lezen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage",
     
     "relUrl": "/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lezen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage"
-  },"90": {
+  },"91": {
     "doc": "Project omschrijving",
     "title": "Blog",
     "content": "Voor deze blog kun je de standaard functionaliteit van WordPress gebruiken. Voor het beheren van de toegang van gebruikers en het versturen van mails maken wij straks een custom plugin. ",
     "url": "/m9prog_opdrachtensite/project_description.html#blog",
     
     "relUrl": "/project_description.html#blog"
-  },"91": {
+  },"92": {
     "doc": "Project omschrijving",
     "title": "Doel",
     "content": "Aan het eind van dit project heb je een website ontwikkeld die je kunt gebruiken voor je stage. ",
     "url": "/m9prog_opdrachtensite/project_description.html#doel",
     
     "relUrl": "/project_description.html#doel"
-  },"92": {
+  },"93": {
     "doc": "Project omschrijving",
     "title": "Omschrijving",
     "content": "Er komen in dit project verschillende onderdelen op de website: . | geen toegang tot blogs pagina, voor mensen die niet ingelogd zijn | overzicht van blogs pagina | detail informatie van een bericht | mogelijkheid om comments te plaatsen bij elk bericht | menu waarbij je kunt kiezen tussen stage 1 én stage 2 | wie ben ik pagina ( about pagina over jou ) | . 1. Gast pagina . Op deze pagina is duidelijk dat iemand niet is ingelogd en daardoor geen blog berichten mag lezen. 2. Overzicht blogs . Hier is straks een lijst met blog items zichtbaar, per bericht is het volgende zichtbaar: . | Titel | Datum | Intro De volgorde is op datum, nieuwste bericht staat bovenaan. | . 3. Bericht pagina . Per bericht is straks het volgende zichtbaar: . | Titel | Datum | Content | Categorie ( stage 1 / stage 2 ) | Comments | . ",
     "url": "/m9prog_opdrachtensite/project_description.html#omschrijving",
     
     "relUrl": "/project_description.html#omschrijving"
-  },"93": {
+  },"94": {
     "doc": "Project omschrijving",
     "title": "Randvoorwaarden:",
     "content": ". | De applicatie moet ontwikkeld worden in PHP eventueel in combinatie met JavaScript. | Het lokaal ontwikkelen van dit project gaat via een Docker container. | De data wordt in de database opgeslagen | Er moet een error afhandeling zijn die de gebruiker informeert waarom iemand een bericht niet mag bekijken. | Deze module moet functioneren in de laatste versies van Chrome, Safari, Firefox en Edge | Ontwikkel deze website ‘Mobile-first’ | Taal: minimaal Nederlands | . ",
     "url": "/m9prog_opdrachtensite/project_description.html#randvoorwaarden",
     
     "relUrl": "/project_description.html#randvoorwaarden"
-  },"94": {
+  },"95": {
     "doc": "Les 4",
     "title": "SSH commando’s",
     "content": "SSH, Secure Shell, is een protocol dat veilige communicatie mogelijk maakt tussen een client en een server. Het wordt vaak gebruikt voor remote access tot servers, waarbij je commando’s kunt uitvoeren en bestanden kunt overdragen. SSH zorgt ervoor dat deze verbinding versleuteld is, waardoor gevoelige gegevens veilig blijven. 1- SSH . Het basiscommando om verbinding te maken met een remote server. De syntaxis is ssh gebruikersnaam@server_ip, waarbij je de gebruikersnaam en het IP-adres of de hostname van de server invult. Bij de eerste verbinding moet je de server identificeren door een sleutel te accepteren. 2- scp . Met scp (Secure Copy Protocol) kun je veilig bestanden kopiëren tussen je lokale machine en een remote server. De syntaxis is scp lokaal_bestand gebruikersnaam@server_ip:/doelmap. Dit maakt het eenvoudig om gegevens over te dragen zonder dat je extra tools nodig hebt. 3- sftp . sftp (SSH File Transfer Protocol) biedt een interactieve manier om bestanden tussen lokale en remote systemen te beheren. Start met sftp gebruikersnaam@server_ip. Eenmaal verbonden, kun je bestanden uploaden, downloaden, en beheren met commando’s zoals put en get. 4- ssh-keygen . Dit commando genereert een SSH-sleutelpaar (public en private key) voor veilige authenticatie. Gebruik ssh-keygen om een nieuw paar sleutels te maken, en sla deze veilig op. De public key moet je op de server plaatsen om password-less login mogelijk te maken. 5- ssh-copy-id . Met ssh-copy-id voeg je eenvoudig je publieke sleutel toe aan de authorized_keys op de remote server. Het commando is ssh-copy-id gebruikersnaam@server_ip, waardoor je voortaan zonder wachtwoord kunt inloggen. 6- ssh-agent . ssh-agent is een programma dat je SSH-sleutels beheert en ze automatisch aan de SSH-client aanbiedt, zodat je niet telkens je wachtwoord hoeft in te voeren. Start het met eval $(ssh-agent) en voeg je sleutel toe met ssh-add. 7- ssh-config . Met een configuratiebestand (~/.ssh/config) kun je standaardinstellingen voor je SSH-verbindingen beheren, zoals aliasnamen, poorten en sleutels. Dit maakt het eenvoudiger om verbinding te maken zonder steeds lange commando’s te hoeven typen. 8- ssh -L . Met port forwarding (ssh -L) kun je lokale poorten doorsturen naar een remote server. Het commando ssh -L lokale_poort:remote_host:remote_poort gebruikersnaam@server_ip maakt het mogelijk om een beveiligde tunnel te creëren voor applicaties die normaal niet via SSH toegankelijk zijn. 9- chmod . Het chmod-commando wordt gebruikt om de toegangsrechten van bestanden en mappen te wijzigen. Je kunt hiermee instellen wie een bestand kan lezen, schrijven of uitvoeren. De syntaxis is chmod [rechten] [bestand], waarbij rechten kunnen worden aangegeven in octale notatie (bijv. 755) of met symbolische notatie (bijv. u+x om uitvoerrechten voor de eigenaar toe te voegen). Dit is essentieel voor het beheer van de beveiliging van je bestanden. 10- chown . Met het chown-commando kun je de eigenaar en/of groep van een bestand of map wijzigen. De syntaxis is chown [nieuwe_eigenaar]:[nieuwe_groep] [bestand]. Dit is handig als je wilt dat een andere gebruiker toegang heeft tot bepaalde bestanden of als je de eigenaar wilt veranderen na het verplaatsen van bestanden naar een nieuwe locatie. Het correct instellen van eigenaarschap is cruciaal voor systeembeveiliging en gebruikersbeheer. 10- ln . Het ln-commando wordt gebruikt om links naar bestanden aan te maken. Met ln [origineel_bestand] [linknaam] maak je een harde link, terwijl ln -s [origineel_bestand] [linknaam] een symbolische link creëert. Harde links delen dezelfde inode (index node), terwijl symbolische links verwijzen naar de originele bestandslocatie. Dit kan nuttig zijn voor het organiseren van bestanden of het maken van snelkoppelingen naar veelgebruikte bestanden. Conclusie . Met deze basiscommando’s ben je goed uitgerust om effectief gebruik te maken van SSH voor veilige communicatie en bestandsoverdracht. Experimenteer met deze commando’s om je vaardigheden verder te ontwikkelen! . ",
     "url": "/m9prog_opdrachtensite/les-4/ssh#ssh-commandos",
     
     "relUrl": "/les-4/ssh#ssh-commandos"
-  },"95": {
+  },"96": {
     "doc": "Les 4",
     "title": "Les 4",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-4/ssh",
     
     "relUrl": "/les-4/ssh"
-  },"96": {
+  },"97": {
     "doc": "Les 1",
     "title": "Testen",
     "content": "Na de installatie kun je jouw website testen. 1- Controle website . Ga in je browser naar jouw website en bekijk jouw website. ",
     "url": "/m9prog_opdrachtensite/les-1/testen#testen",
     
     "relUrl": "/les-1/testen#testen"
-  },"97": {
+  },"98": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/testen",
     
     "relUrl": "/les-1/testen"
-  },"98": {
+  },"99": {
     "doc": "Les 6",
     "title": "Webpack integreren met WordPress",
     "content": "Deze les een stuk minder verschillende stappen, dus heb je meer tijd om een mooie website te maken. Om onze SASS en JavaScipt te compilen maak ik gebruik van npm in combinatie met webpack om de assets te renderen. ",
     "url": "/m9prog_opdrachtensite/les-6/webpack#webpack-integreren-met-wordpress",
     
     "relUrl": "/les-6/webpack#webpack-integreren-met-wordpress"
-  },"99": {
+  },"100": {
     "doc": "Les 6",
     "title": "Let op, straks wordt er een node_modules folder gegenereerd, deze mag niet in git.",
     "content": ". 1- Structuur . Eerst heb je een structuur nodig. Maak in je thema map een aantal folders en bestanden die je als basis nodig hebt: . | src/js ( dit is de locatie van je javascripts die niet minified zijn ) | src/js/main.js ( dit is je js bestand met minimaal een console.log() functie erin ) | src/scss ( hierin staan je SASS bestanden ) | src/scss/main.scss ( je scss bestand met bijvoorbeeld je sass code ) | package.json ( hier staat in welke packages er nodig zijn zoals een sass compiler ) | webpack.config.js ( hier zijn de functies gedefinieerd voor het compilen van de sass ) Je kunt een voorbeeld van dit pakket bestanden ook hier downloaden: example | . 2- package.json . In de package.json kun je aangeven hoe je project heet en wat de locatie van webpack.config.js is. Je vind ook diverse dependencies die nodig zijn voor het compilen van dit project. Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoorbeeld dev . 3- webpack.config.js . In de webpack.config.js vind je de acties die uitgevoerd worden tijdens het compilen. 4- Packages installeren . Het installeren van de packages doe je via npm. Navigeer daarvoor in de terminal naar je thema folder en voer het volgende commando uit: . npm i . ( npm install ) Je ziet nu een node_modules folder in je thema folder. Note: Zorg ervoor dat je de node_modules in je .gitignore hebt staan zodat deze niet gepushed wordt naar je repo. 5- Packages compilen . Om de sass en de javascripts te compilen en in een dist folder te plaatsen kun je het volgende commando uitvoeren: . npm run dev . 6- Scripts toevoegen aan de website . Voor het laden van de javascripts en styles maak je binnen WordPress gebruik van een enqueue functie. Zie voor de scripts: https://developer.wordpress.org/reference/functions/wp_enqueue_script/ En voor de styles: https://developer.wordpress.org/reference/functions/wp_enqueue_style/ Hierdoor worden ook eventuele dependencies geladen en worden de scripts op de juiste plek geladen. Let even goed op welke parameters er zijn. Plaats daarvoor deze code in je functions.php: . function add_style_and_js() { wp_enqueue_script( 'm5prog', get_template_directory_uri() . '/dist/js/main.js', [ 'jquery' ], '1.0.0', [ 'strategy' =&gt; 'defer', 'in_footer' =&gt; true, ] ); wp_register_style( 'm5prog_styles', get_template_directory_uri() . '/dist/css/main.min.css', [], '1.0.0' ); wp_enqueue_style( 'm5prog_styles' ); } add_action( 'wp_enqueue_scripts', 'add_style_and_js' ); . 7- Thema opruimen . Omdat je nu gebruik maakt van de wp_enqueue_script en wp_enqueue_style hoef je de style en scripts niet meer los te laden in je header en footer. Mocht je dat nog wel doen dan moet je die regels verwijderen. 8- Controleer . Bekijk je website nu in de browser. 9- Customize . Pas nu de scss en templates nu aan zodat de website voldoet aan de eisen van jouw project. ",
     "url": "/m9prog_opdrachtensite/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git",
     
     "relUrl": "/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git"
-  },"100": {
+  },"101": {
     "doc": "Les 6",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
     "url": "/m9prog_opdrachtensite/les-6/webpack#commit-en-push",
     
     "relUrl": "/les-6/webpack#commit-en-push"
-  },"101": {
+  },"102": {
     "doc": "Les 6",
     "title": "Les 6",
     "content": " ",
