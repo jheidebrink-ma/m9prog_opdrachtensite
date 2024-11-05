@@ -41,7 +41,7 @@ Author URI: https://mediacollege.rocks
 ```
 
 ---
-### 3- Voeg functionaliteit
+### 3- Voeg functionaliteit toe aan de post page.
 Voeg nu een extra metabox toe aan de post page waar iemand kan aanvinken of de pagina of post **geblokkeerd** moet zijn en of er een **mail** verstuurd moet worden.   
 Hiervoor kun je de volgende hooks gebruiken:
 - admin_init (action)
