@@ -8,7 +8,7 @@ nav_exclude: true
 ## Pagina  / Post afschermen via WordPress
 {: .text-green-100 .fs-6 }
 
-Deze les gaan wij aan de slag met het 
+Deze les gaan wij aan de slag met het afschermen van berichten.
 
 
 ---
