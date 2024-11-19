@@ -5,9 +5,11 @@ nav_order: 0
 has_toc: true
 ---
 
-# WordPress - {{ page.title }}
+# StageBlog - {{ page.title }}
 
-Op deze website vind je de opdrachten voor de unit M5PROG waarbij wij een custom thema voor WordPress gaan ontwikkelen.
+Op deze website vind je de opdrachten voor de unit M9PROG waarbij wij een stage blog gaan ontwikkelen.  
+Tijdens de lessen doorlopen wij een aantal items, Wordpress is een leidraad indien je zelf een ander framework gebruikt heb je minder werk.  
+Een aantal onderdelen die wij behandelen zijn: compilers, deployment, ssh, testing
 
 ---
 
