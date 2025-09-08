@@ -8,24 +8,26 @@ nav_order: 1
 
 ## Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lezen om je goed te kunnen begeleiden tijdens de stage. 
 - Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is.  
-- Elke keer als er een nieuw bericht is moeten alle abonnees een mail krijgen dat er een nieuw bericht is.
-- Het is voor de stagebegeleider mogelijk om bij een bericht comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin
+- Elke keer als er een nieuwe blog post is aangemaakt moeten alle abonnees een mail krijgen dat er een nieuw bericht is.
+- Het is voor de stagebegeleider mogelijk om bij een blog post comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin.
 
 ## Blog
 Voor deze blog kun je de standaard functionaliteit van WordPress gebruiken.  
 Voor het beheren van de toegang van gebruikers en het versturen van mails maken wij straks een custom plugin. 
 
 ## Doel
-Aan het eind van dit project heb je een website ontwikkeld die je kunt gebruiken voor je stage.
+Aan het eind van dit project heb je een website ontwikkeld die je kunt gebruiken voor je stage blog.
 
 ## Omschrijving
-Er komen in dit project verschillende onderdelen op de website:
-1. geen toegang tot blogs pagina, voor mensen die niet ingelogd zijn
-2. overzicht van blogs pagina 
-3. detail informatie van een bericht
+Er komen in dit project verschillende onderdelen op de website:  
+1. geen toegang tot blogs _( overzicht én details )_, voor mensen die niet ingelogd zijn  
+2. overzicht van blogs pagina
+3. detail informatie van een blog post
 4. mogelijkheid om comments te plaatsen bij elk bericht
 5. menu waarbij je kunt kiezen tussen **stage 1** én **stage 2**
 6. wie ben ik pagina _( about pagina over jou )_
+7. elke gebruiker heeft een eigen inlog die gekoppeld kan zijn aan een ma-web e-mail adres
+8. elke keer als er een nieuw blog bericht is aangemaakt krijgen alle gebruikers een mail dat er een nieuw bericht is
 
 ### 1. Gast pagina  
 Op deze pagina is duidelijk dat iemand niet is ingelogd en daardoor geen blog berichten mag lezen.

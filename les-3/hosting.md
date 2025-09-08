@@ -29,8 +29,8 @@ De keuze voor een type hosting hangt af van de grootte van de website en de tech
 ---
 ### 1- Hosting
 Sluit een hosting af en doorloop de stappen vor het instellen van een domein.  
-Bijvoorbeeld bij [hostinger.nl](https://hostinger.nl?REFERRALCODE=1JASPER14)
-
+Bijvoorbeeld bij [hostinger.nl](https://hostinger.nl?REFERRALCODE=1JASPER14)  
+Gebruik deze **referral code** voor korting: `1JASPER14`
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  

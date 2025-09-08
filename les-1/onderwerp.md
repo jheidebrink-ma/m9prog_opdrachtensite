@@ -9,7 +9,8 @@ nav_exclude: true
 {: .text-green-100 .fs-6 }
 Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren.  
 Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling.  
-Deze onderdelen gaan wij tijdens de PROG en BO lessen ontwikkelen.  
+Deze twee onderdelen gaan wij tijdens de BO lessen ontwikkelen.
+
 ---
 ### 1- Onderzoek wat er gedaan moet worden
 - Lees eerst de [project omschrijving](../project_description) zodat je weet wat er van je verwacht wordt.
