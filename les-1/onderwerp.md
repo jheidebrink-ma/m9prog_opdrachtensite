@@ -13,7 +13,8 @@ Deze twee onderdelen gaan wij tijdens de BO lessen ontwikkelen.
 
 ---
 ### 1- Onderzoek wat er gedaan moet worden
-- Lees eerst de [project omschrijving](../project_description) zodat je weet wat er van je verwacht wordt.
+- Je moet een portfolio ontwikkelen waarin jij jezelf positief gaat presenteren. Laat zien waarom bedrijven jou nodig hebben.  
+- De vereisten vind je in de rubric: [Rubrics.pdf](data/Rubrics.pdf)
 
 ---
 ### 2- Requirements
