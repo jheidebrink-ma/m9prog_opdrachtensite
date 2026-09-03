@@ -29,7 +29,7 @@ function initNav() {
     }
     if (target) {
       e.preventDefault();
-      target.ariaPressed = target.parentNode.classList.toggle('active');
+      target.ariaExpanded = target.parentNode.classList.toggle('active');
     }
   });
 
@@ -45,11 +45,11 @@ function initNav() {
     if (menuButton.classList.toggle('nav-open')) {
       siteNav.classList.add('nav-open');
       mainHeader.classList.add('nav-open');
-      menuButton.ariaPressed = true;
+      menuButton.ariaExpanded = true;
     } else {
       siteNav.classList.remove('nav-open');
       mainHeader.classList.remove('nav-open');
-      menuButton.ariaPressed = false;
+      menuButton.ariaExpanded = false;
     }
   });
 }
@@ -151,6 +151,16 @@ jtd.onReady(function(){
     activateNav();
     scrollNav();
   }
+});
+
+// Accessibility: set tabindex=0 on each code highlight block, so screenreaders
+// can focus over (particularly important if there's horizontal scroll)
+// see: https://dequeuniversity.com/rules/axe/4.9/scrollable-region-focusable?application=axeAPI
+
+jtd.onReady(() => {
+  document
+    .querySelectorAll("div.highlight")
+    .forEach(codeBlock => codeBlock.setAttribute("tabindex", "0"));
 });
 
 // Copy button on code

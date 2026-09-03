@@ -10,6 +10,7 @@ Na [installatie](https://jekyllrb.com/docs/installation/) kan de Jekyll server e
 - Download Ruby 2.7 + DevKit van https://rubyinstaller.org/downloads/
 - Run `bundle install`
 
+## Uitvoeren
 ```bash
 bundle exec jekyll serve
 ```
