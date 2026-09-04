@@ -5,11 +5,11 @@ nav_order: 0
 has_toc: true
 ---
 
-# StageBlog - {{ page.title }}
+# M9PROG - WordPress Portfolio
 
-Op deze website vind je de opdrachten voor de unit M9PROG waarbij wij een stage blog gaan ontwikkelen.  
-Tijdens de lessen doorlopen wij een aantal items, Wordpress is een leidraad indien je zelf een ander framework gebruikt heb je minder werk.  
-Een aantal onderdelen die wij behandelen zijn: compilers, deployment, ssh, testing
+In deze unit ontwikkel je een portfolio waarmee je jezelf aan stagebedrijven en opdrachtgevers presenteert. Je bouwt een custom WordPress-theme vanaf scratch, werkt met Bootstrap, Sass, npm en Webpack en zet je site uiteindelijk live op een eigen webomgeving.
+
+AI helpt je in de eerste les om snel een eerste resultaat te maken. Daarna leer je die code stap voor stap begrijpen, testen en zelf aanpassen. Je levert dus geen AI-resultaat in dat je niet kunt uitleggen.
 
 ---
 
@@ -18,7 +18,15 @@ Een aantal onderdelen die wij behandelen zijn: compilers, deployment, ssh, testi
 
 ---
 
-## Opdrachten en uitleg
+## Voor docent en student
+
+- [Complete lesbrief](lesbrief): leerdoelen, didactiek, lesverloop en beoordeling per lesmoment.
+- [M9 Leercoach](m9-leercoach): een interactieve prompt voor uitleg, planning, feedback en debugging.
+- [Projectomschrijving](project_description): de eisen voor het live portfolio.
+
+---
+
+## Lessen, opdrachten en uitleg
 
 {% for lesson in site.data.lessons %}
 {% assign today = "now"|date:"%Y%m%d" %}

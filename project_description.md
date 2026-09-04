@@ -1,57 +1,40 @@
 ---
 layout: home
 title: Project omschrijving
-nav_order: 1
+nav_order: 19
+has_toc: true
+nav_exclude: false
 ---
 
-# Project omschrijving
+# Projectomschrijving - live WordPress-portfolio
 
-## Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lezen om je goed te kunnen begeleiden tijdens de stage. 
-- Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is.  
-- Elke keer als er een nieuwe blog post is aangemaakt moeten alle abonnees een mail krijgen dat er een nieuw bericht is.
-- Het is voor de stagebegeleider mogelijk om bij een blog post comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin.
-
-## Blog
-Voor deze blog kun je de standaard functionaliteit van WordPress gebruiken.  
-Voor het beheren van de toegang van gebruikers en het versturen van mails maken wij straks een custom plugin. 
+Je ontwikkelt een persoonlijke portfolio-website waarmee je je presenteert aan stagebedrijven en opdrachtgevers. De website is gebouwd als een eigen WordPress-theme; je gebruikt geen page builder en past geen bestaand theme aan.
 
 ## Doel
-Aan het eind van dit project heb je een website ontwikkeld die je kunt gebruiken voor je stage blog.
 
-## Omschrijving
-Er komen in dit project verschillende onderdelen op de website:  
-1. geen toegang tot blogs _( overzicht én details )_, voor mensen die niet ingelogd zijn  
-2. overzicht van blogs pagina
-3. detail informatie van een blog post
-4. mogelijkheid om comments te plaatsen bij elk bericht
-5. menu waarbij je kunt kiezen tussen **stage 1** én **stage 2**
-6. wie ben ik pagina _( about pagina over jou )_
-7. elke gebruiker heeft een eigen inlog die gekoppeld kan zijn aan een ma-web e-mail adres
-8. elke keer als er een nieuw blog bericht is aangemaakt krijgen alle gebruikers een mail dat er een nieuw bericht is
+Aan het eind van de periode staat je portfolio online op een publiek bereikbare URL. Een opdrachtgever moet kunnen zien wie je bent, wat je kunt en aan welke projecten je hebt gewerkt.
 
-### 1. Gast pagina  
-Op deze pagina is duidelijk dat iemand niet is ingelogd en daardoor geen blog berichten mag lezen.
+## Verplichte onderdelen
 
-### 2. Overzicht blogs
-Hier is straks een lijst met blog items zichtbaar, per bericht is het volgende zichtbaar:
-- Titel
-- Datum
-- Intro  
-De volgorde is op datum, nieuwste bericht staat bovenaan.
+1. Een responsive homepagina met een heldere introductie.
+2. Een over-mij-pagina, gericht op stage of werk.
+3. Een projectoverzicht met minimaal drie portfolio-projecten.
+4. Een detailpagina per project met rol, gebruikte technieken, resultaat en beeldmateriaal.
+5. Een contactmogelijkheid.
+6. Een eigen WordPress Custom Post Type voor de portfolio-projecten, met overzichts- en detailweergave.
+7. Een eigen custom theme met onder andere `style.css`, `functions.php`, `header.php`, `footer.php` en passende templates.
+8. Een front-end build met Bootstrap (of vooraf goedgekeurd alternatief), Sass, npm en Webpack.
+9. Een Git-repository met een README voor lokaal starten en bouwen.
+10. Een live productieversie op een eigen hostingomgeving of domein.
 
-### 3. Bericht pagina
-Per bericht is straks het volgende zichtbaar:
-- Titel
-- Datum
-- Content
-- Categorie _( stage 1 / stage 2 )_
-- Comments
+## Werkwijze met AI
 
-## Randvoorwaarden:
-- De applicatie moet ontwikkeld worden in PHP eventueel in combinatie met JavaScript.
-- Het lokaal ontwikkelen van dit project gaat via een Docker container.
-- De data wordt in de database opgeslagen
-- Er moet een error afhandeling zijn die de gebruiker informeert waarom iemand een bericht niet mag bekijken.
-- Deze module moet functioneren in de laatste versies van Chrome, Safari, Firefox en Edge
-- Ontwikkel deze website **'Mobile-first'**
-- Taal: minimaal Nederlands
+In de eerste les gebruik je AI om snel een eerste thema en ontwerpidee te maken. Bewaar je prompts en noteer welke bestanden of stukken code zijn gegenereerd. Je controleert de output altijd lokaal, kunt uitleggen wat de code doet en verbetert hem gedurende de periode zelf.
+
+## Randvoorwaarden
+
+- Ontwikkel lokaal in Docker met WordPress en een database.
+- Werk mobile-first en test minimaal in Chrome, Safari, Firefox en Edge waar beschikbaar.
+- Gebruik semantische HTML, toegankelijke formulieren en leesbare code.
+- Plaats geen wachtwoorden, API-sleutels of andere gevoelige gegevens in Git.
+- De live URL, repository en korte technische verantwoording zijn onderdeel van de eindoplevering.

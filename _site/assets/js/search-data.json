@@ -13,711 +13,1222 @@
     
     "relUrl": "/les-4/admin"
   },"2": {
+    "doc": "AI-start",
+    "title": "AI-start: van prompt naar eerste resultaat",
+    "content": "AI kan je helpen om sneller een begin te maken met een website. Het kan ideeën, HTML, CSS, PHP-uitleg en foutoplossingen voorstellen. Jij blijft verantwoordelijk voor het resultaat: je test de code, leest hem terug en past hem zelf aan. ",
+    "url": "/m9prog_opdrachtensite/les-1/ai-start#ai-start-van-prompt-naar-eerste-resultaat",
+    
+    "relUrl": "/les-1/ai-start#ai-start-van-prompt-naar-eerste-resultaat"
+  },"3": {
+    "doc": "AI-start",
+    "title": "Werk in vier stappen",
+    "content": "1. Bepaal je doel . Beschrijf eerst voor wie je portfolio is en wat een bezoeker moet kunnen vinden. Bijvoorbeeld: een stagebedrijf moet in één minuut kunnen zien wie je bent, welke technieken je gebruikt en welke projecten je hebt gemaakt. 2. Geef AI duidelijke context . Een vage prompt als maak een mooie website geeft een vaag resultaat. Geef rol, doel, inhoud, techniek en vormgeving mee. Je bent een WordPress-theme developer. Help mij een eerste opzet te maken voor een persoonlijke portfolio voor een software developer die stage zoekt. Gebruik een custom WordPress-theme met PHP-templates. Ik wil een homepagina, over-mij-pagina, projectoverzicht, drie projectkaarten en contactsectie. De stijl is rustig en professioneel, mobile-first, met semantische HTML. Leg per bestand uit wat het doet. Geef geen bestanden die ik niet nodig heb. 3. Controleer het resultaat . | Plaats gegenereerde code nooit blind in je project. | Controleer bestanden lokaal in WordPress en lees foutmeldingen. | Vraag AI om code regel voor regel uit te leggen als je iets niet begrijpt. | Vergelijk de output met de eisen van deze opdracht. | Pas namen, tekst, ontwerp en code aan zodat het jouw portfolio wordt. | . 4. Bewaar bewijs . Maak twee bestanden in de hoofdmap van je repository: . | prompt.md: de volledige prompt en relevante AI-antwoorden. | ai-log.md: wat je gebruikte, wat je hebt gecontroleerd, wat niet werkte en welke aanpassingen je zelf deed. | . AI mag je sneller laten starten. Het eindproduct moet aantoonbaar van jou zijn en je moet elke belangrijke technische keuze kunnen uitleggen. ",
+    "url": "/m9prog_opdrachtensite/les-1/ai-start#werk-in-vier-stappen",
+    
+    "relUrl": "/les-1/ai-start#werk-in-vier-stappen"
+  },"4": {
+    "doc": "AI-start",
+    "title": "AI-start",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-1/ai-start",
+    
+    "relUrl": "/les-1/ai-start"
+  },"5": {
     "doc": "Les 7",
     "title": "Backend testing",
     "content": "Een backend test is een type softwaretest dat de functionaliteit, prestaties en betrouwbaarheid van de serverkant van een applicatie controleert. Dit omvat het testen van de databases, API’s, servers en logica die niet direct zichtbaar zijn voor de gebruiker, maar wel cruciaal zijn voor het correct functioneren van de applicatie. Bij backend tests wordt vaak gekeken of data correct wordt verwerkt, opgeslagen en opgehaald, of de API’s correct reageren op verzoeken, en of de applicatie efficiënt omgaat met belasting en schaalbaarheid. Het doel is om ervoor te zorgen dat de backend stabiel en foutloos werkt. Doel: In deze opdracht leer je hoe je een eenvoudige test schrijft en uitvoert met PHPUnit in PHP. Deze opdracht kun je ook zonder WordPress uitvoeren, gebruik hiervoor jouw blog project. Let op dat bij sommige omgevingen het installeren van composer minder soepel gaat, tijdens de les bespreken wij dit. 1. Installatie van PHPUnit . | Open de terminal van je WordPress container in Docker. | Installeer composer als je deze nog niet hebt geïnstalleerd: https://getcomposer.org/download/ | Installeer PHPUnit via Composer. composer require --dev phpunit/phpunit . Of als je geen alias hebt geïnstalleerd: . php composer.phar require --dev phpunit/phpunit . | . 2. Maak een eenvoudige PHP-functie . Maak een bestand aan, bijvoorbeeld Rekenmachine.php, met de volgende eenvoudige functie: . &lt;?php class Rekenmachine { public function optellen($a, $b) { return $a + $b; } } . 3. Schrijf een PHPUnit test . Maak nu een bestand RekenmachineTest.php in een nieuwe map genaamd tests, en schrijf de volgende test: . &lt;?php use PHPUnit\\Framework\\TestCase; class RekenmachineTest extends TestCase { public function testOptellen() { $rekenmachine = new Rekenmachine(); $resultaat = $rekenmachine-&gt;optellen(2, 3); $this-&gt;assertEquals(5, $resultaat); } } . 4. Voer de test uit . In de terminal voer je de test uit met het volgende commando: . vendor/bin/phpunit tests . Verwacht resultaat: . Je zou een succesmelding moeten zien als de test slaagt, zoals: . OK (1 test, 1 assertion) . Bonus: . | Pas de functie of de test aan, bijvoorbeeld om negatieve getallen op te tellen, en voer opnieuw de tests uit om te zien hoe PHPUnit werkt. | . Meer informatie: . PhpUnit WordPress PHP Unit Documentation . ",
     "url": "/m9prog_opdrachtensite/les-7/backend#backend-testing",
     
     "relUrl": "/les-7/backend#backend-testing"
-  },"3": {
+  },"6": {
     "doc": "Les 7",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je een de tests automatisch uitvoeren. Automatische code testing . ",
     "url": "/m9prog_opdrachtensite/les-7/backend#commit-en-push",
     
     "relUrl": "/les-7/backend#commit-en-push"
-  },"4": {
+  },"7": {
     "doc": "Les 7",
     "title": "Les 7",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-7/backend",
     
     "relUrl": "/les-7/backend"
-  },"5": {
+  },"8": {
     "doc": "Les 2",
     "title": "Verschillende type cache",
     "content": "Als developer loop je tegen verschillende type cache aan. Deze verschillende soorten caching worden gebruikt om de prestaties van een website of applicatie te verbeteren. Hier bespreek ik de belangrijkste types en hoe je deze geforceerd kunt legen. 1- Server-side Cache . Op de server wordt de gegenereerde informatie voor een bepaalde tijd opgeslagen. Hierdoor hoeft de server niet steeds dezelfde gegevens opnieuw te berekenen of ophalen uit de database. Dit kan een full-pagina-cache ( HTML ) of een object-cache ( gedeelte van een web pagina ) Geforceerd legen . | via een deploy ( komt later ) | via een cli script zoals: php artisan cache:clear | . 2- Database Cache . Als je meerdere keren een database query uitvoert zal het resultaat opgeslagen worden op de database server om de server te ontlasten. Geforceerd legen . | met de mysql query: RESET QUERY CACHE; | . 3- Browser Cache . De browser slaat bestanden zoals afbeeldingen, CSS en JavaScript lokaal op de computer van de gebruiker op. Dit zorgt ervoor dat bij een volgend bezoek dezelfde bestanden niet opnieuw van de server hoeven te worden gedownload, wat de laadtijd versnelt. Dit is de belangrijkste cache, maar ook de vervelendste. Om ervoor te zorgen dat je een nieuwe versie van bijvoorbeeld de css moet laden kun je de cache legen in de browser, maar dit kun je je klanten niet laten doen. Daarom moet je tegen de browser vertellen dat je een nieuwe versie wilt laden, door bijvoorbeeld een variabele toe te voegen achter de url: ?v=VERSION_NUMBER Door VERSION_NUMBER te vervangen door een nieuw nummmer zal de browser zien dat er een ander bestand geladen moet worden. Je kunt in je thema het versie nummer van WordPress overschrijven om zo zelf controle te hebben over de versies met het volgende filter: Voor nu kun je jouw css te laden door een nieuw filter aan te maken: . /** * Replace WP version with custom version number * * @param $src * * @return string */ public function filter_custom_version( $src ) { if ( strpos( $src, 'ver=' ) ) { $src = remove_query_arg( 'ver', $src ); $src .= '?ver=' . D_VERSION; } return $src; } add_filter( 'the_generator', [ $this, 'filter_custom_version' ] ); . Let op: Ik heb ergens anders de constante D_VERSION gedefinieerd, die is noodzakelijk in deze code. ",
     "url": "/m9prog_opdrachtensite/les-2/cache#verschillende-type-cache",
     
     "relUrl": "/les-2/cache#verschillende-type-cache"
-  },"6": {
+  },"9": {
     "doc": "Les 2",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
     "url": "/m9prog_opdrachtensite/les-2/cache#commit-en-push",
     
     "relUrl": "/les-2/cache#commit-en-push"
-  },"7": {
+  },"10": {
     "doc": "Les 2",
     "title": "Les 2",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/cache",
     
     "relUrl": "/les-2/cache"
-  },"8": {
+  },"11": {
     "doc": "Les 2",
     "title": "Compiler",
     "content": "Voor het compilen van je sass bestanden kun je gebruik maken van verschillende compilers. Dit zijn een paar voorbeelden in volgorde van populariteit bij grote bedrijven: . | Yarn | NPM JS Compiler | Grunt JS | Integrated development environment (IDE) | . 1- Keuze voor compiler . Op basis van je framework keuze moet je een compiler gebruiken. Volg de stappen zoals beschreven bij de installatie van je framework. 2- Test en controleer . Test en controleer je framework en compiler. ALs je een aanpassing in het design maakt dan zou dit nu zichtbaar moeten zijn in de browser. 3- Pas het thema aan . Pas het thema zo aan dat je een design hebt dat bij jouw wensen past. 4- Controleer . Bekijk de website in je browser en zie dat het nieuwe thema actief is. Controleer ook even in een privé-venster waarbij je niet bent ingelogd. ",
     "url": "/m9prog_opdrachtensite/les-2/compiler#compiler",
     
     "relUrl": "/les-2/compiler#compiler"
-  },"9": {
+  },"12": {
     "doc": "Les 2",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Cache . ",
     "url": "/m9prog_opdrachtensite/les-2/compiler#commit-en-push",
     
     "relUrl": "/les-2/compiler#commit-en-push"
-  },"10": {
+  },"13": {
     "doc": "Les 2",
     "title": "Les 2",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/compiler",
     
     "relUrl": "/les-2/compiler"
-  },"11": {
+  },"14": {
     "doc": "Les 3",
     "title": "Wat is deployment",
     "content": ". ",
     "url": "/m9prog_opdrachtensite/les-3/deployment#wat-is-deployment",
     
     "relUrl": "/les-3/deployment#wat-is-deployment"
-  },"12": {
+  },"15": {
     "doc": "Les 3",
     "title": "Presentatie",
     "content": "Hier kun je de presentatie uit de les terug vinden: Deployment.pdf . Volgende stap: . Keuze voor hosting . ",
     "url": "/m9prog_opdrachtensite/les-3/deployment#presentatie",
     
     "relUrl": "/les-3/deployment#presentatie"
-  },"13": {
+  },"16": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/deployment",
     
     "relUrl": "/les-3/deployment"
-  },"14": {
+  },"17": {
     "doc": "CSS frameworks",
     "title": "css frameworks",
     "content": "A overview of the most used css frameworks in 2024. ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#css-frameworks",
     
     "relUrl": "/les-2/frameworks#css-frameworks"
-  },"15": {
+  },"18": {
     "doc": "CSS frameworks",
     "title": "General-Purpose CSS Frameworks",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#general-purpose-css-frameworks",
     
     "relUrl": "/les-2/frameworks#general-purpose-css-frameworks"
-  },"16": {
+  },"19": {
     "doc": "CSS frameworks",
     "title": "1. Bootstrap",
     "content": "Bootstrap might be the most popular and well-known CSS framework in the world. And while our list includes many alternatives to Bootstrap, you can’t go wrong with this CSS framework designed by Twitter, as it provides a comprehensive set of tools and assets for designing web applications. As one of the best CSS libraries, Bootstrap offers a consistent and tested codebase you can rely on for consistent results. The trade-off is that it leaves little room for flexibility. Bootstrap classes help front-end developers quickly add styling to their HTML code. Bootstrap is also well-documented, making it easy to find resources. It’s one of the most popular CSS frameworks and has a large and active online community of users. We also found an 11-hour Bootstrap course for beginners. Pros . | Large community and support | Built with accessibility in mind | Supports both SASS and LESS | . Cons . | Lack of design flexibility | Large file sizes with increased download times | Overreliance on classes | Compatibility issues with older browser versions | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#1-bootstrap",
     
     "relUrl": "/les-2/frameworks#1-bootstrap"
-  },"17": {
+  },"20": {
     "doc": "CSS frameworks",
     "title": "2. Bulma",
     "content": "Bulma is a free and open-source CSS framework based on Flexbox. It was created to provide a modern, minimalist alternative to other CSS frameworks. Instead of using classes for styling and layout, Bulma uses a modular approach. And this allows developers to create custom designs without writing much CSS code. Bulma also has a strict CSS-only approach and includes no JavaScript components. Bulma’s modular design makes it more flexible. You can easily customize it to suit your specific needs for a project. It’s also designed for cross-browser compatibility. And it’s also lightweight, fast, and optimized for performance. Pros . | Highly flexible and customizable | Lightweight and fast | Classless and modular design | . Cons . | Smaller community of developers | Steep learning curve for those new to Flexbox | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#2-bulma",
     
     "relUrl": "/les-2/frameworks#2-bulma"
-  },"18": {
+  },"21": {
     "doc": "CSS frameworks",
     "title": "3. Foundation",
     "content": "Foundation is a responsive front-end framework that provides a set of CSS tools focusing on mobile-first design and accessibility. Foundation includes a range of JavaScript plugins for adding interactivity to your web applications. Compared to other CSS frameworks, Foundation offers more control to developers for customizations. While this is a good thing, it also means newcomers will find it slightly complex and take a while before getting used to it. Pros . | Creators offer training/consulting for enterprises | High degree of flexibility | Has a command-line interface (CLI) | Includes an advanced responsive image system | . Cons . | Steep learning curve | Can be complex for beginners | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#3-foundation",
     
     "relUrl": "/les-2/frameworks#3-foundation"
-  },"19": {
+  },"22": {
     "doc": "CSS frameworks",
     "title": "Utility-Based CSS Frameworks",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#utility-based-css-frameworks",
     
     "relUrl": "/les-2/frameworks#utility-based-css-frameworks"
-  },"20": {
+  },"23": {
     "doc": "CSS frameworks",
     "title": "1. Tailwind",
     "content": "Tailwind is a modern, utility-first, and un-opinionated framework that’s widely viewed as one of the top CSS frameworks available. As possibly the best CSS library for beginners, Tailwind provides a set of pre-defined CSS classes to apply to HTML elements, allowing front-end developers to quickly build custom interfaces with a focus on speed and efficiency. Tailwind gives developers more control over the look and feel of their websites. Whether you’re a seasoned web designer or a beginner, Tailwind is a great tool to help you build a high-quality, responsive, and accessible website quickly. Pros . | Focuses on developer productivity | Highly customizable | Focuses on accessibility | . Cons . | Over-reliance on utility classes | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#1-tailwind",
     
     "relUrl": "/les-2/frameworks#1-tailwind"
-  },"21": {
+  },"24": {
     "doc": "CSS frameworks",
     "title": "2. Open Props",
     "content": "Open Props is one of the few CSS libraries that’s non-prescriptive. It provides customizable design options for front-end developers to create websites quickly and efficiently. Unlike many CSS frameworks/libraries, Open props allow developers to create custom classes instead of strictly using predefined class names. Pros . | Highly flexible and customizable | It’s incrementally adoptable | . Cons . | Smaller community of developers | Limited documentation | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#2-open-props",
     
     "relUrl": "/les-2/frameworks#2-open-props"
-  },"22": {
+  },"25": {
     "doc": "CSS frameworks",
     "title": "Lightweight CSS Frameworks",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#lightweight-css-frameworks",
     
     "relUrl": "/les-2/frameworks#lightweight-css-frameworks"
-  },"23": {
+  },"26": {
     "doc": "CSS frameworks",
     "title": "1. Pure",
     "content": "Pure is a minimalist CSS framework that provides a small set of basic styles for common HTML elements like buttons, forms, tables, etc. It’s designed to be a place for developers to begin when styling websites. This framework is designed to reduce the amount of CSS code required for styling your web applications, making it easier for developers and designers to understand and modify. Pros . | It’s lightweight | Has a minimalist design | Highly customizable | . Cons . | Limited JavaScript support | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#1-pure",
     
     "relUrl": "/les-2/frameworks#1-pure"
-  },"24": {
+  },"27": {
     "doc": "CSS frameworks",
     "title": "2. Spectre",
     "content": "Spectre is a modern CSS framework that utilizes the latest CSS technologies, such as Flexbox and CSS grid, making it suitable for building responsive and modern websites. Its minimal and customizable design makes it a great choice when you want to quickly prototype and build a website without having to start from scratch. Spectre is well-documented and includes examples and usage guidelines, making it easy to start. Pros . | Compatible with older browsers | Supports both SASS and LESS preprocessing | . Cons . | Limited community support | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#2-spectre",
     
     "relUrl": "/les-2/frameworks#2-spectre"
-  },"25": {
+  },"28": {
     "doc": "CSS frameworks",
     "title": "3.Skeleton",
     "content": "One of the key features of Skeleton is its minimalism, which allows developers to start with a clean slate and avoid the usual clutter and bloat of larger CSS frameworks. It also focuses on mobile-first design. Overall, it’s a good choice for developers who want to create custom and responsive designs without the hassle of working around already-styled components. Pros . | Very lightweight and fast | Clean and elegant design | . Cons . | Not many pre-styled components | Class-Less CSS Frameworks | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#3skeleton",
     
     "relUrl": "/les-2/frameworks#3skeleton"
-  },"26": {
+  },"29": {
     "doc": "CSS frameworks",
     "title": "4. Water",
     "content": "This CSS framework is based on minimalistic design principles, providing only the bare essentials to style your web pages. It’s easy to add to any of your projects, as you only need to copy one line of code into your HTML file. It’s also lightweight, fast-loading, and designed to make simple static websites more visually appealing. Pros . | Easy to use | Lightweight and fast | . Cons . | Not ideal for large, complex projects | Limited customization option | . ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#4-water",
     
     "relUrl": "/les-2/frameworks#4-water"
-  },"27": {
+  },"30": {
     "doc": "CSS frameworks",
     "title": "Conclusion",
     "content": "What Is the Easiest CSS Framework to Learn? . Even the best CSS framework can be challenging without a decent understanding of vanilla CSS. With that said, if you have basic CSS skills, check out Bootstrap or Tailwind, as these are two of the most widely used and well-documented CSS frameworks in 2024. ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks#conclusion",
     
     "relUrl": "/les-2/frameworks#conclusion"
-  },"28": {
+  },"31": {
     "doc": "CSS frameworks",
     "title": "CSS frameworks",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/frameworks",
     
     "relUrl": "/les-2/frameworks"
-  },"29": {
+  },"32": {
     "doc": "Les 7",
     "title": "Frontend testing",
     "content": "Een frontend test controleert de functionaliteit en het gedrag van de gebruikersinterface (UI) van een applicatie, waarbij wordt nagegaan of de interface correct reageert op interacties van de gebruiker. Dit omvat het testen van knoppen, formulieren en navigaties, om ervoor te zorgen dat alles werkt zoals bedoeld. Behat . Meer informatie: behat.org Met Behat, een tool voor behavior-driven development (BDD), kun je frontend tests schrijven in begrijpelijke, scenario-gebaseerde taal. Bijvoorbeeld: . Scenario: Gebruiker logt succesvol in Given ik ben op de loginpagina When ik vul \"gebruikersnaam\" in met \"testgebruiker\" And ik vul \"wachtwoord\" in met \"geheim123\" And ik klik op de \"inloggen\" knop Then zie ik \"Welkom, testgebruiker\" op de homepage . Deze test simuleert de stappen van een gebruiker en controleert of de UI correct reageert. Selenium . Meer informatie: selenium.dev Selenium is de meest populaire automatiseringstool, het bestaat al decennia, en zelfs vandaag de dag is Selenium een sterke concurrent voor veel moderne automatiseringstools. Selenium is een open-source front-end automatiserings testbibliotheek. Het ondersteunt de browsers Firefox, Chrome, Edge en Safari op Windows-, macOS- en Linux-platforms. Selenium neemt de programmeertaal barrière weg door ondersteuning te bieden voor populaire programmeertalen zoals Python, Java, Javascript, C# en Ruby. Opdracht: Selenuim implementeren . Deze opdracht begeleidt je bij het opzetten van Selenium en het automatiseren van een eenvoudige taak in Chrome, zoals het bezoeken van een website en het opvragen van een titel: . 1. Installeer Python . Python geïnstalleerd op je computer: python.org . 2. Installeer Selenium . Open de terminal of command line en installeer de Selenium-bibliotheek met pip: . pip install selenium . 3. Download de Chrome WebDriver . Ga naar ChromeDriver en download de versie van de ChromeDriver die overeenkomt met jouw versie van Google Chrome. Pak het bestand uit en plaats de chromedriver in een map die je gemakkelijk kunt vinden. 4. Schrijf je eerste Selenium-script . Schrijf een script dat Selenium gebruikt om: . | de Chrome-browser te openen, | naar een website te gaan (bijvoorbeeld “https://www.wikipedia.org”) | haal de titel van de pagina op | . from selenium import webdriver from selenium.webdriver.chrome.service import Service from selenium.webdriver.common.by import By # Locatie van de gedownloade chromedriver chrome_driver_path = \"/pad/naar/chromedriver\" # Maak een nieuwe Chrome sessie service = Service(chrome_driver_path) driver = webdriver.Chrome(service=service) # Ga naar de website driver.get(\"https://www.wikipedia.org\") # Haal de titel van de pagina op page_title = driver.title # Print de titel in de console print(f\"De titel van de pagina is: {page_title}\") # Sluit de browser driver.quit() . 5. Uitvoeren van het script . Voer het script uit in je IDE of via de terminal. De browser zou kort moeten openen, naar Wikipedia moeten gaan, en de titel van de pagina in je console printen. Vervolgens wordt de browser gesloten. 2- Via een browser plugin . Je kunt ook een test script maken door een plugin in je browser te gebruiken. 1. Voeg de browserextensie toe aan jouw browser . Voeg de selenium-ide extensie toe aan je browser, bijvoorbeeld via de chrome store: selenium-ide . 2. Start script . Open de extensie en maak een nieuw script: . 3. Definieer een website . Geef op welke website je wilt testen: . 4. Verwerk de test . Klik nu rond op jouw website om aan te geven wat je wilt testen. Na het klikken stop je de test en zie je in het Selenium popup scherm een resultaat. 3- Opslaan van scripts . Plaats jouw test script(s) in een test folder in de root van je repository. ",
     "url": "/m9prog_opdrachtensite/les-7/frontend#frontend-testing",
     
     "relUrl": "/les-7/frontend#frontend-testing"
-  },"30": {
+  },"33": {
     "doc": "Les 7",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je een de backend tests ontwikkelen. Backend Code testing . ",
     "url": "/m9prog_opdrachtensite/les-7/frontend#commit-en-push",
     
     "relUrl": "/les-7/frontend#commit-en-push"
-  },"31": {
+  },"34": {
     "doc": "Les 7",
     "title": "Les 7",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-7/frontend",
     
     "relUrl": "/les-7/frontend"
-  },"32": {
+  },"35": {
     "doc": "Les 2",
     "title": "Front-end Framework",
     "content": "Voor jouw custom blog kun je goed gebruik maken van een front-end framework zodat je je kan richten op het design en functionaliteit en niet het wiel met bijvoorbeeld responsive opnieuw moet uitvinden. 1- Selecteer een framework dat je wilt gebruiken . Bekijk hier welk framework het beste bij jou past: framework . Volgende stap: . NPM Compilers . ",
     "url": "/m9prog_opdrachtensite/les-2/frontend#front-end-framework",
     
     "relUrl": "/les-2/frontend#front-end-framework"
-  },"33": {
+  },"36": {
     "doc": "Les 2",
     "title": "Les 2",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/frontend",
     
     "relUrl": "/les-2/frontend"
-  },"34": {
+  },"37": {
     "doc": "Les 7",
     "title": "Automatische code testing",
     "content": "Git-hooks zijn scripts die automatisch worden uitgevoerd bij specifieke gebeurtenissen in de Git-workflow, zoals bij een commit of push. Door git-hooks te gebruiken, kun je consistentie en kwaliteit in je codebase verbeteren. Bijvoorbeeld: je kunt ervoor zorgen dat code automatisch wordt gecontroleerd op fouten of stijlproblemen voordat deze wordt gepushed naar de productie omgeving. Ook kun je tests automatisch laten draaien om te voorkomen dat gebroken code op productie terechtkomt. Dit helpt teams om efficiënter samen te werken, fouten te minimaliseren en processen te automatiseren zonder handmatige interventie. ",
     "url": "/m9prog_opdrachtensite/les-7/git_hooks#automatische-code-testing",
     
     "relUrl": "/les-7/git_hooks#automatische-code-testing"
-  },"35": {
+  },"38": {
     "doc": "Les 7",
     "title": "Githook",
     "content": "Je gaat jouw Selenium script koppelen aan een Git Hook, zodat de Selenium-test automatisch wordt uitgevoerd telkens wanneer er een push wordt gedaan naar de main branch. Git heeft een ingebouwd hook-systeem waarmee je scripts kunt koppelen aan specifieke gebeurtenissen (zoals commit, push of merge). Je gaat nu een post-push hook instellen om een Selenium-test uit te voeren na een push naar de master branch. 1. Maak een post-push hook aan . Zorg ervoor dat je in de root van je repository zit in je terminal of command prompt. Git hooks bevinden zich in de .git/hooks/ map. Je maakt nu een post-push hook aan die een Selenium-test zal uitvoeren: . touch .git/hooks/post-push chmod +x .git/hooks/post-push . 2. Schrijf het hook-script . Voeg het volgende script toe om het Selenium-script uit te voeren na een push: . #!/bin/bash # Controleren of de push naar de master branch is current_branch=$(git rev-parse --abbrev-ref HEAD) if [ \"$current_branch\" == \"main\" ]; then echo \"Push naar master gedetecteerd. Selenium test wordt uitgevoerd...\" # Voer het Selenium-script uit python3 /pad/naar/jouw/selenium_script.py if [ $? -eq 0 ]; then echo \"Selenium test succesvol uitgevoerd.\" else echo \"Selenium test is mislukt.\" exit 1 fi else echo \"Niet gepusht naar master branch, geen Selenium-test uitgevoerd.\" fi . Let op: vervang /pad/naar/jouw/selenium_script.py door het pad naar jouw script, bijvoorbeeld /tests/script1.py . 3. Test de Git Hook . Test nu jouw script door een code aan te passen, te pushen en te pushen naar main. Na je push zou je in de terminal een bericht moeten zien dat de Selenium-test wordt uitgevoerd en de paginatitel van de website zou worden afgedrukt. ",
     "url": "/m9prog_opdrachtensite/les-7/git_hooks#githook",
     
     "relUrl": "/les-7/git_hooks#githook"
-  },"36": {
+  },"39": {
     "doc": "Les 7",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende opdracht ga je een categorie toevoegen. Registreren van een taxonomie . ",
     "url": "/m9prog_opdrachtensite/les-7/git_hooks#commit-en-push",
     
     "relUrl": "/les-7/git_hooks#commit-en-push"
-  },"37": {
+  },"40": {
     "doc": "Les 7",
     "title": "Les 7",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-7/git_hooks",
     
     "relUrl": "/les-7/git_hooks"
-  },"38": {
+  },"41": {
     "doc": "Les 3",
     "title": "Hosting",
-    "content": "Webhosting is een dienst waarmee individuen en bedrijven hun websites beschikbaar kunnen maken op het internet. Een provider biedt serverruimte waar de bestanden van een website worden opgeslagen en beheerd. Wanneer iemand een website bezoekt, worden deze bestanden vanaf de server naar de browser van de gebruiker verzonden. Er zijn verschillende soorten hosting, zoals: . | shared hosting (waar meerdere websites op één server staan) | VPS-hosting (Virtual Private Server) | dedicated hosting (waar een website zijn eigen server heeft) | cloud hosting ( waarbij een dynamisch aantal servers gekoppeld zijn aan één service ) De keuze voor een type hosting hangt af van de grootte van de website en de technische vereisten. | . Vereisten voor onze website: . | PHP ( version 8.0 or higher ) | MySQL (version 5.7 or higher) or MariaDB (version 10.4 or higher) | HTTPS support | Apache / Nginx | SSH toegang | Deployment via git | . 1- Hosting . Sluit een hosting af en doorloop de stappen vor het instellen van een domein. Bijvoorbeeld bij hostinger.nl . Volgende stap: . Hosting inrichten . ",
+    "content": "Webhosting is een dienst waarmee individuen en bedrijven hun websites beschikbaar kunnen maken op het internet. Een provider biedt serverruimte waar de bestanden van een website worden opgeslagen en beheerd. Wanneer iemand een website bezoekt, worden deze bestanden vanaf de server naar de browser van de gebruiker verzonden. Er zijn verschillende soorten hosting, zoals: . | shared hosting (waar meerdere websites op één server staan) | VPS-hosting (Virtual Private Server) | dedicated hosting (waar een website zijn eigen server heeft) | cloud hosting ( waarbij een dynamisch aantal servers gekoppeld zijn aan één service ) De keuze voor een type hosting hangt af van de grootte van de website en de technische vereisten. | . Vereisten voor onze website: . | PHP ( version 8.0 or higher ) | MySQL (version 5.7 or higher) or MariaDB (version 10.4 or higher) | HTTPS support | Apache / Nginx | SSH toegang | Deployment via git | . 1- Hosting . Sluit een hosting af en doorloop de stappen vor het instellen van een domein. Bijvoorbeeld bij hostinger.nl Gebruik deze referral code voor korting: 1JASPER14 — . Volgende stap: . Hosting inrichten . ",
     "url": "/m9prog_opdrachtensite/les-3/hosting#hosting",
     
     "relUrl": "/les-3/hosting#hosting"
-  },"39": {
+  },"42": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/hosting",
     
     "relUrl": "/les-3/hosting"
-  },"40": {
-    "doc": "Home",
-    "title": "WordPress - Home",
-    "content": "Op deze website vind je de opdrachten voor de unit M5PROG waarbij wij een custom thema voor WordPress gaan ontwikkelen. ",
-    "url": "/m9prog_opdrachtensite/#wordpress---home",
-    
-    "relUrl": "/#wordpress---home"
-  },"41": {
-    "doc": "Home",
-    "title": "Planning",
-    "content": ". ",
-    "url": "/m9prog_opdrachtensite/#planning",
-    
-    "relUrl": "/#planning"
-  },"42": {
-    "doc": "Home",
-    "title": "Opdrachten en uitleg",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/#opdrachten-en-uitleg",
-    
-    "relUrl": "/#opdrachten-en-uitleg"
   },"43": {
-    "doc": "Home",
-    "title": "Les 1:  Local development setup",
-    "content": "Docker en structuur instellen, IDE inrichten voor gebruik met WordPress, localhost inclusief database starten . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-1--local-development-setup",
-    
-    "relUrl": "/#les-1--local-development-setup"
-  },"44": {
-    "doc": "Home",
-    "title": "Les 2:  Custom theme",
-    "content": "Welke front-end gebruik je, NPM Compilers instellen, Cache negeren in frontend en in php-fpm . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-2--custom-theme",
-    
-    "relUrl": "/#les-2--custom-theme"
-  },"45": {
-    "doc": "Home",
-    "title": "Les 3:  Deployment",
-    "content": "Keuze van hosting, deployment methodes, inrichten van hosting en CI/CD flow . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-3--deployment",
-    
-    "relUrl": "/#les-3--deployment"
-  },"46": {
-    "doc": "Home",
-    "title": "Les 4:  Inloggen zonder admin account",
-    "content": "Wat als je van je klant alleen ftp gegevens krijgt, hoe kom je dan bij de database en wp-admin . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-4--inloggen-zonder-admin-account",
-    
-    "relUrl": "/#les-4--inloggen-zonder-admin-account"
-  },"47": {
-    "doc": "Home",
-    "title": "Les 5:  Plugin ontwikkelen",
-    "content": "Maak een custom plugin om pagina’s af te schermen en mails te versturen bij updates . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-5--plugin-ontwikkelen",
-    
-    "relUrl": "/#les-5--plugin-ontwikkelen"
-  },"48": {
-    "doc": "Home",
-    "title": "Les 6:  Custom post types",
-    "content": "Implementatie van custom portfolio type . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-6--custom-post-types",
-    
-    "relUrl": "/#les-6--custom-post-types"
-  },"49": {
-    "doc": "Home",
-    "title": "Les 7:  Testing",
-    "content": "Hoe test je een website en implementeer je een test flow . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-7--testing",
-    
-    "relUrl": "/#les-7--testing"
-  },"50": {
-    "doc": "Home",
-    "title": "Les 8:  Presentatie",
-    "content": "Laatste les voor de afronding van dit project zodat je op stage kunt . Start . ",
-    "url": "/m9prog_opdrachtensite/#les-8--presentatie",
-    
-    "relUrl": "/#les-8--presentatie"
-  },"51": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/",
-    
-    "relUrl": "/"
-  },"52": {
-    "doc": "Les 7",
-    "title": "Les 7 - Testing",
-    "content": ". Hoe test je een website en implementeer je een test flow . Maak de opdrachten voor deze les . | Frontend Code testing | Backend Code testing | Automatische code testing | . ",
-    "url": "/m9prog_opdrachtensite/les-7/index#les-7---testing",
-    
-    "relUrl": "/les-7/index#les-7---testing"
-  },"53": {
-    "doc": "Les 7",
-    "title": "Les 7",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/les-7/index",
-    
-    "relUrl": "/les-7/index"
-  },"54": {
-    "doc": "Les 8",
-    "title": "Les 8 - Presentatie",
-    "content": ". Laatste les voor de afronding van dit project zodat je op stage kunt . ",
-    "url": "/m9prog_opdrachtensite/les-8/index#les-8---presentatie",
-    
-    "relUrl": "/les-8/index#les-8---presentatie"
-  },"55": {
-    "doc": "Les 8",
-    "title": "De opdrachten",
-    "content": ". | Project presentatie | . ",
-    "url": "/m9prog_opdrachtensite/les-8/index#de-opdrachten",
-    
-    "relUrl": "/les-8/index#de-opdrachten"
-  },"56": {
-    "doc": "Les 8",
-    "title": "Les 8",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/les-8/index",
-    
-    "relUrl": "/les-8/index"
-  },"57": {
-    "doc": "Les 1",
-    "title": "Les 1 - Local development setup",
-    "content": ". Docker en structuur instellen, IDE inrichten voor gebruik met WordPress, localhost inclusief database starten . Maak de opdrachten voor deze les . | Start | Development omgeving opzetten | Initialiseren van WordPress | Testen | . ",
-    "url": "/m9prog_opdrachtensite/les-1/#les-1---local-development-setup",
-    
-    "relUrl": "/les-1/#les-1---local-development-setup"
-  },"58": {
-    "doc": "Les 1",
-    "title": "Les 1",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/les-1/",
-    
-    "relUrl": "/les-1/"
-  },"59": {
-    "doc": "Les 6",
-    "title": "Les 6 - Custom post types",
-    "content": ". Implementatie van custom portfolio type . Maak de opdrachten voor deze les . | Bootstrap via Sass en Webpack | . ",
-    "url": "/m9prog_opdrachtensite/les-6/index#les-6---custom-post-types",
-    
-    "relUrl": "/les-6/index#les-6---custom-post-types"
-  },"60": {
-    "doc": "Les 6",
-    "title": "Les 6",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/les-6/index",
-    
-    "relUrl": "/les-6/index"
-  },"61": {
     "doc": "Les 3",
-    "title": "Les 3 - Deployment",
-    "content": ". Keuze van hosting, deployment methodes, inrichten van hosting en CI/CD flow . Maak de opdrachten voor deze les . | Deployment uitleg | Keuze voor hosting | Hosting inrichten | . ",
-    "url": "/m9prog_opdrachtensite/les-3/index#les-3---deployment",
+    "title": "Les 3 - Custom theme structureren",
+    "content": ". Breid je actieve theme uit met templates, enqueueing en de WordPress-templatehiërarchie. ",
+    "url": "/m9prog_opdrachtensite/les-3/index#les-3---custom-theme-structureren",
     
-    "relUrl": "/les-3/index#les-3---deployment"
-  },"62": {
+    "relUrl": "/les-3/index#les-3---custom-theme-structureren"
+  },"44": {
+    "doc": "Les 3",
+    "title": "Custom theme structureren",
+    "content": "Voorwaarde: je custom theme uit les 2 is actief. Je werkt nu verder aan hetzelfde theme, niet aan een nieuw theme. | Maak functions.php als dit bestand nog niet bestaat en laad styles en scripts via wp_enqueue_style() en wp_enqueue_script(). | Voeg add_theme_support( 'post-thumbnails' ) toe en leg in ai-log.md uit welk effect dit heeft. | Maak front-page.php en page.php. Geef iedere template een herkenbare testkop, zodat je kunt zien welk bestand WordPress kiest. | Lees de WordPress-templatehiërarchie en noteer welke template gebruikt wordt voor de homepagina en een gewone pagina. | Maak in WordPress een homepagina en een over-mij-pagina. Controleer dat de juiste templates worden geladen. | . Resultaat: een gestructureerd custom theme waarin WordPress verschillende templates aantoonbaar correct kiest. ",
+    "url": "/m9prog_opdrachtensite/les-3/index#custom-theme-structureren",
+    
+    "relUrl": "/les-3/index#custom-theme-structureren"
+  },"45": {
+    "doc": "Les 3",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 3: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-3/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-3/index#afronden-testen-committen-en-pushen"
+  },"46": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/index",
     
     "relUrl": "/les-3/index"
-  },"63": {
-    "doc": "Les 4",
-    "title": "Les 4 - Inloggen zonder admin account",
-    "content": ". Wat als je van je klant alleen ftp gegevens krijgt, hoe kom je dan bij de database en wp-admin . Maak de opdrachten voor deze les . | WP Admin user | SSH | . ",
-    "url": "/m9prog_opdrachtensite/les-4/index#les-4---inloggen-zonder-admin-account",
+  },"47": {
+    "doc": "Les 10",
+    "title": "Les 10 - WP-CLI en SSH",
+    "content": ". Beheer WordPress vanaf de terminal en oefen veilig met servertoegang. ",
+    "url": "/m9prog_opdrachtensite/les-10/index#les-10---wp-cli-en-ssh",
     
-    "relUrl": "/les-4/index#les-4---inloggen-zonder-admin-account"
+    "relUrl": "/les-10/index#les-10---wp-cli-en-ssh"
+  },"48": {
+    "doc": "Les 10",
+    "title": "WP-CLI en SSH",
+    "content": ". | Leg uit wat het verschil is tussen lokale terminaltoegang, SSH en toegang via wp-admin. | Gebruik WP-CLI lokaal om de WordPress-versie, plugins en themes te tonen. | Oefen veilig met wp plugin list, wp theme list en wp user list. | Voer een wp search-replace eerst uit met --dry-run; leg uit waarom dat belangrijk is. | Bewaar geen hostnamen, wachtwoorden of privésleutels in je repository. | . Resultaat: je kunt basisbeheer van een WordPress-site via de terminal uitleggen en veilig uitvoeren. ",
+    "url": "/m9prog_opdrachtensite/les-10/index#wp-cli-en-ssh",
+    
+    "relUrl": "/les-10/index#wp-cli-en-ssh"
+  },"49": {
+    "doc": "Les 10",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 10: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-10/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-10/index#afronden-testen-committen-en-pushen"
+  },"50": {
+    "doc": "Les 10",
+    "title": "Les 10",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-10/index",
+    
+    "relUrl": "/les-10/index"
+  },"51": {
+    "doc": "Les 16",
+    "title": "Les 16 - Beoordeling en backlog",
+    "content": ". Rond je portfolio af, lever bewijs aan en bepaal vervolgstappen richting stage. ",
+    "url": "/m9prog_opdrachtensite/les-16/index#les-16---beoordeling-en-backlog",
+    
+    "relUrl": "/les-16/index#les-16---beoordeling-en-backlog"
+  },"52": {
+    "doc": "Les 16",
+    "title": "Beoordeling en backlog",
+    "content": "Lever onderstaande onderdelen aan en gebruik de checklist om je werk te verantwoorden. | De live URL van je portfolio. | De URL van je Git-repository, met README en zonder gevoelige gegevens. | Bewijs van eigen theme, Custom Post Type, Sass/Webpack-build en responsive ontwerp. | prompt.md en ai-log.md met een kritische uitleg van je AI-gebruik. | Een backlog met minimaal drie verbeteringen die je na de beoordeling wilt uitvoeren. | . Resultaat: een complete eindoplevering die je kunt gebruiken bij je stagezoektocht. ",
+    "url": "/m9prog_opdrachtensite/les-16/index#beoordeling-en-backlog",
+    
+    "relUrl": "/les-16/index#beoordeling-en-backlog"
+  },"53": {
+    "doc": "Les 16",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 16: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-16/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-16/index#afronden-testen-committen-en-pushen"
+  },"54": {
+    "doc": "Les 16",
+    "title": "Les 16",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-16/index",
+    
+    "relUrl": "/les-16/index"
+  },"55": {
+    "doc": "Les 11",
+    "title": "Les 11 - Hosting voorbereiden",
+    "content": ". Kies en richt een hostingomgeving in voor jouw portfolio. ",
+    "url": "/m9prog_opdrachtensite/les-11/index#les-11---hosting-voorbereiden",
+    
+    "relUrl": "/les-11/index#les-11---hosting-voorbereiden"
+  },"56": {
+    "doc": "Les 11",
+    "title": "Hosting voorbereiden",
+    "content": ". | Kies de afgesproken hostingomgeving en verzamel de gegevens die je nodig hebt: URL, SFTP/SSH, database en WordPress-installatie. | Maak of controleer de productie-database en WordPress-installatie. | Beschrijf in je README welke bestanden en gegevens nooit gecommit mogen worden. | Bepaal hoe je theme, uploads en database naar productie verplaatst. | Maak een deployment-checklist met een back-upstap en een terugvaloptie. | . Resultaat: jouw live omgeving is voorbereid en je weet precies welke stappen je gaat uitvoeren. ",
+    "url": "/m9prog_opdrachtensite/les-11/index#hosting-voorbereiden",
+    
+    "relUrl": "/les-11/index#hosting-voorbereiden"
+  },"57": {
+    "doc": "Les 11",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 11: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-11/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-11/index#afronden-testen-committen-en-pushen"
+  },"58": {
+    "doc": "Les 11",
+    "title": "Les 11",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-11/index",
+    
+    "relUrl": "/les-11/index"
+  },"59": {
+    "doc": "Les 7",
+    "title": "Les 7 - Designimplementatie",
+    "content": ". Vertaal je ontwerp naar een responsive portfolio met eigen typografie en kleuren. ",
+    "url": "/m9prog_opdrachtensite/les-7/index#les-7---designimplementatie",
+    
+    "relUrl": "/les-7/index#les-7---designimplementatie"
+  },"60": {
+    "doc": "Les 7",
+    "title": "Designimplementatie",
+    "content": ". | Werk je wireframe uit tot een pagina-opbouw voor home, over mij, projecten en contact. | Gebruik je eigen kleuren, minimaal één webfont en consistente spacing in Sass. | Bouw mobile-first en controleer de layout op mobiel, tablet en desktop. | Maak hero, projectkaarten en navigatie als herbruikbare onderdelen. | Vraag feedback aan een medestudent en verwerk minstens één concreet verbeterpunt. | . Resultaat: een herkenbare, responsive portfolio-uitstraling. ",
+    "url": "/m9prog_opdrachtensite/les-7/index#designimplementatie",
+    
+    "relUrl": "/les-7/index#designimplementatie"
+  },"61": {
+    "doc": "Les 7",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 7: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-7/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-7/index#afronden-testen-committen-en-pushen"
+  },"62": {
+    "doc": "Les 7",
+    "title": "Les 7",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-7/index",
+    
+    "relUrl": "/les-7/index"
+  },"63": {
+    "doc": "Les 9",
+    "title": "Les 9 - Tussenbeoordeling",
+    "content": ". Laat je voortgang zien, verwerk feedback en maak een concreet plan voor de livegang. ",
+    "url": "/m9prog_opdrachtensite/les-9/index#les-9---tussenbeoordeling",
+    
+    "relUrl": "/les-9/index#les-9---tussenbeoordeling"
   },"64": {
+    "doc": "Les 9",
+    "title": "Tussenbeoordeling",
+    "content": "Je laat zien wat nu werkt en wat je nodig hebt voor een professioneel eindresultaat. | Demonstreer lokaal: home, over mij, contact, projectoverzicht en minstens één projectdetail. | Laat je theme-structuur, Webpack-build en Git-geschiedenis zien. | Geef een korte uitleg van één AI-resultaat dat je later zelf hebt aangepast. Benoem waarom die aanpassing nodig was. | Verzamel feedback op inhoud, vormgeving, techniek en planning. | Maak een backlog met minimaal vijf taken, geprioriteerd voor beheer, livegang en afronding. | . Resultaat: aantoonbare voortgang, feedback en een haalbaar plan voor de tweede helft van de periode. ",
+    "url": "/m9prog_opdrachtensite/les-9/index#tussenbeoordeling",
+    
+    "relUrl": "/les-9/index#tussenbeoordeling"
+  },"65": {
+    "doc": "Les 9",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 9: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-9/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-9/index#afronden-testen-committen-en-pushen"
+  },"66": {
+    "doc": "Les 9",
+    "title": "Les 9",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-9/index",
+    
+    "relUrl": "/les-9/index"
+  },"67": {
+    "doc": "Les 8",
+    "title": "Les 8 - Custom post type: projecten",
+    "content": ". Maak en beheer portfolio-projecten als eigen contenttype in WordPress. ",
+    "url": "/m9prog_opdrachtensite/les-8/index#les-8---custom-post-type-projecten",
+    
+    "relUrl": "/les-8/index#les-8---custom-post-type-projecten"
+  },"68": {
+    "doc": "Les 8",
+    "title": "Custom Post Type: projecten",
+    "content": ". | Registreer een Custom Post Type project in je theme of in een afgesproken eigen plugin. | Voeg passende labels, REST-ondersteuning, uitgelichte afbeelding en archive toe. | Maak minimaal drie portfolio-projecten met titel, intro, gebruikte technieken, afbeelding en toelichting. | Bouw archive-project.php en single-project.php of de passende bloktemplates. | Test de permalink en vernieuw de permalinks als dat nodig is. | . Resultaat: projecten worden in WordPress beheerd en hebben een eigen overzichts- en detailpagina. ",
+    "url": "/m9prog_opdrachtensite/les-8/index#custom-post-type-projecten",
+    
+    "relUrl": "/les-8/index#custom-post-type-projecten"
+  },"69": {
+    "doc": "Les 8",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 8: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-8/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-8/index#afronden-testen-committen-en-pushen"
+  },"70": {
+    "doc": "Les 8",
+    "title": "Les 8",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-8/index",
+    
+    "relUrl": "/les-8/index"
+  },"71": {
+    "doc": "Les 1",
+    "title": "Les 1 - Introductie: portfolio en AI",
+    "content": ". Start je WordPress-portfolio. Je configureert een lokale ontwikkelomgeving. ",
+    "url": "/m9prog_opdrachtensite/les-1/#les-1---introductie-portfolio-en-ai",
+    
+    "relUrl": "/les-1/#les-1---introductie-portfolio-en-ai"
+  },"72": {
+    "doc": "Les 1",
+    "title": "Start: jouw portfolio en AI",
+    "content": "Vandaag maak je snel een eerste zichtbaar resultaat. Daarvoor zet je eerst een vaste lokale ontwikkelomgeving met Docker op. AI is je startpunt, niet je eindpunt. | Kies een richting voor je portfolio: voor welk soort stagebedrijf of opdrachtgever is deze site bedoeld? | Lees Docker: lokale WordPress-omgeving opzetten. Start WordPress, MariaDB en phpMyAdmin lokaal met Docker en controleer dat de containers draaien. | Initialiseer WordPress in je lokale omgeving en maak een map voor je eigen theme. | Lees AI-start: van prompt naar eerste resultaat. Maak een prompt waarin je doelgroep, gewenste pagina’s, stijl, kleuren en minimaal drie projectkaarten benoemt. | Laat AI een eerste WordPress-theme-structuur of homepage-opzet voorstellen. Bewaar de volledige prompt en output in prompt.md in je repository. | Controleer kritisch: welke onderdelen begrijp je al, welke niet, en wat moet je later zelf aanpassen? Noteer dit in ai-log.md. | . Resultaat: een werkende lokale Docker-omgeving met WordPress, een portfolio-concept, een bewaarde prompt en een eerste eigen theme-map. ",
+    "url": "/m9prog_opdrachtensite/les-1/#start-jouw-portfolio-en-ai",
+    
+    "relUrl": "/les-1/#start-jouw-portfolio-en-ai"
+  },"73": {
+    "doc": "Les 1",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 1: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-1/#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-1/#afronden-testen-committen-en-pushen"
+  },"74": {
+    "doc": "Les 1",
+    "title": "Les 1",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-1/",
+    
+    "relUrl": "/les-1/"
+  },"75": {
+    "doc": "Les 6",
+    "title": "Les 6 - Contactformulier",
+    "content": ". Maak een toegankelijke contactmogelijkheid voor potentiële stagebedrijven. ",
+    "url": "/m9prog_opdrachtensite/les-6/index#les-6---contactformulier",
+    
+    "relUrl": "/les-6/index#les-6---contactformulier"
+  },"76": {
+    "doc": "Les 6",
+    "title": "Contactformulier",
+    "content": ". | Bepaal welke informatie een opdrachtgever via je site kan sturen. | Maak een contactpagina met duidelijke labels, verplichte velden en een toegankelijke foutmelding. | Kies een passende oplossing: een betrouwbaar formulier-plugin of een eigen, veilige implementatie na overleg. | Test een succesvolle inzending en minimaal twee foutscenario’s. | Voeg privacyvriendelijke contactinformatie toe; publiceer geen persoonsgegevens die je niet wilt delen. | . Resultaat: bezoekers kunnen je via een duidelijk en getest formulier benaderen. ",
+    "url": "/m9prog_opdrachtensite/les-6/index#contactformulier",
+    
+    "relUrl": "/les-6/index#contactformulier"
+  },"77": {
+    "doc": "Les 6",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 6: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-6/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-6/index#afronden-testen-committen-en-pushen"
+  },"78": {
+    "doc": "Les 6",
+    "title": "Les 6",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-6/index",
+    
+    "relUrl": "/les-6/index"
+  },"79": {
+    "doc": "Les 14",
+    "title": "Les 14 - SEO en vindbaarheid",
+    "content": ". Verbeter de technische en inhoudelijke vindbaarheid van je portfolio. ",
+    "url": "/m9prog_opdrachtensite/les-14/index#les-14---seo-en-vindbaarheid",
+    
+    "relUrl": "/les-14/index#les-14---seo-en-vindbaarheid"
+  },"80": {
+    "doc": "Les 14",
+    "title": "SEO en vindbaarheid",
+    "content": ". | Geef elke pagina een unieke, duidelijke titel en een korte meta description. | Gebruik precies één logische h1 per pagina en een begrijpelijke koppenstructuur. | Geef projectafbeeldingen beschrijvende bestandsnamen en alt-teksten. | Controleer dat permalinks leesbaar zijn en dat er geen kapotte interne links bestaan. | Verbeter de inhoud voor je doelgroep: benoem je rol, technieken, resultaat en contactmogelijkheid. | . Resultaat: je portfolio is inhoudelijk en technisch beter vindbaar voor stagebedrijven. ",
+    "url": "/m9prog_opdrachtensite/les-14/index#seo-en-vindbaarheid",
+    
+    "relUrl": "/les-14/index#seo-en-vindbaarheid"
+  },"81": {
+    "doc": "Les 14",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 14: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-14/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-14/index#afronden-testen-committen-en-pushen"
+  },"82": {
+    "doc": "Les 14",
+    "title": "Les 14",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-14/index",
+    
+    "relUrl": "/les-14/index"
+  },"83": {
+    "doc": "Les 13",
+    "title": "Les 13 - Testen en releasecontrole",
+    "content": ". Test je portfolio systematisch voordat je een nieuwe versie live zet. ",
+    "url": "/m9prog_opdrachtensite/les-13/index#les-13---testen-en-releasecontrole",
+    
+    "relUrl": "/les-13/index#les-13---testen-en-releasecontrole"
+  },"84": {
+    "doc": "Les 13",
+    "title": "Testen en releasecontrole",
+    "content": ". | Test alle menu-items, formulieren, projectlinks en afbeeldingen op de live site. | Controleer de layout op minimaal mobiel, tablet en desktop. | Draai de front-end build en controleer dat er geen oude of ontbrekende assets live staan. | Controleer HTML-structuur, alt-teksten, toetsenbordnavigatie en zichtbare focus. | Leg bugs vast in je backlog, los de belangrijkste op en test de oplossing opnieuw. | . Resultaat: een geteste release met aantoonbare controles vóór de eindpresentatie. ",
+    "url": "/m9prog_opdrachtensite/les-13/index#testen-en-releasecontrole",
+    
+    "relUrl": "/les-13/index#testen-en-releasecontrole"
+  },"85": {
+    "doc": "Les 13",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 13: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-13/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-13/index#afronden-testen-committen-en-pushen"
+  },"86": {
+    "doc": "Les 13",
+    "title": "Les 13",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-13/index",
+    
+    "relUrl": "/les-13/index"
+  },"87": {
+    "doc": "Les 12",
+    "title": "Les 12 - Deployment",
+    "content": ". Publiceer jouw portfolio op een live omgeving en controleer de productieversie. ",
+    "url": "/m9prog_opdrachtensite/les-12/index#les-12---deployment",
+    
+    "relUrl": "/les-12/index#les-12---deployment"
+  },"88": {
+    "doc": "Les 12",
+    "title": "Deployment",
+    "content": ". | Maak eerst een back-up van je lokale database en de productieomgeving als die al bestaat. | Maak een productie-build van je front-end met npm run build. | Verplaats database, uploads, plugins en jouw custom theme volgens je checklist. | Gebruik bij een domeinwijziging eerst een WP-CLI search-replace --dry-run en controleer het resultaat. | Controleer de live URL in een privévenster, op mobiel en als niet-ingelogde bezoeker. | . Resultaat: jouw portfolio is publiek bereikbaar op een live URL. ",
+    "url": "/m9prog_opdrachtensite/les-12/index#deployment",
+    
+    "relUrl": "/les-12/index#deployment"
+  },"89": {
+    "doc": "Les 12",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 12: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-12/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-12/index#afronden-testen-committen-en-pushen"
+  },"90": {
+    "doc": "Les 12",
+    "title": "Les 12",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-12/index",
+    
+    "relUrl": "/les-12/index"
+  },"91": {
+    "doc": "Les 15",
+    "title": "Les 15 - Portfolio presenteren",
+    "content": ". Demonstreer je live product en leg technische keuzes begrijpelijk uit. ",
+    "url": "/m9prog_opdrachtensite/les-15/index#les-15---portfolio-presenteren",
+    
+    "relUrl": "/les-15/index#les-15---portfolio-presenteren"
+  },"92": {
+    "doc": "Les 15",
+    "title": "Portfolio presenteren",
+    "content": "Bereid een demo van maximaal vijf minuten voor. | Open je live portfolio en vertel voor welke doelgroep je de site hebt gemaakt. | Toon home, over mij, projecten, projectdetail en contact. | Leg de opbouw van je custom theme uit en laat je Sass/Webpack-build zien. | Licht één AI-startresultaat toe en beschrijf hoe jij het hebt gecontroleerd en verbeterd. | Verzamel minimaal drie concrete ideeën voor de backlog na deze periode. | . Resultaat: een heldere demo van een live, technisch onderbouwd portfolio. ",
+    "url": "/m9prog_opdrachtensite/les-15/index#portfolio-presenteren",
+    
+    "relUrl": "/les-15/index#portfolio-presenteren"
+  },"93": {
+    "doc": "Les 15",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 15: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-15/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-15/index#afronden-testen-committen-en-pushen"
+  },"94": {
+    "doc": "Les 15",
+    "title": "Les 15",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-15/index",
+    
+    "relUrl": "/les-15/index"
+  },"95": {
+    "doc": "Les 4",
+    "title": "Les 4 - Header, footer en loops",
+    "content": ". Bouw gedeelde templates en haal WordPress-content op met de Loop. ",
+    "url": "/m9prog_opdrachtensite/les-4/index#les-4---header-footer-en-loops",
+    
+    "relUrl": "/les-4/index#les-4---header-footer-en-loops"
+  },"96": {
+    "doc": "Les 4",
+    "title": "Header, footer en WordPress Loop",
+    "content": ". | Maak header.php met wp_head(), body_class() en een navigatie. | Maak footer.php met wp_footer() en contact- of copyrightinformatie. | Gebruik get_header() en get_footer() in je templates. | Bouw een Loop die titel, uitgelichte afbeelding en content van WordPress weergeeft. | Maak minimaal twee pagina’s in WordPress en controleer dat hun inhoud dynamisch verschijnt. | . Resultaat: een dynamische site met gedeelde header/footer en WordPress-content. ",
+    "url": "/m9prog_opdrachtensite/les-4/index#header-footer-en-wordpress-loop",
+    
+    "relUrl": "/les-4/index#header-footer-en-wordpress-loop"
+  },"97": {
+    "doc": "Les 4",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 4: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-4/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-4/index#afronden-testen-committen-en-pushen"
+  },"98": {
     "doc": "Les 4",
     "title": "Les 4",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-4/index",
     
     "relUrl": "/les-4/index"
-  },"65": {
+  },"99": {
     "doc": "Les 5",
-    "title": "Les 5 - Plugin ontwikkelen",
-    "content": ". Maak een custom plugin om pagina’s af te schermen en mails te versturen bij updates . Maak de opdrachten voor deze les . | Plugin ontwikkeling | Mails versturen bij update | . ",
-    "url": "/m9prog_opdrachtensite/les-5/index#les-5---plugin-ontwikkelen",
+    "title": "Les 5 - Sass, npm en Webpack",
+    "content": ". Compileer Bootstrap en je eigen Sass met een reproduceerbare front-end build. ",
+    "url": "/m9prog_opdrachtensite/les-5/index#les-5---sass-npm-en-webpack",
     
-    "relUrl": "/les-5/index#les-5---plugin-ontwikkelen"
-  },"66": {
+    "relUrl": "/les-5/index#les-5---sass-npm-en-webpack"
+  },"100": {
+    "doc": "Les 5",
+    "title": "Bootstrap, Sass, npm en Webpack",
+    "content": ". | Installeer npm-dependencies en maak een package.json met dev- en build-scripts. | Configureer Webpack voor JavaScript en Sass. | Importeer Bootstrap via Sass en overschrijf ten minste kleuren, spacing of typografie met eigen variabelen. | Enqueue alleen de gecompilede bestanden vanuit je theme. | Controleer met een productie-build dat de website zonder ontwikkelserver goed werkt. | . Resultaat: je front-end wordt reproduceerbaar gecompileerd en heeft een eigen visuele basis. ",
+    "url": "/m9prog_opdrachtensite/les-5/index#bootstrap-sass-npm-en-webpack",
+    
+    "relUrl": "/les-5/index#bootstrap-sass-npm-en-webpack"
+  },"101": {
+    "doc": "Les 5",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 5: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-5/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-5/index#afronden-testen-committen-en-pushen"
+  },"102": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/index",
     
     "relUrl": "/les-5/index"
-  },"67": {
+  },"103": {
     "doc": "Les 2",
-    "title": "Les 2 - Custom theme",
-    "content": ". Welke front-end gebruik je, NPM Compilers instellen, Cache negeren in frontend en in php-fpm . Maak de opdrachten voor deze les . | Keuze front-end framework | Compilers | Cache | . ",
-    "url": "/m9prog_opdrachtensite/les-2/index#les-2---custom-theme",
+    "title": "Les 2 - Custom theme: van AI naar eigen code",
+    "content": ". Werk verder in de Docker-omgeving uit les 1. Controleer het AI-startresultaat en maak er een eerste actief WordPress-theme van. ",
+    "url": "/m9prog_opdrachtensite/les-2/index#les-2---custom-theme-van-ai-naar-eigen-code",
     
-    "relUrl": "/les-2/index#les-2---custom-theme"
-  },"68": {
+    "relUrl": "/les-2/index#les-2---custom-theme-van-ai-naar-eigen-code"
+  },"104": {
+    "doc": "Les 2",
+    "title": "Custom theme: van AI naar eigen code",
+    "content": "Voorwaarde: les 1 is afgerond. Docker draait, WordPress is lokaal bereikbaar en je hebt een prompt.md, ai-log.md en een map voor je eigen theme. | Open jouw lokale WordPress-site en wp-admin. Gebruik de bestaande Docker-omgeving; je maakt geen nieuwe Compose- of .env-bestanden. | Bekijk het AI-startresultaat uit les 1. Markeer in ai-log.md welke bestanden je begrijpt en welke code je eerst wilt controleren of vervangen. | Vul style.css aan met een volledige WordPress-theme header: naam, beschrijving, versie, auteur en text domain. | Maak of verbeter index.php zodat je een eigen, eenvoudige homepage of testtekst ziet als het theme actief is. | Voeg een screenshot.png toe en activeer je theme via Weergave &gt; Thema’s. | Pas ten minste één zichtbaar onderdeel uit het AI-resultaat zelf aan: bijvoorbeeld tekst, kleur, HTML-structuur of een CSS-regel. Leg uit waarom je die wijziging hebt gemaakt. | . Resultaat: een actief custom theme met een eigen theme header, screenshot, eerste inhoud en een aantoonbare eigen aanpassing op het AI-startresultaat. ",
+    "url": "/m9prog_opdrachtensite/les-2/index#custom-theme-van-ai-naar-eigen-code",
+    
+    "relUrl": "/les-2/index#custom-theme-van-ai-naar-eigen-code"
+  },"105": {
+    "doc": "Les 2",
+    "title": "Afronden: testen, committen en pushen",
+    "content": "1. Wat heb je getest? . Noteer in je ai-log.md, README of lesnotities: . | Welke functionaliteit of pagina heb je getest? | Wat verwachtte je dat er zou gebeuren? | Wat gebeurde er daadwerkelijk? | Op welk apparaat of in welke browser heb je gecontroleerd? | Welke fout vond je en hoe heb je die opgelost, of wat staat er nog op je backlog? | . Controleer altijd minimaal de nieuwe functionaliteit van deze les in je browser. Test na een wijziging opnieuw; een foutmelding of een niet-werkende pagina is nog geen afgerond resultaat. 2. Commit en push naar Git . | Controleer met git status welke bestanden je hebt gewijzigd. | Controleer dat .env, wachtwoorden, sleutels en andere gevoelige bestanden niet in de lijst staan. | Voeg alleen de relevante bestanden toe en maak een duidelijke commit, bijvoorbeeld: . git add . git commit -m \"Les 2: beschrijf wat je hebt gemaakt\" git push . | Open je repository in GitHub en controleer of de commit zichtbaar is. | . Bewijs van deze les: een getest resultaat, een korte testnotitie en een zichtbare commit in je repository. ",
+    "url": "/m9prog_opdrachtensite/les-2/index#afronden-testen-committen-en-pushen",
+    
+    "relUrl": "/les-2/index#afronden-testen-committen-en-pushen"
+  },"106": {
     "doc": "Les 2",
     "title": "Les 2",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-2/index",
     
     "relUrl": "/les-2/index"
-  },"69": {
-    "doc": "Les 1",
-    "title": "HTML bestanden",
-    "content": "Nu je de server structuur hebt van je project is het tijd je thema klaar te zetten. 1- Thema folder . Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je thema, (gebruik geen kapitalen en spaties). 2- Structuur van de thema folder . | Plaats hierin een nieuw bestand met de naam style.css | Plaats hierin een nieuw bestand met de naam index.php | Plaats hierin een nieuw bestand met de naam functions.php | Plaats hierin een nieuw bestand met de naam screenshot.png Meer informatie over thema’s: https://codex.wordpress.org/Theme_Development | . 3- style.css . Weet je nog hoe het werkt? In dit bestand geef je aan hoe je thema heet. In dit voorbeeld heb ik een nieuw thema gemaakt met de naam M9PROG_VOORBEELD_NAAM Zie voor alle opties: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ . ",
-    "url": "/m9prog_opdrachtensite/les-1/initialiseren#html-bestanden",
+  },"107": {
+    "doc": "Home",
+    "title": "M9PROG - WordPress Portfolio",
+    "content": "In deze unit ontwikkel je een portfolio waarmee je jezelf aan stagebedrijven en opdrachtgevers presenteert. Je bouwt een custom WordPress-theme vanaf scratch, werkt met Bootstrap, Sass, npm en Webpack en zet je site uiteindelijk live op een eigen webomgeving. AI helpt je in de eerste les om snel een eerste resultaat te maken. Daarna leer je die code stap voor stap begrijpen, testen en zelf aanpassen. Je levert dus geen AI-resultaat in dat je niet kunt uitleggen. ",
+    "url": "/m9prog_opdrachtensite/#m9prog---wordpress-portfolio",
     
-    "relUrl": "/les-1/initialiseren#html-bestanden"
-  },"70": {
+    "relUrl": "/#m9prog---wordpress-portfolio"
+  },"108": {
+    "doc": "Home",
+    "title": "Planning",
+    "content": ". ",
+    "url": "/m9prog_opdrachtensite/#planning",
+    
+    "relUrl": "/#planning"
+  },"109": {
+    "doc": "Home",
+    "title": "Voor docent en student",
+    "content": ". | Complete lesbrief: leerdoelen, didactiek, lesverloop en beoordeling per lesmoment. | M9 Leercoach: een interactieve prompt voor uitleg, planning, feedback en debugging. | Projectomschrijving: de eisen voor het live portfolio. | . ",
+    "url": "/m9prog_opdrachtensite/#voor-docent-en-student",
+    
+    "relUrl": "/#voor-docent-en-student"
+  },"110": {
+    "doc": "Home",
+    "title": "Lessen, opdrachten en uitleg",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/#lessen-opdrachten-en-uitleg",
+    
+    "relUrl": "/#lessen-opdrachten-en-uitleg"
+  },"111": {
+    "doc": "Home",
+    "title": "Les 1:  Introductie: portfolio en AI",
+    "content": "Start je WordPress-portfolio. Je configureert een lokale ontwikkelomgeving. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-1--introductie-portfolio-en-ai",
+    
+    "relUrl": "/#les-1--introductie-portfolio-en-ai"
+  },"112": {
+    "doc": "Home",
+    "title": "Les 2:  Custom theme: van AI naar eigen code",
+    "content": "Werk verder in de Docker-omgeving uit les 1. Controleer het AI-startresultaat en maak er een eerste actief WordPress-theme van. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-2--custom-theme-van-ai-naar-eigen-code",
+    
+    "relUrl": "/#les-2--custom-theme-van-ai-naar-eigen-code"
+  },"113": {
+    "doc": "Home",
+    "title": "Les 3:  Custom theme structureren",
+    "content": "Breid je actieve theme uit met templates, enqueueing en de WordPress-templatehiërarchie. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-3--custom-theme-structureren",
+    
+    "relUrl": "/#les-3--custom-theme-structureren"
+  },"114": {
+    "doc": "Home",
+    "title": "Les 4:  Header, footer en loops",
+    "content": "Bouw gedeelde templates en haal WordPress-content op met de Loop. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-4--header-footer-en-loops",
+    
+    "relUrl": "/#les-4--header-footer-en-loops"
+  },"115": {
+    "doc": "Home",
+    "title": "Les 5:  Sass, npm en Webpack",
+    "content": "Compileer Bootstrap en je eigen Sass met een reproduceerbare front-end build. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-5--sass-npm-en-webpack",
+    
+    "relUrl": "/#les-5--sass-npm-en-webpack"
+  },"116": {
+    "doc": "Home",
+    "title": "Les 6:  Contactformulier",
+    "content": "Maak een toegankelijke contactmogelijkheid voor potentiële stagebedrijven. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-6--contactformulier",
+    
+    "relUrl": "/#les-6--contactformulier"
+  },"117": {
+    "doc": "Home",
+    "title": "Les 7:  Designimplementatie",
+    "content": "Vertaal je ontwerp naar een responsive portfolio met eigen typografie en kleuren. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-7--designimplementatie",
+    
+    "relUrl": "/#les-7--designimplementatie"
+  },"118": {
+    "doc": "Home",
+    "title": "Les 8:  Custom post type: projecten",
+    "content": "Maak en beheer portfolio-projecten als eigen contenttype in WordPress. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-8--custom-post-type-projecten",
+    
+    "relUrl": "/#les-8--custom-post-type-projecten"
+  },"119": {
+    "doc": "Home",
+    "title": "Les 9:  Tussenbeoordeling",
+    "content": "Laat je voortgang zien, verwerk feedback en maak een concreet plan voor de livegang. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-9--tussenbeoordeling",
+    
+    "relUrl": "/#les-9--tussenbeoordeling"
+  },"120": {
+    "doc": "Home",
+    "title": "Les 10:  WP-CLI en SSH",
+    "content": "Beheer WordPress vanaf de terminal en oefen veilig met servertoegang. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-10--wp-cli-en-ssh",
+    
+    "relUrl": "/#les-10--wp-cli-en-ssh"
+  },"121": {
+    "doc": "Home",
+    "title": "Les 11:  Hosting voorbereiden",
+    "content": "Kies en richt een hostingomgeving in voor jouw portfolio. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-11--hosting-voorbereiden",
+    
+    "relUrl": "/#les-11--hosting-voorbereiden"
+  },"122": {
+    "doc": "Home",
+    "title": "Les 12:  Deployment",
+    "content": "Publiceer jouw portfolio op een live omgeving en controleer de productieversie. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-12--deployment",
+    
+    "relUrl": "/#les-12--deployment"
+  },"123": {
+    "doc": "Home",
+    "title": "Les 13:  Testen en releasecontrole",
+    "content": "Test je portfolio systematisch voordat je een nieuwe versie live zet. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-13--testen-en-releasecontrole",
+    
+    "relUrl": "/#les-13--testen-en-releasecontrole"
+  },"124": {
+    "doc": "Home",
+    "title": "Les 14:  SEO en vindbaarheid",
+    "content": "Verbeter de technische en inhoudelijke vindbaarheid van je portfolio. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-14--seo-en-vindbaarheid",
+    
+    "relUrl": "/#les-14--seo-en-vindbaarheid"
+  },"125": {
+    "doc": "Home",
+    "title": "Les 15:  Portfolio presenteren",
+    "content": "Demonstreer je live product en leg technische keuzes begrijpelijk uit. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-15--portfolio-presenteren",
+    
+    "relUrl": "/#les-15--portfolio-presenteren"
+  },"126": {
+    "doc": "Home",
+    "title": "Les 16:  Beoordeling en backlog",
+    "content": "Rond je portfolio af, lever bewijs aan en bepaal vervolgstappen richting stage. Start . ",
+    "url": "/m9prog_opdrachtensite/#les-16--beoordeling-en-backlog",
+    
+    "relUrl": "/#les-16--beoordeling-en-backlog"
+  },"127": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/",
+    
+    "relUrl": "/"
+  },"128": {
+    "doc": "Les 1",
+    "title": "WordPress en je theme initialiseren",
+    "content": "Nu de Docker-containers draaien, rond je eerst de WordPress-installatie af via http://localhost. Kies een lokale gebruikersnaam en wachtwoord; dit zijn geen gegevens voor je live website. Daarna maak je je eigen theme klaar in de map themes van je project. Deze map is door Docker gekoppeld aan wp-content/themes in WordPress. 1- WordPress-installatie afronden . | Open http://localhost. | Kies Nederlands als taal en maak de WordPress-site aan. | Log in via http://localhost/wp-admin. | Controleer of je het WordPress-dashboard ziet. | . 2- Theme folder . Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je thema, (gebruik geen kapitalen en spaties). 3- Structuur van de thema folder . | Plaats hierin een nieuw bestand met de naam style.css | Plaats hierin een nieuw bestand met de naam index.php | Plaats hierin een nieuw bestand met de naam functions.php | Plaats hierin een nieuw bestand met de naam screenshot.png Meer informatie over thema’s: https://codex.wordpress.org/Theme_Development | . 4- style.css . Weet je nog hoe het werkt? In dit bestand geef je aan hoe je thema heet. In dit voorbeeld heb ik een nieuw thema gemaakt met de naam M9PROG_VOORBEELD_NAAM Zie voor alle opties: https://developer.wordpress.org/themes/core-concepts/main-stylesheet/ . ",
+    "url": "/m9prog_opdrachtensite/les-1/initialiseren#wordpress-en-je-theme-initialiseren",
+    
+    "relUrl": "/les-1/initialiseren#wordpress-en-je-theme-initialiseren"
+  },"129": {
     "doc": "Les 1",
     "title": "Dit is een voorbeeld, let op dat je wel de juiste versie van php én WordPress instelt, anders werkt het thema niet.",
-    "content": "/** * Theme Name: M9PROG_VOORBEELD_NAAM * Theme URI: https://ma-web.nl * Description: This is a custom WordPress theme example * Version: 0.0.1 * Author: Jasper Heidebrink * Author URI: https://ma-web.nl * Tags: m9prog * Text Domain: M9PROG_VOORBEELD_NAAM * Domain Path: /languages * Tested up to: 6.5 * Requires at least: 6.4 * Requires PHP: 8.2 * License: GNU General Public License v2.0 or later * License URI: https://www.gnu.org/licenses/gpl-2.0.html */ . 4- index.php . Plaats hierin de basis elementen zoals: . get_header(); . De while loop . get_footer(); . 5- functions.php . Plaats hierin de benodigde functies, laat het leeg als je nog geen nieuwe filters of functies hebt. 6- screenshot.png . Zorg dat dit een afbeelding is waar te zien is hoe je website eruit gaat zien. 7- initialisatie . Nu je de structuur hebt ingesteld is het eindelijk tijd om docker te starten en naar je browser te gaan om WordPress te initialiseren. ",
+    "content": "/** * Theme Name: M9PROG_VOORBEELD_NAAM * Theme URI: https://ma-web.nl * Description: This is a custom WordPress theme example * Version: 0.0.1 * Author: Jasper Heidebrink * Author URI: https://ma-web.nl * Tags: m9prog * Text Domain: M9PROG_VOORBEELD_NAAM * Domain Path: /languages * Tested up to: 6.5 * Requires at least: 6.4 * Requires PHP: 8.2 * License: GNU General Public License v2.0 or later * License URI: https://www.gnu.org/licenses/gpl-2.0.html */ . 5- index.php . Plaats hierin de basis elementen zoals: . get_header(); . De while loop . get_footer(); . 6- functions.php . Plaats hierin de benodigde functies, laat het leeg als je nog geen nieuwe filters of functies hebt. 7- screenshot.png . Zorg dat dit een afbeelding is waar te zien is hoe je website eruit gaat zien. 8- Activeer je theme . Ga in wp-admin naar Weergave &gt; Thema’s en activeer jouw eigen theme. Bekijk daarna de voorkant van de website en controleer of WordPress jouw index.php gebruikt. ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-%C3%A9n-wordpress-instelt-anders-werkt-het-thema-niet",
     
     "relUrl": "/les-1/initialiseren#dit-is-een-voorbeeld-let-op-dat-je-wel-de-juiste-versie-van-php-én-wordpress-instelt-anders-werkt-het-thema-niet"
-  },"71": {
+  },"130": {
     "doc": "Les 1",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . testen . ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren#commit-en-push",
     
     "relUrl": "/les-1/initialiseren#commit-en-push"
-  },"72": {
+  },"131": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/initialiseren",
     
     "relUrl": "/les-1/initialiseren"
-  },"73": {
+  },"132": {
     "doc": "Les 3",
     "title": "Inrichten",
     "content": "Voordat je website automatisch deployed word op de server moet je een aantal stappen doorlopen. Je maakt straks eerst een placeholder website aan, stelt de beveiliging tussen de host en git in en daarna stel je de git flow in. 1- Wordpress installatie . Stel nu een standaard WordPress installatie in op deze server zodat de structuur en database ingericht zijn. Na het doorlopen vna de installatie kun je inloggen via ftp of via de file browser om alle inhoud uit de wp-content te verwijderen. Dit is belangrijk omdat je straks een repository gaat koppelen en deployen. 2- Negeer uploads folder . Uploads op de server mogen niet overschreven worden door jouw lokale uploads omdat dit variabele bestanden zijn afhankelijk van de omgeving waar het project staat. Daarom mag de uploads folder straks niet overschreven worden door de inhoud uit git. Verwijder deze upload folder in github lokaal of via de web interface. Stel in .gitignore in dat de uploads folder niet bijgehouden mag worden door git. 3- Negeer plugin folder . Plugins op de server mogen niet overschreven worden door jouw lokale plugin folder omdat dit variabele bestanden zijn afhankelijk van de omgeving waar het project staat. Verwijder deze plugins folder in github lokaal of via de web interface. Stel in .gitignore in dat de plugins folder niet bijgehouden mag worden door git. 4- SSH-sleutel . Voeg de SSH-Key van de server toe aan git. | Genereer een SSH-Key | ga nu naar gighub.com en zoek jouw repository op in het overzicht. | ga naar de tab ‘settings’ en maak een nieuwe deploy key aan waar je de SSH-Key van de host aan toevoegt. | Plak in het veld voor de SSH-Key de key van de hosting. | Vanaf dit moment heeft de hosting server toegang tot jouw git omgeving. | . 5- Link de repository . Ga nu weer naar de hosting partij en vul de gegevens voor het koppelen van een Repository in door het formulier van Create a New Repository in te vullen. | gebruik bij de url de beveiligde url uit git ( begint met git@github.com: ) | de master branch/tak heet bij jou waarschijnlijk main | de folder is wp-content | . 6- testen . Log nu in op jouw website ( wp-admin ) en voeg een nieuwe pagina toe inclusief een afbeelding. 7- CD ( Continues Delivery ) . Wil je het voor jouw zelf nog makkelijker maken? Stel dan de auto deployment in, volg hiervoor de stappen die je ziet als je klikt op ‘auto deployment’ . 8- testen . Test nogmaals door lokaal een aanpassing te doen in jouw thema, commit en push deze wijziging en zie dat dit direct is doorgevoerd op de live website. ",
     "url": "/m9prog_opdrachtensite/les-3/inrichten#inrichten",
     
     "relUrl": "/les-3/inrichten#inrichten"
-  },"74": {
+  },"133": {
     "doc": "Les 3",
     "title": "Les 3",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-3/inrichten",
     
     "relUrl": "/les-3/inrichten"
-  },"75": {
+  },"134": {
     "doc": "Les 1",
-    "title": "Development omgeving instellen",
-    "content": "We gaan een Docker container samenstellen. Deze omgeving gaan wij tijdens deze gehele module gebruiken. ",
-    "url": "/m9prog_opdrachtensite/les-1/installatie#development-omgeving-instellen",
+    "title": "Docker: lokale WordPress-omgeving opzetten",
+    "content": "Je ontwikkelt dit project lokaal met Docker. Docker start drie losse services die samen jouw WordPress-website vormen: . | WordPress: de website en wp-admin. | MariaDB: de database waarin WordPress pagina’s, projecten en instellingen bewaart. | phpMyAdmin: een hulpmiddel om de database alleen tijdens het ontwikkelen te bekijken. | . Iedere student heeft hierdoor dezelfde basisomgeving. Je installeert WordPress dus niet los op je laptop en je zet deze Docker-omgeving de rest van de module steeds opnieuw aan met één commando. ",
+    "url": "/m9prog_opdrachtensite/les-1/installatie#docker-lokale-wordpress-omgeving-opzetten",
     
-    "relUrl": "/les-1/installatie#development-omgeving-instellen"
-  },"76": {
+    "relUrl": "/les-1/installatie#docker-lokale-wordpress-omgeving-opzetten"
+  },"135": {
     "doc": "Les 1",
     "title": "Requirements",
-    "content": "In de vorige les heb je een aantal requirements samengesteld, een aantal daarvan gaan wij nu instellen. Er zijn een aantal vereisten aan dit project: . | Je hebt een werkende Docker Desktop installatie. | De volgende poorten zijn niet in gebruik: . | 80 | 3305 | 8805 | . | Je hebt een werkende IDE waarmee je websites kunt ontwikkelen, bijvoorbeeld Visual Code of PhpStorm | . 1- Repository . 1- Maak een nieuwe repository aan in GitHub voor m9prog-blog, zorg dat de repository private is. 2- Navigeer op je computer naar de folder waar je project straks komt te staan, niet een nieuwe lege folder aanmaken. 3- Clone je github project zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen. 2- Docker container initialiseren . | Start eerst Docker Desktop | Navigeer naar de repo folder die je net gekloond hebt | Maak een nieuw bestand aan met de naam: docker-compose.yml | maak de structuur van dit yml bestand services: NAAM: image: WELKE IMAGE HEB JE NODIG container_name: prog_m5_TYPE environment: title: waarde INTERNE CONSTANTEN ports: - EXTERN:INTERN - 9999:80 links: - IS DEZE CONTAINER GEKOPPELD AAN EEN ANDERE CONTAINER? volumes: - './:/var/www/html' depends_on: - HEEFT DEZE CONTAINER EEN ANDERE CONTAINER NODIG? . | . 3- Definieer de volgende containers: . | wordpress met image: wordpress:latest | mariadb met de image: mariadb:latest | phpmyadmin met de image: phpmyadmin:latest en de externe poort 8805 | De wordpress container heeft de volgende environment constanten nodig: WORDPRESS_DB_HOST: '${DB_HOST}' WORDPRESS_DB_NAME: '${DB_NAME}' WORDPRESS_DB_USER: '${DB_USERNAME}' WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}' . | De wordpress container heeft de volgende volumes nodig: (vergeet niet om een - teken voor elke regel te plaatsen) ./themes:/var/www/html/wp-content/themes ./plugins:/var/www/html/wp-content/plugins ./uploads:/var/www/html/wp-content/uploads . | De Mariadb container heeft de volgende environment constanten nodig: MYSQL_DATABASE: '${DB_NAME}' MYSQL_USER: '${DB_USERNAME}' MYSQL_PASSWORD: '${DB_PASSWORD}' MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}' . | De PhpMyAdmin container heeft de volgende environment constanten nodig: PMA_HOST: '${DB_HOST}' PMA_USER: '${DB_USERNAME}' PMA_PASSWORD: '${DB_PASSWORD}' . | . 4- Variabele in een .env file . Zoals in andere projecten maak je ook nu weer een .env file . | maak een voorbeeld .env file aan met de naam: .env.example | plaats hierin de variabele die je straks gaat gebruiken: DB_NAME= DB_USERNAME= DB_PASSWORD= DB_ROOT_PASSWORD= . | dupliceer dit bestand naar: .env | vul de waardes in deze .env file | . 5- Negeren van bestanden via de .gitignore . Maak nu een .gitignore file aan om te zorgen dat niet alles naar git gaat. Hierbij een voorbeeld inhoud: . ### Node an Vendor files node_modules/ vendor/ ### JetBrains .idea ### Linux *~ .Trash-* ### Windows Thumbs.db ehthumbs.db Desktop.ini $RECYCLE.BIN/ *.cab *.msi *.msm *.msp *.lnk ### OSX .DS_Store .AppleDouble .LSOverride .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns ### Application .env _sources . 6- Folders . Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaatsen: . | themes | plugins | uploads | . 7- Start container . Start nu je docker container om je project in de browser te kunnen testen. docker compose up . ",
+    "content": "Er zijn een aantal vereisten aan dit project: . | Je hebt een werkende Docker Desktop installatie en Docker Desktop staat aan. | De volgende poorten zijn niet in gebruik: . | 80 | 1089 | . | Je hebt een werkende IDE waarmee je websites kunt ontwikkelen, bijvoorbeeld Visual Code of PhpStorm | . 1- Repository . 1- Maak een nieuwe repository aan in GitHub voor m9prog-portfolio, zorg dat de repository private is. 2- Navigeer op je computer naar de folder waar je project straks komt te staan, niet een nieuwe lege folder aanmaken. 3- Clone je github project zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen. 2- Docker-configuratie toevoegen . | Start eerst Docker Desktop | Navigeer naar de repo folder die je net gekloond hebt | Download of kopieer docker-compose.yml naar de hoofdmap van je repository. | Lees het bestand door. Zoek de drie services wordpress, mariadb en phpmyadmin op en benoem aan een medestudent welke taak iedere service heeft. | . 3- Variabelen in .env . | Download .env.example, plaats die in de hoofdmap van je repository en zorg dat deze met een punt begint. | Maak een kopie van dit bestand en noem dat: .env. | Vul eigen lokale waarden in. Deze gegevens zijn alleen voor jouw Docker-omgeving. | Controleer dat .env in .gitignore staat. Deel of commit dit bestand nooit. | . 4- Bestanden negeren in Git . Kopieer de .gitignore naar de hoofdmap van je repository. Controleer dat .env, node_modules/ en je IDE-instellingen niet per ongeluk worden gecommit. 5- Mappen voor WordPress-content . Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaatsen: . | themes | plugins | uploads | . 6- Containers starten en controleren . Start de omgeving vanuit de hoofdmap van je repository: . docker compose up -d . Controleer daarna de status: . docker compose ps . Je ziet drie draaiende services. Open vervolgens: . | WordPress: http://localhost | phpMyAdmin: http://localhost:1089 | . Zie je geen WordPress-installatiescherm? Gebruik dan eerst docker compose logs wordpress en bespreek de foutmelding met je peer of de M9 Leercoach. Stop je omgeving na het werken met: . docker compose down . Met docker compose down verwijder je de containers, maar de gemounte mappen themes, plugins en uploads blijven in je project staan. ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#requirements",
     
     "relUrl": "/les-1/installatie#requirements"
-  },"77": {
+  },"136": {
     "doc": "Les 1",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . Initialiseren van WordPress . ",
     "url": "/m9prog_opdrachtensite/les-1/installatie#commit-en-push",
     
     "relUrl": "/les-1/installatie#commit-en-push"
-  },"78": {
+  },"137": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/installatie",
     
     "relUrl": "/les-1/installatie"
-  },"79": {
+  },"138": {
+    "doc": "Complete lesbrief",
+    "title": "Lesbrief M9PROG - live WordPress-portfolio",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#lesbrief-m9prog---live-wordpress-portfolio",
+    
+    "relUrl": "/lesbrief.html#lesbrief-m9prog---live-wordpress-portfolio"
+  },"139": {
+    "doc": "Complete lesbrief",
+    "title": "Doel van de periode",
+    "content": "In negen onderwijsweken, met één vakantieweek, ontwikkelt iedere student een persoonlijke portfolio-website voor stagebedrijven en opdrachtgevers. De student bouwt een custom WordPress-theme vanaf scratch, gebruikt Bootstrap met Sass en Webpack, beheert projecten met een Custom Post Type en deployt de site naar een live omgeving. De eerste les gebruikt AI om snel een eerste, zichtbaar resultaat te bereiken. Vervolgens verschuift het zwaartepunt naar begrip, aanpassen, testen en verantwoorden. AI is een hulpmiddel; de student blijft eigenaar van de code en kan keuzes uitleggen. ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#doel-van-de-periode",
+    
+    "relUrl": "/lesbrief.html#doel-van-de-periode"
+  },"140": {
+    "doc": "Complete lesbrief",
+    "title": "Eindresultaat",
+    "content": "De student levert een publiek bereikbare portfolio-URL, de Git-repository en een korte technische verantwoording op. Het portfolio bevat ten minste een homepagina, over-mij-pagina, contactmogelijkheid, projectoverzicht en drie projectdetails. De site gebruikt een eigen custom WordPress-theme, een Custom Post Type voor projecten en een front-end build met Sass en Webpack. Zie ook de volledige projectomschrijving. ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#eindresultaat",
+    
+    "relUrl": "/lesbrief.html#eindresultaat"
+  },"141": {
+    "doc": "Complete lesbrief",
+    "title": "Vaste opbouw van ieder lesmoment (120 minuten)",
+    "content": "| Tijd | Activiteit | Waarom | . | 0-10 min | Binnenkomst, doel op het bord, korte check-in en ophalen van de vorige stap | Geeft rust en maakt het doel concreet. | . | 10-25 min | Compacte instructie met een live demo | De docent modelleert één afgebakende vaardigheid. | . | 25-40 min | Denk - doe - bespreek: ieder werkt eerst, daarna legt een duo de aanpak aan elkaar uit | Maakt voorkennis zichtbaar en voorkomt passief meekijken. | . | 40-85 min | Zelfstandig bouwen met docentcoaching | Studenten passen de vaardigheid toe in hun eigen portfolio. | . | 85-105 min | Peer-principe: review, demo of debuggesprek in tweetallen | Studenten ervaren dat medestudenten waardevolle feedback en uitleg geven. | . | 105-120 min | Bewijs vastleggen, exit ticket en volgende stap | Houdt de voortgang zichtbaar en maakt problemen vroeg bespreekbaar. | . Gebruik waar passend de M9 Leercoach voor een uitleg of debugstap. De student werkt eerst vijf minuten zelf, formuleert daarna een concrete vraag en legt na afloop in eigen woorden uit wat de oplossing doet. ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#vaste-opbouw-van-ieder-lesmoment-120-minuten",
+    
+    "relUrl": "/lesbrief.html#vaste-opbouw-van-ieder-lesmoment-120-minuten"
+  },"142": {
+    "doc": "Complete lesbrief",
+    "title": "Peer-principe",
+    "content": "Het peer-principe is geen “vraag het maar aan elkaar”, maar een vaste werkvorm met rollen: . | Bouwer: deelt scherm, benoemt doel en toont wat al geprobeerd is. | Coach: stelt eerst vragen, leest foutmeldingen mee en geeft geen code zonder uitleg. | Bewaker: controleert in de rubric/checklist of het resultaat aan de eis voldoet. Deze rol rouleert bij een drietal. | . Sluit iedere peer-ronde af met: “Wat verander ik nu?”, “Waarom werkt dit?” en “Welk bewijs commit of noteer ik?” De docent loopt rond, luistert naar uitleg en pakt alleen patronen klassikaal op. Zo krijgen studenten inhoudelijke steun én een reden om fysiek aanwezig en betrokken te zijn. ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#peer-principe",
+    
+    "relUrl": "/lesbrief.html#peer-principe"
+  },"143": {
+    "doc": "Complete lesbrief",
+    "title": "Lesmomenten",
+    "content": "Les 1 - Introductie: portfolio en AI . Student leert: het doel van een stageportfolio, waarom dit project lokaal in Docker draait, waar AI kan helpen en waarom gegenereerde code gecontroleerd moet worden. Instructie: laat eerst zien hoe Docker WordPress, MariaDB en phpMyAdmin als één herhaalbare lokale omgeving start. Demonstreer daarna een goede en slechte prompt, hoe een prompt leidt tot een eerste theme-opzet, hoe je de output controleert en hoe je prompt.md en ai-log.md bijhoudt. Doen: studenten starten Docker Desktop, kopiëren de Compose- en .env-bestanden, starten de drie containers, controleren WordPress en initialiseren de site. Daarna kiezen zij doelgroep en stijl, schrijven een prompt en maken een eerste theme-structuur of homepage-opzet. Zij bewaren prompt en resultaat. Peer-activiteit: duo’s beoordelen elkaars prompt op doelgroep, concrete eisen, techniek en toetsbare output. Laat elk duo één verbeterde prompt demonstreren. Bewijs: draaiende Docker-omgeving, WordPress-installatie, portfolio-concept, prompt.md, ai-log.md en eerste eigen theme-map. Les 2 - Custom theme: van AI naar eigen code . Student leert: een AI-startresultaat kritisch omzetten naar een eerste actief WordPress-theme dat aantoonbaar van de student is. Instructie: vertrek expliciet vanuit de afgeronde Docker- en WordPress-setup van les 1. Demonstreer de theme header in style.css, het activeren van een theme en hoe je ziet dat index.php wordt geladen. Doen: studenten controleren het AI-startresultaat, vullen style.css aan, maken een eerste eigen aanpassing, plaatsen een screenshot en activeren hun theme. Peer-activiteit: duo’s bekijken elkaars actieve theme en laten de ander één AI-codefragment uitleggen. De peer stelt doorvragen totdat de bouwer de eigen aanpassing kan verantwoorden. Bewijs: actief custom theme, bijgewerkte ai-log.md en een zichtbaar eigen verschil met het AI-startresultaat. Les 3 - Custom theme structureren . Student leert: hoe templates, functions.php, enqueueing en de WordPress-templatehiërarchie samen een custom theme vormen. Instructie: demonstreer functions.php, enqueueing, front-page.php, page.php en de templatehiërarchie met herkenbare testkoppen. Doen: studenten breiden hun bestaande theme uit met templates, post-thumbnails en een correcte WordPress-configuratie. Peer-activiteit: template-speurtocht: student A opent home en over mij; student B voorspelt en controleert welk templatebestand WordPress laadt. Daarna wisselen zij. Bewijs: actief custom theme met werkende front-page.php, page.php, functions.php en commit. Les 4 - Header, footer en Loops . Student leert: gedeelde templates, wp_head(), wp_footer(), navigatie en dynamische content via de WordPress Loop. Instructie: demonstreer één pagina die hardcoded is en maak die vervolgens dynamisch. Doen: studenten maken header/footer, zetten menu en twee pagina’s op en tonen titel, afbeelding en content dynamisch. Peer-activiteit: each pair checks one page in logged-out mode and geeft feedback op navigatie en dynamische content. Bewijs: twee dynamische pagina’s met gedeelde header en footer. Les 5 - Sass, npm en Webpack . Student leert: waarom een buildstap nodig is en hoe Bootstrap, Sass en eigen variabelen worden gecompileerd. Instructie: demonstreer bronbestanden versus gecompileerde bestanden en voer npm run build uit. Doen: studenten configureren npm/Webpack, importeren Bootstrap via Sass en passen de visuele basis aan. Peer-activiteit: build-buddy: student A verwijdert tijdelijk de output en student B controleert of de buildinstructie het project herstelt. Bewijs: package.json, Webpack-configuratie, eigen Sass en werkende productie-build. Les 6 - Contactformulier . Student leert: welke informatie een opdrachtgever nodig heeft, hoe een formulier toegankelijk wordt en hoe foutscenario’s worden getest. Instructie: bespreek labels, validatie, foutmeldingen, spam en privacy. Demonstreer één fout en één succesvolle inzending. Doen: studenten maken een contactpagina en testen de belangrijkste scenario’s. Peer-activiteit: testduo: één student vult het formulier in zonder uitleg, de ander observeert waar de interface onduidelijk is. Bewijs: geteste contactmogelijkheid met duidelijke foutmeldingen. Les 7 - Designimplementatie . Student leert: een ontwerp vertalen naar mobile-first componenten, eigen typografie, kleuren en consistente spacing. Instructie: demonstreer van wireframe naar hero, navigatie en projectkaart; benadruk herbruikbare Sass-componenten. Doen: studenten bouwen home, over-mij, projectkaarten en contact volgens hun eigen stijl. Peer-activiteit: drie-minuten gebruikerstest op mobiel: bezoeker zoekt wie de student is, een project en contact. Bewijs: responsive portfolio-uitstraling en minimaal één verwerkt feedbackpunt. Les 8 - Custom Post Type: projecten . Student leert: waarom projecten eigen content zijn, hoe een Custom Post Type werkt en hoe archive- en detailtemplates verschillen. Instructie: registreer een voorbeeld-project, maak inhoud aan en toon archive-project.php en single-project.php. Doen: studenten registreren het type, voeren minstens drie projecten in en bouwen overzicht en detailweergave. Peer-activiteit: contentredactie: duo’s controleren of elk project rol, techniek, resultaat en beeldmateriaal bevat. Bewijs: drie beheersbare projectitems met werkende overzichts- en detailpagina. Les 9 - Tussenbeoordeling . Student leert: voortgang onderbouwen, feedback ophalen en werk prioriteren voor livegang. Instructie: maak beoordelingscriteria expliciet en toon hoe een goede demo in twee minuten werkt. Doen: studenten tonen hun werk, verwerken feedback en maken een backlog. Peer-activiteit: gallery walk met rubric. Iedere student geeft twee concrete observaties en één prioriteit aan een andere student. Bewijs: ingevulde feedback, geprioriteerde backlog en korte demo. Les 10 - WP-CLI en SSH . Student leert: veilig terminalbeheer, basis-WP-CLI-commando’s, SSH en het verschil met wp-admin. Instructie: demonstreer read-only commando’s, --dry-run en het veilig omgaan met sleutels en wachtwoorden. Doen: studenten voeren lokaal beheercommando’s uit en oefenen search-replace uitsluitend met dry-run. Peer-activiteit: commando-kaarten: een student verklaart doel, risico en verwachte output; de ander valideert die uitleg. Bewijs: korte commandolog met uitleg en veilige omgang met credentials. Les 11 - Hosting voorbereiden . Student leert: vereisten van een live omgeving, production configuration, back-up en deploymentplanning. Instructie: bespreek hosting, SFTP/SSH, database, uploads, secrets en rollback. Loop samen de checklist door. Doen: studenten richten hosting voor, verzamelen gegevens en maken hun persoonlijke deployment-checklist. Peer-activiteit: checklist review: partner zoekt ontbrekende stappen of risicovolle aannames. Bewijs: gekozen hostingomgeving en beoordeelde deployment-checklist. Les 12 - Deployment . Student leert: een WordPress-project gecontroleerd publiceren en de productieversie onafhankelijk verifiëren. Instructie: demonstreer back-up, productie-build, databasedomeinwijziging met dry-run en controle in privévenster. Doen: studenten publiceren eigen theme, content en media volgens checklist. Peer-activiteit: live-paarcontrole: partner opent de URL op eigen apparaat en noteert de eerste drie bevindingen. Bewijs: publiek bereikbare portfolio-URL en vastgelegde live-controle. Les 13 - Testen en releasecontrole . Student leert: systematisch testen van functies, responsive layout, toegankelijkheid en build-output. Instructie: modelleer een compacte testlijst en laat zien hoe je een bug helder rapporteert en hertest. Doen: studenten testen live en lokaal, lossen prioritaire bugs op en voeren een regressiecheck uit. Peer-activiteit: cross-browser/cross-device test in duo’s met vooraf bepaalde testtaken. Bewijs: testlijst, opgeloste bugs en hertestbewijs. Les 14 - SEO en vindbaarheid . Student leert: basis-SEO voor een portfolio: zoekintentie, content, headings, metadata, alt-tekst en interne links. Instructie: vergelijk een onvindbare projectpagina met een duidelijke projectpagina voor een stagebedrijf. Doen: studenten verbeteren titels, descriptions, headings, beelden en projectteksten. Peer-activiteit: stagebedrijf-scan: partner zoekt op de site antwoord op “wie, wat kan deze student, welk project past?” . Bewijs: verbeterde metadata en inhoudelijke portfolio-check. Les 15 - Portfolio presenteren . Student leert: een productdemo geven en technische keuzes begrijpelijk koppelen aan het eindresultaat. Instructie: geef een voorbeeld van een korte demo met probleem, oplossing, live resultaat en technische toelichting. Doen: studenten oefenen een demo van maximaal vijf minuten. Peer-activiteit: oefenpresentatie in trio’s; publiek geeft feedback op helderheid, bewijs en technische uitleg. Bewijs: live demo, peer-feedback en aangevulde backlog. Les 16 - Beoordeling en backlog . Student leert: eindoplevering verantwoorden en een professioneel vervolgplan formuleren. Instructie: loop de eindchecklist door: URL, repository, theme, build, projecten, AI-log, testbewijs en backlog. Doen: studenten leveren alle links en bewijs aan, herstellen laatste issues en schrijven reflectie. Peer-activiteit: eindcheck in koppels: elk onderdeel wordt door een tweede persoon geopend en afgevinkt. Bewijs: complete eindoplevering en een backlog met minimaal drie vervolgstappen. ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#lesmomenten",
+    
+    "relUrl": "/lesbrief.html#lesmomenten"
+  },"144": {
+    "doc": "Complete lesbrief",
+    "title": "Beoordelingsbewijs",
+    "content": "Beoordeel het product én het proces. Vraag minimaal om: . | Live URL en Git-repository. | Werkend custom theme en project-CPT. | Bewijs van Bootstrap/Sass/Webpack-build. | Responsieve, toegankelijke basis en geteste contactmogelijkheid. | prompt.md en ai-log.md met kritische AI-reflectie. | Testlijst, deployment-checklist en backlog. | Korte mondelinge demonstratie. | . ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#beoordelingsbewijs",
+    
+    "relUrl": "/lesbrief.html#beoordelingsbewijs"
+  },"145": {
+    "doc": "Complete lesbrief",
+    "title": "Docentinterventies die betrokkenheid vergroten",
+    "content": ". | Geef maximaal vijftien minuten klassikale technische uitleg voordat studenten zelf toepassen. | Vraag niet “is iedereen klaar?”, maar laat studenten een zichtbaar artefact tonen: URL, commit, foutmelding of checklist. | Beloon uitleg aan medestudenten: vraag een student die een oplossing vond om de aanpak, niet alleen de code, te delen. | Laat AI-antwoorden nooit het eindpunt zijn. Laat studenten steeds voorspellen, testen en in eigen woorden verklaren. | Gebruik de tussenbeoordeling om de scope kleiner te maken als livegang in gevaar komt; de live portfolio blijft de harde eindvoorwaarde. | . ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html#docentinterventies-die-betrokkenheid-vergroten",
+    
+    "relUrl": "/lesbrief.html#docentinterventies-die-betrokkenheid-vergroten"
+  },"146": {
+    "doc": "Complete lesbrief",
+    "title": "Complete lesbrief",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/lesbrief.html",
+    
+    "relUrl": "/lesbrief.html"
+  },"147": {
+    "doc": "M9 Leercoach",
+    "title": "M9 Leercoach - interactieve hulp tijdens M9PROG",
+    "content": "Gebruik deze prompt in een AI-chat naar keuze als persoonlijke leercoach tijdens deze lessen. De coach geeft geen kant-en-klare eindoplossing zonder uitleg. Hij helpt je denken, testen, debuggen en je werk verantwoorden. ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html#m9-leercoach---interactieve-hulp-tijdens-m9prog",
+    
+    "relUrl": "/m9-leercoach.html#m9-leercoach---interactieve-hulp-tijdens-m9prog"
+  },"148": {
+    "doc": "M9 Leercoach",
+    "title": "Zo gebruik je de leercoach",
+    "content": ". | Kopieer de prompt hieronder naar een nieuwe chat. | Vertel bij iedere vraag bij welke les je bent en wat je al hebt geprobeerd. | Plak foutmeldingen als tekst, geen screenshot als dat niet nodig is. | Werk eerst zelf of met je peer aan de voorgestelde stap. | Noteer belangrijke hulp en jouw eigen aanpassingen in ai-log.md. | . ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html#zo-gebruik-je-de-leercoach",
+    
+    "relUrl": "/m9-leercoach.html#zo-gebruik-je-de-leercoach"
+  },"149": {
+    "doc": "M9 Leercoach",
+    "title": "Kopieerbare basisprompt",
+    "content": "Je bent mijn M9 Leercoach voor het bouwen van een live WordPress-portfolio. Mijn doel is een eigen custom WordPress-theme vanaf scratch te bouwen met Bootstrap, Sass, npm en Webpack. Mijn portfolio bevat een homepagina, over-mij, contact, minimaal drie projecten en een Custom Post Type voor projecten. De site moet uiteindelijk live staan. Je begeleidt mij als docent en debugcoach, niet als codegenerator die mijn werk overneemt. Werk volgens deze regels: 1. Vraag eerst naar mijn lesnummer, doel, relevante bestanden, wat ik verwachtte, wat er gebeurt en wat ik al heb geprobeerd. Sla vragen die ik al beantwoordde over. 2. Leg eerst kort het concept uit in begrijpelijk Nederlands. Gebruik daarna kleine, controleerbare stappen. Geef pas code als ik de aanpak begrijp of nadat je mij een gerichte vraag hebt gesteld. 3. Geef nooit een compleet portfolio of complete theme als eindantwoord. Lever alleen de kleinste codewijziging die nodig is, inclusief bestandspad en uitleg per onderdeel. 4. Bij debugging: laat mij de foutmelding lezen, maak een hypothese, geef één test, wacht op het resultaat en kies dan de volgende stap. Noem ook een veilige rollback wanneer een stap risico heeft. 5. Controleer WordPress-specifieke zaken zoals template hierarchy, hooks, wp_head(), wp_footer(), enqueueing, permalinks en de Loop. Controleer bij Sass/ Webpack de bronbestanden, buildopdracht en gecompileerde output. 6. Bewaak veiligheid: vraag nooit om wachtwoorden, API-sleutels, .env-inhoud of privésleutels. Herinner mij eraan die niet te committen. 7. Bewaak toegankelijkheid, mobile-first, semantische HTML en live-testen. 8. Sluit ieder antwoord af met: - Mijn eerstvolgende concrete stap - Wat ik daarna moet controleren - Een korte zin die ik in ai-log.md kan noteren 9. Stimuleer peer learning. Als mijn vraag geschikt is voor een medestudent, formuleer een korte vraag die ik eerst aan mijn peer kan stellen en wat die peer moet controleren. 10. Als ik om een directe oplossing vraag, geef dan eerst een minimale uitleg en vraag mij om te voorspellen wat de oplossing doet. Mijn huidige lesnummer is: [VUL IN] Mijn doel voor nu is: [VUL IN] Ik heb al geprobeerd: [VUL IN] Mijn foutmelding of vraag is: [VUL IN] . ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html#kopieerbare-basisprompt",
+    
+    "relUrl": "/m9-leercoach.html#kopieerbare-basisprompt"
+  },"150": {
+    "doc": "M9 Leercoach",
+    "title": "Handige vraagstarters",
+    "content": "Les 4. Mijn header verschijnt, maar mijn CSS niet. Dit heb ik al gecontroleerd: ... Help me een diagnoseplan te maken, zonder meteen de oplossing te geven. Les 5. Leg uit wat in mijn project het verschil is tussen SCSS-bronbestanden, Webpack en de CSS die WordPress inlaadt. Stel daarna drie controlevragen. Les 8. Ik wil een Custom Post Type voor projecten registreren. Vraag mij eerst welke velden en pagina's mijn portfolio nodig heeft. Geef daarna alleen de kleinst mogelijke eerste stap. Les 12. Ik wil deployen. Maak een checklist die eerst om back-up en dry-run vraagt. Geef geen commando dat gegevens kan overschrijven zonder waarschuwing. ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html#handige-vraagstarters",
+    
+    "relUrl": "/m9-leercoach.html#handige-vraagstarters"
+  },"151": {
+    "doc": "M9 Leercoach",
+    "title": "Debugkaart voor een peer-gesprek",
+    "content": "Gebruik deze vragen voordat je de leercoach inschakelt: . | Wat wilde je dat er gebeurde? | Wat gebeurt er daadwerkelijk? | Welke exacte foutmelding of URL zie je? | Welk bestand en welke wijziging zijn waarschijnlijk relevant? | Wat heb je al getest en wat was het resultaat? | Wat is één kleine, veilige volgende test? | . De bouwer voert de test uit. De peer stelt vragen en maakt geen grote wijzigingen in het project van de ander. Daarna kan de leercoach helpen om de volgende hypothese te formuleren. ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html#debugkaart-voor-een-peer-gesprek",
+    
+    "relUrl": "/m9-leercoach.html#debugkaart-voor-een-peer-gesprek"
+  },"152": {
+    "doc": "M9 Leercoach",
+    "title": "M9 Leercoach",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/m9-leercoach.html",
+    
+    "relUrl": "/m9-leercoach.html"
+  },"153": {
     "doc": "Les 5",
     "title": "Mails versturen",
     "content": "Binnen php kun je gebruik maken van een mail functie waarmee je mails kunt sturen naar een klant. Deze functie werkt alleen niet op alle servers, daar moet je rekening mee houden. Binnen WordPress kun je gebruik maken van de wp_mail() functie, zie: https://developer.wordpress.org/reference/functions/wp_mail/ . 1- Implementatie mail functie . Met de volgende code kun je mails versturen via wp_mail(). Waarbij $to het mail adres van de ontvanger is. Gebruik als afzender hetzelfde domain als waar de site staat om spam issues te voorkomen. // Headers instellen voor HTML e-mail $headers = array('Content-Type: text/html; charset=UTF-8'); // Extra headers, zoals van wie de mail afkomstig is $headers[] = 'From: Jouw Naam &lt;jouwnaam@voorbeeld.com&gt;'; // Verstuur de e-mail if(wp_mail($to, $subject, $message, $headers)) { echo \"E-mail succesvol verzonden via wp_mail!\"; } else { echo \"Er is een fout opgetreden bij het verzenden van de e-mail.\"; } . 2- Implementeer de mail functionaliteit . | Maak nu in jouw php bestand een nieuwe functie. | Plaats in deze functie jouw mail code. | Roep deze functie bij het opslaan van de post ( dus bij de ‘save_post’ action ) | . 2- Test en controleer . Kijk nu eens of je mails kunt versturen. ",
     "url": "/m9prog_opdrachtensite/les-5/mail#mails-versturen",
     
     "relUrl": "/les-5/mail#mails-versturen"
-  },"80": {
+  },"154": {
     "doc": "Les 5",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
     "url": "/m9prog_opdrachtensite/les-5/mail#commit-en-push",
     
     "relUrl": "/les-5/mail#commit-en-push"
-  },"81": {
+  },"155": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/mail",
     
     "relUrl": "/les-5/mail"
-  },"82": {
+  },"156": {
     "doc": "Les 1",
     "title": "Stage blog en portfolio",
-    "content": "Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren. Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling. Deze onderdelen gaan wij tijdens de PROG en BO lessen ontwikkelen. — . 1- Onderzoek wat er gedaan moet worden . | Lees eerst de project omschrijving zodat je weet wat er van je verwacht wordt. | . 2- Requirements . Maak een overzicht van de vereisten die dit project nodig hebben. Denk hierbij aan: . | computer | werkendeIDE | server met de volgende services …. | etc. | . 3- Structuur . Maak een overzicht van hoe je de verschillende requirements gaat verzamelen. Denk hierbij aan: . | docker, een oude docker setup | html structuur, heb ik vorig jaar gemaakt / W3Schools … | etc. | . Volgende stap: . Development omgeving opzetten . ",
+    "content": "Voordat je een stage plek hebt gevonden zul je een portfolio site moeten ontwikkelen om je te presenteren. Daarnaast heb je een website nodig waar je blogs kunt bijhouden voor je stage beoordeling. Deze twee onderdelen gaan wij tijdens de BO lessen ontwikkelen. 1- Onderzoek wat er gedaan moet worden . | Je moet een portfolio ontwikkelen waarin jij jezelf positief gaat presenteren. Laat zien waarom bedrijven jou nodig hebben. | De vereisten vind je in de rubric: Rubrics.pdf | . 2- Requirements . Maak een overzicht van de vereisten die dit project nodig hebben. Denk hierbij aan: . | computer | werkendeIDE | server met de volgende services …. | etc. | . 3- Structuur . Maak een overzicht van hoe je de verschillende requirements gaat verzamelen. Denk hierbij aan: . | docker, een oude docker setup | html structuur, heb ik vorig jaar gemaakt / W3Schools … | etc. | . Volgende stap: . Development omgeving opzetten . ",
     "url": "/m9prog_opdrachtensite/les-1/onderwerp#stage-blog-en-portfolio",
     
     "relUrl": "/les-1/onderwerp#stage-blog-en-portfolio"
-  },"83": {
+  },"157": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/onderwerp",
     
     "relUrl": "/les-1/onderwerp"
-  },"84": {
+  },"158": {
     "doc": "Les 5",
     "title": "WordPress plugins",
     "content": "Binnen verschillende frameworks heb je diverse plugins, soms heten deze extensies en soms plugins. In alle gevallen bereiden ze het bestaande framework uit met nieuwe functionaliteit. Wij gaan nu een WordPress plugin ontwikkelen, volgens deze structuur kun je straks zelf ook plugins ontwikkelen en uiteindelijk beschikbaar maken voor ander developers. Afhankelijk van jouw doel kun je hier ook geld mee verdienen. 1- Structuur . Begin met het opzetten van de structuur. | Maak een nieuwe folder in je plugins folder en geef deze de naam van jouw plugin. | Plaats een php bestand in deze folder met dezelfde naam als jouw folder. | . 2- Definieer de plugin . Net als bij het thema heb je een DocBlok waar de informatie over dit thema in staat. Dit doe je nu bovenin het php bestand. Bijvoorbeeld in mijn geval heb ik een blog plugin. /** * @package blog_plugin * @version 1.7.2 */ /* Plugin Name: Blog Plugin Plugin URI: https://mediacollege.rocks/blog Description: Dit is een voorbeeld plugin Author: Jasper Heidebrink Version: 1.0.0 Author URI: https://mediacollege.rocks */ . 3- Voeg functionaliteit toe aan de post page. Voeg nu een extra metabox toe aan de post page waar iemand kan aanvinken of de pagina of post geblokkeerd moet zijn en of er een mail verstuurd moet worden. Hiervoor kun je de volgende hooks gebruiken: . | admin_init (action) | save_post (action) En de volgende fucnties: | add_meta_box | wp_verify_nonce | . Bijvoorbeeld: . // register the meta box add_action( 'add_meta_boxes', 'my_custom_field_checkboxes' ); function my_custom_field_checkboxes() { add_meta_box( 'my_meta_box_id', // this is HTML id of the box on edit screen 'My Plugin Checkboxes', // title of the box 'my_customfield_box_content', // function to be called to display the checkboxes, see the function below 'post', // on which edit screen the box should appear 'normal', // part of page where the box should appear 'default' // priority of the box ); } // display the metabox function my_customfield_box_content() { echo '&lt;input type=\"checkbox\" name=\"my_plugin_blocked\" value=\"1\" /&gt; blocked content &lt;br /&gt;'; echo '&lt;input type=\"checkbox\" name=\"my_plugin_mail\" value=\"1\" /&gt; send a mail on update'; } // save data from checkboxes add_action( 'save_post', 'my_custom_field_data' ); function my_custom_field_data($post_id) { // check if this isn't an auto save if ( defined( 'DOING_AUTOSAVE' ) &amp;&amp; DOING_AUTOSAVE ) return; // now store data in custom fields based on checkboxes selected if ( isset( $_POST['my_plugin_blocked'] ) ) update_post_meta( $post_id, 'my_plugin_blocked', 1 ); else update_post_meta( $post_id, 'my_plugin_blocked', 0 ); if ( isset( $_POST['my_plugin_mail'] ) ) update_post_meta( $post_id, 'my_plugin_mail', 1 ); else update_post_meta( $post_id, 'my_plugin_mail', 0 ); } . Later kun je controleren bij het opslaan of een post bepaalde meta data heeft en of je aan de hand daarvan een moet mail versturen. 4- Controleer . Bekijk je website nu in de browser. Als het goed is zie je nu een extra element in je edit scherm van de post. ",
     "url": "/m9prog_opdrachtensite/les-5/plugin#wordpress-plugins",
     
     "relUrl": "/les-5/plugin#wordpress-plugins"
-  },"85": {
+  },"159": {
     "doc": "Les 5",
     "title": "Commit en push",
     "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. Volgende stap: . In de volgende pagina ga je één enkele pagina of blog item weergeven. Mails versturen . ",
     "url": "/m9prog_opdrachtensite/les-5/plugin#commit-en-push",
     
     "relUrl": "/les-5/plugin#commit-en-push"
-  },"86": {
+  },"160": {
     "doc": "Les 5",
     "title": "Les 5",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-5/plugin",
     
     "relUrl": "/les-5/plugin"
-  },"87": {
+  },"161": {
     "doc": "Les 8",
     "title": "Project presentatie",
-    "content": "Vandaag ga je laten zien wat jij allemaal gemaakt hebt en hoe goed jij moeilijkheden hebt opgelost. De presentatie duurt 3 tot 8 minuten per persoon. Wat te presenteren. De volgende onderdelen moet je tijdens je presentatie behandelen: . | welk thema heb je gebruikt | welke plugins heb je gebruikt | waar liep je tegenaan | hoe heb je dit opgelost | waar ben je trots op | . Samenvatting . Zorg dat je in een readme.md deze samenvatting hebt staan en lever dit in bij je project. &lt;/m9PROG&gt; . ",
+    "content": "Vandaag ga je laten zien wat jij allemaal gemaakt hebt en hoe goed jij moeilijkheden hebt opgelost. De presentatie duurt 3 tot 8 minuten per persoon. Wat te presenteren. De volgende onderdelen moet je tijdens je presentatie behandelen: . | waar liep je tegenaan | hoe heb je dit opgelost | waar ben je trots op | . Samenvatting . Zorg dat je in een readme.md deze drie punten beantwoord en lever deze met de repo vna je project in. &lt;/m9PROG&gt; . ",
     "url": "/m9prog_opdrachtensite/les-8/presentation#project-presentatie",
     
     "relUrl": "/les-8/presentation#project-presentatie"
-  },"88": {
+  },"162": {
     "doc": "Les 8",
     "title": "Les 8",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-8/presentation",
     
     "relUrl": "/les-8/presentation"
-  },"89": {
+  },"163": {
+    "doc": "Project omschrijving",
+    "title": "Projectomschrijving - live WordPress-portfolio",
+    "content": "Je ontwikkelt een persoonlijke portfolio-website waarmee je je presenteert aan stagebedrijven en opdrachtgevers. De website is gebouwd als een eigen WordPress-theme; je gebruikt geen page builder en past geen bestaand theme aan. ",
+    "url": "/m9prog_opdrachtensite/project_description.html#projectomschrijving---live-wordpress-portfolio",
+    
+    "relUrl": "/project_description.html#projectomschrijving---live-wordpress-portfolio"
+  },"164": {
+    "doc": "Project omschrijving",
+    "title": "Doel",
+    "content": "Aan het eind van de periode staat je portfolio online op een publiek bereikbare URL. Een opdrachtgever moet kunnen zien wie je bent, wat je kunt en aan welke projecten je hebt gewerkt. ",
+    "url": "/m9prog_opdrachtensite/project_description.html#doel",
+    
+    "relUrl": "/project_description.html#doel"
+  },"165": {
+    "doc": "Project omschrijving",
+    "title": "Verplichte onderdelen",
+    "content": ". | Een responsive homepagina met een heldere introductie. | Een over-mij-pagina, gericht op stage of werk. | Een projectoverzicht met minimaal drie portfolio-projecten. | Een detailpagina per project met rol, gebruikte technieken, resultaat en beeldmateriaal. | Een contactmogelijkheid. | Een eigen WordPress Custom Post Type voor de portfolio-projecten, met overzichts- en detailweergave. | Een eigen custom theme met onder andere style.css, functions.php, header.php, footer.php en passende templates. | Een front-end build met Bootstrap (of vooraf goedgekeurd alternatief), Sass, npm en Webpack. | Een Git-repository met een README voor lokaal starten en bouwen. | Een live productieversie op een eigen hostingomgeving of domein. | . ",
+    "url": "/m9prog_opdrachtensite/project_description.html#verplichte-onderdelen",
+    
+    "relUrl": "/project_description.html#verplichte-onderdelen"
+  },"166": {
+    "doc": "Project omschrijving",
+    "title": "Werkwijze met AI",
+    "content": "In de eerste les gebruik je AI om snel een eerste thema en ontwerpidee te maken. Bewaar je prompts en noteer welke bestanden of stukken code zijn gegenereerd. Je controleert de output altijd lokaal, kunt uitleggen wat de code doet en verbetert hem gedurende de periode zelf. ",
+    "url": "/m9prog_opdrachtensite/project_description.html#werkwijze-met-ai",
+    
+    "relUrl": "/project_description.html#werkwijze-met-ai"
+  },"167": {
+    "doc": "Project omschrijving",
+    "title": "Randvoorwaarden",
+    "content": ". | Ontwikkel lokaal in Docker met WordPress en een database. | Werk mobile-first en test minimaal in Chrome, Safari, Firefox en Edge waar beschikbaar. | Gebruik semantische HTML, toegankelijke formulieren en leesbare code. | Plaats geen wachtwoorden, API-sleutels of andere gevoelige gegevens in Git. | De live URL, repository en korte technische verantwoording zijn onderdeel van de eindoplevering. | . ",
+    "url": "/m9prog_opdrachtensite/project_description.html#randvoorwaarden",
+    
+    "relUrl": "/project_description.html#randvoorwaarden"
+  },"168": {
     "doc": "Project omschrijving",
     "title": "Project omschrijving",
     "content": " ",
     "url": "/m9prog_opdrachtensite/project_description.html",
     
     "relUrl": "/project_description.html"
-  },"90": {
-    "doc": "Project omschrijving",
-    "title": "Als jouw stage begeleider wil ik een verslag van jouw stage kunnen lezen om je goed te kunnen begeleiden tijdens de stage.",
-    "content": ". | Op een website moet een afgeschermde blog beschikbaar zijn die alleen voor genodigden toegankelijk is. | Elke keer als er een nieuw bericht is moeten alle abonnees een mail krijgen dat er een nieuw bericht is. | Het is voor de stagebegeleider mogelijk om bij een bericht comments te plaatsen, deze zijn alleen zichtbaar voor de stagebegeleider én de admin | . ",
-    "url": "/m9prog_opdrachtensite/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lezen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage",
+  },"169": {
+    "doc": "Les 6",
+    "title": "Pagina  / Post afschermen via WordPress",
+    "content": "Deze les gaan wij aan de slag met het afschermen van berichten. 1- protect . ",
+    "url": "/m9prog_opdrachtensite/les-6/protect#pagina---post-afschermen-via-wordpress",
     
-    "relUrl": "/project_description.html#als-jouw-stage-begeleider-wil-ik-een-verslag-van-jouw-stage-kunnen-lezen-om-je-goed-te-kunnen-begeleiden-tijdens-de-stage"
-  },"91": {
-    "doc": "Project omschrijving",
-    "title": "Blog",
-    "content": "Voor deze blog kun je de standaard functionaliteit van WordPress gebruiken. Voor het beheren van de toegang van gebruikers en het versturen van mails maken wij straks een custom plugin. ",
-    "url": "/m9prog_opdrachtensite/project_description.html#blog",
+    "relUrl": "/les-6/protect#pagina---post-afschermen-via-wordpress"
+  },"170": {
+    "doc": "Les 6",
+    "title": "Commit en push",
+    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
+    "url": "/m9prog_opdrachtensite/les-6/protect#commit-en-push",
     
-    "relUrl": "/project_description.html#blog"
-  },"92": {
-    "doc": "Project omschrijving",
-    "title": "Doel",
-    "content": "Aan het eind van dit project heb je een website ontwikkeld die je kunt gebruiken voor je stage. ",
-    "url": "/m9prog_opdrachtensite/project_description.html#doel",
+    "relUrl": "/les-6/protect#commit-en-push"
+  },"171": {
+    "doc": "Les 6",
+    "title": "Les 6",
+    "content": " ",
+    "url": "/m9prog_opdrachtensite/les-6/protect",
     
-    "relUrl": "/project_description.html#doel"
-  },"93": {
-    "doc": "Project omschrijving",
-    "title": "Omschrijving",
-    "content": "Er komen in dit project verschillende onderdelen op de website: . | geen toegang tot blogs pagina, voor mensen die niet ingelogd zijn | overzicht van blogs pagina | detail informatie van een bericht | mogelijkheid om comments te plaatsen bij elk bericht | menu waarbij je kunt kiezen tussen stage 1 én stage 2 | wie ben ik pagina ( about pagina over jou ) | . 1. Gast pagina . Op deze pagina is duidelijk dat iemand niet is ingelogd en daardoor geen blog berichten mag lezen. 2. Overzicht blogs . Hier is straks een lijst met blog items zichtbaar, per bericht is het volgende zichtbaar: . | Titel | Datum | Intro De volgorde is op datum, nieuwste bericht staat bovenaan. | . 3. Bericht pagina . Per bericht is straks het volgende zichtbaar: . | Titel | Datum | Content | Categorie ( stage 1 / stage 2 ) | Comments | . ",
-    "url": "/m9prog_opdrachtensite/project_description.html#omschrijving",
-    
-    "relUrl": "/project_description.html#omschrijving"
-  },"94": {
-    "doc": "Project omschrijving",
-    "title": "Randvoorwaarden:",
-    "content": ". | De applicatie moet ontwikkeld worden in PHP eventueel in combinatie met JavaScript. | Het lokaal ontwikkelen van dit project gaat via een Docker container. | De data wordt in de database opgeslagen | Er moet een error afhandeling zijn die de gebruiker informeert waarom iemand een bericht niet mag bekijken. | Deze module moet functioneren in de laatste versies van Chrome, Safari, Firefox en Edge | Ontwikkel deze website ‘Mobile-first’ | Taal: minimaal Nederlands | . ",
-    "url": "/m9prog_opdrachtensite/project_description.html#randvoorwaarden",
-    
-    "relUrl": "/project_description.html#randvoorwaarden"
-  },"95": {
+    "relUrl": "/les-6/protect"
+  },"172": {
     "doc": "Les 4",
     "title": "SSH commando’s",
     "content": "SSH, Secure Shell, is een protocol dat veilige communicatie mogelijk maakt tussen een client en een server. Het wordt vaak gebruikt voor remote access tot servers, waarbij je commando’s kunt uitvoeren en bestanden kunt overdragen. SSH zorgt ervoor dat deze verbinding versleuteld is, waardoor gevoelige gegevens veilig blijven. 1- SSH . Het basiscommando om verbinding te maken met een remote server. De syntaxis is ssh gebruikersnaam@server_ip, waarbij je de gebruikersnaam en het IP-adres of de hostname van de server invult. Bij de eerste verbinding moet je de server identificeren door een sleutel te accepteren. 2- scp . Met scp (Secure Copy Protocol) kun je veilig bestanden kopiëren tussen je lokale machine en een remote server. De syntaxis is scp lokaal_bestand gebruikersnaam@server_ip:/doelmap. Dit maakt het eenvoudig om gegevens over te dragen zonder dat je extra tools nodig hebt. 3- sftp . sftp (SSH File Transfer Protocol) biedt een interactieve manier om bestanden tussen lokale en remote systemen te beheren. Start met sftp gebruikersnaam@server_ip. Eenmaal verbonden, kun je bestanden uploaden, downloaden, en beheren met commando’s zoals put en get. 4- ssh-keygen . Dit commando genereert een SSH-sleutelpaar (public en private key) voor veilige authenticatie. Gebruik ssh-keygen om een nieuw paar sleutels te maken, en sla deze veilig op. De public key moet je op de server plaatsen om password-less login mogelijk te maken. 5- ssh-copy-id . Met ssh-copy-id voeg je eenvoudig je publieke sleutel toe aan de authorized_keys op de remote server. Het commando is ssh-copy-id gebruikersnaam@server_ip, waardoor je voortaan zonder wachtwoord kunt inloggen. 6- ssh-agent . ssh-agent is een programma dat je SSH-sleutels beheert en ze automatisch aan de SSH-client aanbiedt, zodat je niet telkens je wachtwoord hoeft in te voeren. Start het met eval $(ssh-agent) en voeg je sleutel toe met ssh-add. 7- ssh-config . Met een configuratiebestand (~/.ssh/config) kun je standaardinstellingen voor je SSH-verbindingen beheren, zoals aliasnamen, poorten en sleutels. Dit maakt het eenvoudiger om verbinding te maken zonder steeds lange commando’s te hoeven typen. 8- ssh -L . Met port forwarding (ssh -L) kun je lokale poorten doorsturen naar een remote server. Het commando ssh -L lokale_poort:remote_host:remote_poort gebruikersnaam@server_ip maakt het mogelijk om een beveiligde tunnel te creëren voor applicaties die normaal niet via SSH toegankelijk zijn. 9- chmod . Het chmod-commando wordt gebruikt om de toegangsrechten van bestanden en mappen te wijzigen. Je kunt hiermee instellen wie een bestand kan lezen, schrijven of uitvoeren. De syntaxis is chmod [rechten] [bestand], waarbij rechten kunnen worden aangegeven in octale notatie (bijv. 755) of met symbolische notatie (bijv. u+x om uitvoerrechten voor de eigenaar toe te voegen). Dit is essentieel voor het beheer van de beveiliging van je bestanden. 10- chown . Met het chown-commando kun je de eigenaar en/of groep van een bestand of map wijzigen. De syntaxis is chown [nieuwe_eigenaar]:[nieuwe_groep] [bestand]. Dit is handig als je wilt dat een andere gebruiker toegang heeft tot bepaalde bestanden of als je de eigenaar wilt veranderen na het verplaatsen van bestanden naar een nieuwe locatie. Het correct instellen van eigenaarschap is cruciaal voor systeembeveiliging en gebruikersbeheer. 10- ln . Het ln-commando wordt gebruikt om links naar bestanden aan te maken. Met ln [origineel_bestand] [linknaam] maak je een harde link, terwijl ln -s [origineel_bestand] [linknaam] een symbolische link creëert. Harde links delen dezelfde inode (index node), terwijl symbolische links verwijzen naar de originele bestandslocatie. Dit kan nuttig zijn voor het organiseren van bestanden of het maken van snelkoppelingen naar veelgebruikte bestanden. Conclusie . Met deze basiscommando’s ben je goed uitgerust om effectief gebruik te maken van SSH voor veilige communicatie en bestandsoverdracht. Experimenteer met deze commando’s om je vaardigheden verder te ontwikkelen! . ",
     "url": "/m9prog_opdrachtensite/les-4/ssh#ssh-commandos",
     
     "relUrl": "/les-4/ssh#ssh-commandos"
-  },"96": {
+  },"173": {
     "doc": "Les 4",
     "title": "Les 4",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-4/ssh",
     
     "relUrl": "/les-4/ssh"
-  },"97": {
+  },"174": {
     "doc": "Les 1",
     "title": "Testen",
     "content": "Na de installatie kun je jouw website testen. 1- Controle website . Ga in je browser naar jouw website en bekijk jouw website. ",
     "url": "/m9prog_opdrachtensite/les-1/testen#testen",
     
     "relUrl": "/les-1/testen#testen"
-  },"98": {
+  },"175": {
     "doc": "Les 1",
     "title": "Les 1",
     "content": " ",
     "url": "/m9prog_opdrachtensite/les-1/testen",
     
     "relUrl": "/les-1/testen"
-  },"99": {
-    "doc": "Les 6",
-    "title": "Webpack integreren met WordPress",
-    "content": "Deze les een stuk minder verschillende stappen, dus heb je meer tijd om een mooie website te maken. Om onze SASS en JavaScipt te compilen maak ik gebruik van npm in combinatie met webpack om de assets te renderen. ",
-    "url": "/m9prog_opdrachtensite/les-6/webpack#webpack-integreren-met-wordpress",
-    
-    "relUrl": "/les-6/webpack#webpack-integreren-met-wordpress"
-  },"100": {
-    "doc": "Les 6",
-    "title": "Let op, straks wordt er een node_modules folder gegenereerd, deze mag niet in git.",
-    "content": ". 1- Structuur . Eerst heb je een structuur nodig. Maak in je thema map een aantal folders en bestanden die je als basis nodig hebt: . | src/js ( dit is de locatie van je javascripts die niet minified zijn ) | src/js/main.js ( dit is je js bestand met minimaal een console.log() functie erin ) | src/scss ( hierin staan je SASS bestanden ) | src/scss/main.scss ( je scss bestand met bijvoorbeeld je sass code ) | package.json ( hier staat in welke packages er nodig zijn zoals een sass compiler ) | webpack.config.js ( hier zijn de functies gedefinieerd voor het compilen van de sass ) Je kunt een voorbeeld van dit pakket bestanden ook hier downloaden: example | . 2- package.json . In de package.json kun je aangeven hoe je project heet en wat de locatie van webpack.config.js is. Je vind ook diverse dependencies die nodig zijn voor het compilen van dit project. Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoorbeeld dev . 3- webpack.config.js . In de webpack.config.js vind je de acties die uitgevoerd worden tijdens het compilen. 4- Packages installeren . Het installeren van de packages doe je via npm. Navigeer daarvoor in de terminal naar je thema folder en voer het volgende commando uit: . npm i . ( npm install ) Je ziet nu een node_modules folder in je thema folder. Note: Zorg ervoor dat je de node_modules in je .gitignore hebt staan zodat deze niet gepushed wordt naar je repo. 5- Packages compilen . Om de sass en de javascripts te compilen en in een dist folder te plaatsen kun je het volgende commando uitvoeren: . npm run dev . 6- Scripts toevoegen aan de website . Voor het laden van de javascripts en styles maak je binnen WordPress gebruik van een enqueue functie. Zie voor de scripts: https://developer.wordpress.org/reference/functions/wp_enqueue_script/ En voor de styles: https://developer.wordpress.org/reference/functions/wp_enqueue_style/ Hierdoor worden ook eventuele dependencies geladen en worden de scripts op de juiste plek geladen. Let even goed op welke parameters er zijn. Plaats daarvoor deze code in je functions.php: . function add_style_and_js() { wp_enqueue_script( 'm5prog', get_template_directory_uri() . '/dist/js/main.js', [ 'jquery' ], '1.0.0', [ 'strategy' =&gt; 'defer', 'in_footer' =&gt; true, ] ); wp_register_style( 'm5prog_styles', get_template_directory_uri() . '/dist/css/main.min.css', [], '1.0.0' ); wp_enqueue_style( 'm5prog_styles' ); } add_action( 'wp_enqueue_scripts', 'add_style_and_js' ); . 7- Thema opruimen . Omdat je nu gebruik maakt van de wp_enqueue_script en wp_enqueue_style hoef je de style en scripts niet meer los te laden in je header en footer. Mocht je dat nog wel doen dan moet je die regels verwijderen. 8- Controleer . Bekijk je website nu in de browser. 9- Customize . Pas nu de scss en templates nu aan zodat de website voldoet aan de eisen van jouw project. ",
-    "url": "/m9prog_opdrachtensite/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git",
-    
-    "relUrl": "/les-6/webpack#let-op-straks-wordt-er-een-node_modules-folder-gegenereerd-deze-mag-niet-in-git"
-  },"101": {
-    "doc": "Les 6",
-    "title": "Commit en push",
-    "content": "Commit en push ALTIJD na het maken van een opdracht of aan het einde van de les. Zo is je voortgang zichtbaar en ontvang je feedback en/of hulp op de laatste versie van je code als dat nodig is. ",
-    "url": "/m9prog_opdrachtensite/les-6/webpack#commit-en-push",
-    
-    "relUrl": "/les-6/webpack#commit-en-push"
-  },"102": {
-    "doc": "Les 6",
-    "title": "Les 6",
-    "content": " ",
-    "url": "/m9prog_opdrachtensite/les-6/webpack",
-    
-    "relUrl": "/les-6/webpack"
   }
 }

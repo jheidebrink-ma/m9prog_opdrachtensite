@@ -5,154 +5,83 @@ permalink: :path/:basename
 nav_exclude: true
 ---
 
-## Development omgeving instellen
+## Docker: lokale WordPress-omgeving opzetten
 {: .text-green-100 .fs-6 }
 
-We gaan een Docker container samenstellen.  
-Deze omgeving gaan wij tijdens deze gehele module gebruiken.
+Je ontwikkelt dit project lokaal met Docker. Docker start drie losse services die samen jouw WordPress-website vormen:
+
+- **WordPress:** de website en `wp-admin`.
+- **MariaDB:** de database waarin WordPress pagina's, projecten en instellingen bewaart.
+- **phpMyAdmin:** een hulpmiddel om de database alleen tijdens het ontwikkelen te bekijken.
+
+Iedere student heeft hierdoor dezelfde basisomgeving. Je installeert WordPress dus niet los op je laptop en je zet deze Docker-omgeving de rest van de module steeds opnieuw aan met één commando.
 
 ## Requirements
 {: .text-red-100 .fs-6 }
-In de vorige les heb je een aantal requirements samengesteld, een aantal daarvan gaan wij nu instellen.  
 Er zijn een aantal vereisten aan dit project:
-1. Je hebt een werkende Docker Desktop installatie.
+1. Je hebt een werkende [Docker Desktop](https://www.docker.com/products/docker-desktop/) installatie en Docker Desktop staat aan.
 2. De volgende poorten zijn niet in gebruik:
    - 80
-   - 3305
-   - 8805
+   - 1089
 3. Je hebt een werkende IDE waarmee je websites kunt ontwikkelen, bijvoorbeeld [Visual Code](https://code.visualstudio.com/download) of [PhpStorm](https://www.jetbrains.com/phpstorm/download/)
 
 ---
 ### 1- Repository
-1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m9prog-blog**, zorg dat de repository _private_ is.  
+1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m9prog-portfolio**, zorg dat de repository _private_ is.  
 2- Navigeer op je computer naar de folder waar je project straks komt te staan, _niet een nieuwe lege folder aanmaken_.   
-3- [Clone je github project](https://git-scm.com/docs/git-clone) zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen.
+3- [Clone je github project](https://git-scm.com/docs/git-clone) zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen.  
 
 ---
-### 2- Docker container initialiseren
+### 2- Docker-configuratie toevoegen
 1. Start eerst [Docker Desktop](https://www.docker.com/products/docker-desktop/)  
 2. Navigeer naar de repo folder die je net gekloond hebt
-3. Maak een nieuw bestand aan met de naam: `docker-compose.yml`
-4. maak de structuur van dit yml bestand
-```yaml
-services:
-    NAAM:
-        image: WELKE IMAGE HEB JE NODIG
-        container_name: prog_m5_TYPE
-        environment:
-           title: waarde
-           INTERNE CONSTANTEN
-        ports:
-           - EXTERN:INTERN
-           - 9999:80
-        links:
-           - IS DEZE CONTAINER GEKOPPELD AAN EEN ANDERE CONTAINER?
-        volumes:
-            - './:/var/www/html'
-        depends_on:
-            - HEEFT DEZE CONTAINER EEN ANDERE CONTAINER NODIG?
-```
+3. Download of kopieer [docker-compose.yml](data/docker-compose.yml) naar de hoofdmap van je repository.
+4. Lees het bestand door. Zoek de drie services `wordpress`, `mariadb` en `phpmyadmin` op en benoem aan een medestudent welke taak iedere service heeft.
 
 ---
-### 3- Definieer de volgende containers:
-- **wordpress** met image: wordpress:latest
-- **mariadb** met de image: mariadb:latest
-- **phpmyadmin** met de image: phpmyadmin:latest en de externe poort **8805**
-- De wordpress container heeft de volgende environment constanten nodig:
-```yml
-    WORDPRESS_DB_HOST: '${DB_HOST}'
-    WORDPRESS_DB_NAME: '${DB_NAME}'
-    WORDPRESS_DB_USER: '${DB_USERNAME}'
-    WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
-```
-- De wordpress container heeft de volgende volumes nodig: _(vergeet niet om een - teken voor elke regel te plaatsen)_  
-```yml
-   ./themes:/var/www/html/wp-content/themes
-   ./plugins:/var/www/html/wp-content/plugins
-   ./uploads:/var/www/html/wp-content/uploads
-```
-- De Mariadb container heeft de volgende environment constanten nodig: 
-```yml
-    MYSQL_DATABASE: '${DB_NAME}'
-    MYSQL_USER: '${DB_USERNAME}'
-    MYSQL_PASSWORD: '${DB_PASSWORD}'
-    MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
-```
-- De PhpMyAdmin container heeft de volgende environment constanten nodig: 
-```yml
-   PMA_HOST: '${DB_HOST}'
-   PMA_USER: '${DB_USERNAME}'
-   PMA_PASSWORD: '${DB_PASSWORD}'
-```
+### 3- Variabelen in `.env`
+1. Download [`.env.example`](data/env.example), plaats die in de hoofdmap van je repository en zorg dat deze met een **punt** begint.
+2. Maak een kopie van dit bestand en noem dat: `.env`.
+3. Vul eigen lokale waarden in. Deze gegevens zijn alleen voor jouw Docker-omgeving.
+4. Controleer dat `.env` in `.gitignore` staat. _Deel of commit dit bestand nooit._
 
 ---
-### 4- Variabele in een .env file
-Zoals in andere projecten maak je ook nu weer een .env file
-- maak een voorbeeld .env file aan met de naam: `.env.example`
-- plaats hierin de variabele die je straks gaat gebruiken:
-```env
-DB_NAME=
-DB_USERNAME=
-DB_PASSWORD=
-DB_ROOT_PASSWORD=
-```
-- dupliceer dit bestand naar: `.env`
-- vul de waardes in deze .env file
+### 4- Bestanden negeren in Git
+Kopieer de [`.gitignore`](data/gitignore) naar de hoofdmap van je repository. Controleer dat `.env`, `node_modules/` en je IDE-instellingen niet per ongeluk worden gecommit.
 
 ---
-### 5- Negeren van bestanden via de .gitignore
-Maak nu een .gitignore file aan om te zorgen dat niet alles naar git gaat.  
-Hierbij een voorbeeld inhoud:
-```gitignore
-### Node an Vendor files
-node_modules/
-vendor/
-
-### JetBrains
-.idea
-
-### Linux
-*~
-.Trash-*
-
-### Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-*.lnk
-
-### OSX
-.DS_Store
-.AppleDouble
-.LSOverride
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-### Application
-.env
-_sources
-```
-
----
-### 6- Folders 
+### 5- Mappen voor WordPress-content
 Maak de volgende drie folders aan waar je straks je plugins en thema kunt plaatsen:  
 - themes
 - plugins
 - uploads
 
 ---
-### 7- Start container
-Start nu je docker container om je project in de browser te kunnen testen.  
-```docker compose up```
+### 6- Containers starten en controleren
+Start de omgeving vanuit de hoofdmap van je repository:
+
+```shell
+docker compose up -d
+```
+
+Controleer daarna de status:
+
+```shell
+docker compose ps
+```
+
+Je ziet drie draaiende services. Open vervolgens:
+
+- WordPress: [http://localhost](http://localhost)
+- phpMyAdmin: [http://localhost:1089](http://localhost:1089)
+
+Zie je geen WordPress-installatiescherm? Gebruik dan eerst `docker compose logs wordpress` en bespreek de foutmelding met je peer of de M9 Leercoach. Stop je omgeving na het werken met:
+
+```shell
+docker compose down
+```
+
+Met `docker compose down` verwijder je de containers, maar de gemounte mappen `themes`, `plugins` en `uploads` blijven in je project staan.
 
 ---
 {% include commit_push.md %}

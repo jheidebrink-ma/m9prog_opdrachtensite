@@ -5,16 +5,26 @@ permalink: :path/:basename
 nav_exclude: true
 ---
 
-## HTML bestanden
+## WordPress en je theme initialiseren
 {: .text-green-100 .fs-6 }
-Nu je de server structuur hebt van je project is het tijd je thema klaar te zetten. 
+
+Nu de Docker-containers draaien, rond je eerst de WordPress-installatie af via [http://localhost](http://localhost). Kies een lokale gebruikersnaam en wachtwoord; dit zijn geen gegevens voor je live website.
+
+Daarna maak je je eigen theme klaar in de map `themes` van je project. Deze map is door Docker gekoppeld aan `wp-content/themes` in WordPress.
 
 ---
-### 1- Thema folder
+### 1- WordPress-installatie afronden
+1. Open [http://localhost](http://localhost).
+2. Kies Nederlands als taal en maak de WordPress-site aan.
+3. Log in via [http://localhost/wp-admin](http://localhost/wp-admin).
+4. Controleer of je het WordPress-dashboard ziet.
+
+---
+### 2- Theme folder
 Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je thema, _(gebruik geen kapitalen en spaties)_.
 
 ---
-### 2- Structuur van de thema folder
+### 3- Structuur van de thema folder
 1. Plaats hierin een nieuw bestand met de naam `style.css`
 2. Plaats hierin een nieuw bestand met de naam `index.php`
 3. Plaats hierin een nieuw bestand met de naam `functions.php`
@@ -22,7 +32,7 @@ Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je
    Meer informatie over thema's: [https://codex.wordpress.org/Theme_Development](https://codex.wordpress.org/Theme_Development)
 
 ---
-### 3- style.css
+### 4- style.css
 Weet je nog hoe het werkt?  
 In dit bestand geef je aan hoe je thema heet.  
 In dit voorbeeld heb ik een nieuw thema gemaakt met de naam `M9PROG_VOORBEELD_NAAM`  
@@ -51,7 +61,7 @@ Zie voor alle opties: [https://developer.wordpress.org/themes/core-concepts/main
  ```
 
 ---
-### 4- index.php
+### 5- index.php
 Plaats hierin de basis elementen zoals:
 ```php
 get_header();
@@ -64,17 +74,16 @@ get_footer();
 ```
 
 ---
-### 5- functions.php
+### 6- functions.php
 Plaats hierin de benodigde functies, laat het leeg als je nog geen nieuwe filters of functies hebt.
 
 ---
-### 6- screenshot.png
+### 7- screenshot.png
 Zorg dat dit een afbeelding is waar te zien is hoe je website eruit gaat zien.
 
 ---
-### 7- initialisatie
-Nu je de structuur hebt ingesteld is het eindelijk tijd om **docker te starten** en naar je browser te gaan om WordPress te initialiseren.   
-![Setup.png](img%2FSetup.png)
+### 8- Activeer je theme
+Ga in `wp-admin` naar **Weergave > Thema's** en activeer jouw eigen theme. Bekijk daarna de voorkant van de website en controleer of WordPress jouw `index.php` gebruikt.
 
 ---
 {% include commit_push.md %}
