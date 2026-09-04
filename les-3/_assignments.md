@@ -1,10 +1,12 @@
-## Custom theme vanaf scratch
+## Custom theme structureren
 {: .text-green-200 .fs-5 }
 
-1. Vul de header in `style.css` volledig in: naam, versie, auteur en text domain.
-2. Maak `functions.php` en laad styles en scripts via `wp_enqueue_style()` en `wp_enqueue_script()`.
-3. Voeg minimaal `index.php`, `front-page.php`, `page.php` en een `screenshot.png` toe.
-4. Activeer het theme en controleer dat je eigen template wordt geladen.
-5. Commit je werk met een korte, beschrijvende commitmelding.
+**Voorwaarde:** je custom theme uit les 2 is actief. Je werkt nu verder aan hetzelfde theme, niet aan een nieuw theme.
 
-**Resultaat:** WordPress herkent en gebruikt jouw eigen theme.
+1. Maak `functions.php` als dit bestand nog niet bestaat en laad styles en scripts via `wp_enqueue_style()` en `wp_enqueue_script()`.
+2. Voeg `add_theme_support( 'post-thumbnails' )` toe en leg in `ai-log.md` uit welk effect dit heeft.
+3. Maak `front-page.php` en `page.php`. Geef iedere template een herkenbare testkop, zodat je kunt zien welk bestand WordPress kiest.
+4. Lees de WordPress-templatehiërarchie en noteer welke template gebruikt wordt voor de homepagina en een gewone pagina.
+5. Maak in WordPress een homepagina en een over-mij-pagina. Controleer dat de juiste templates worden geladen.
+
+**Resultaat:** een gestructureerd custom theme waarin WordPress verschillende templates aantoonbaar correct kiest.

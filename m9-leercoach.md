@@ -1,7 +1,7 @@
 ---
 layout: page
 title: M9 Leercoach
-nav_order: 2
+nav_order: 21
 has_toc: true
 ---
 

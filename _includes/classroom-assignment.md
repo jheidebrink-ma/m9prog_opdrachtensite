@@ -16,8 +16,9 @@
 
 {% include_relative _assignments.md %}
 
+{% include test_commit_push.md lesson=lesson %}
+
 {% else %}
 ### Deze opdracht komt binnenkort beschikbaar.
 {: .text-blue-100 .fs-5 }
 {% endif %}
-

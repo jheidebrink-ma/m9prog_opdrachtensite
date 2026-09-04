@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Complete lesbrief
-nav_order: 1
+nav_order: 20
 has_toc: true
 ---
 
@@ -46,39 +46,39 @@ Sluit iedere peer-ronde af met: “Wat verander ik nu?”, “Waarom werkt dit?�
 
 ### Les 1 - Introductie: portfolio en AI
 
-**Student leert:** het doel van een stageportfolio, waar AI kan helpen en waarom gegenereerde code gecontroleerd moet worden.
+**Student leert:** het doel van een stageportfolio, waarom dit project lokaal in Docker draait, waar AI kan helpen en waarom gegenereerde code gecontroleerd moet worden.
 
-**Instructie:** laat een kort voorbeeld zien van een goede en slechte prompt. Demonstreer hoe een prompt leidt tot een eerste theme-opzet, hoe je de output controleert en hoe je `prompt.md` en `ai-log.md` bijhoudt.
+**Instructie:** laat eerst zien hoe Docker WordPress, MariaDB en phpMyAdmin als één herhaalbare lokale omgeving start. Demonstreer daarna een goede en slechte prompt, hoe een prompt leidt tot een eerste theme-opzet, hoe je de output controleert en hoe je `prompt.md` en `ai-log.md` bijhoudt.
 
-**Doen:** studenten kiezen doelgroep en stijl, schrijven een prompt en maken een eerste theme-structuur of homepage-opzet. Zij bewaren prompt en resultaat.
+**Doen:** studenten starten Docker Desktop, kopiëren de Compose- en `.env`-bestanden, starten de drie containers, controleren WordPress en initialiseren de site. Daarna kiezen zij doelgroep en stijl, schrijven een prompt en maken een eerste theme-structuur of homepage-opzet. Zij bewaren prompt en resultaat.
 
 **Peer-activiteit:** duo’s beoordelen elkaars prompt op doelgroep, concrete eisen, techniek en toetsbare output. Laat elk duo één verbeterde prompt demonstreren.
 
-**Bewijs:** portfolio-concept, `prompt.md`, `ai-log.md` en eerste eigen theme-map.
+**Bewijs:** draaiende Docker-omgeving, WordPress-installatie, portfolio-concept, `prompt.md`, `ai-log.md` en eerste eigen theme-map.
 
-### Les 2 - Local development setup
+### Les 2 - Custom theme: van AI naar eigen code
 
-**Student leert:** Docker, `.env`, lokale WordPress-installatie, database en het verschil tussen lokale en live omgeving.
+**Student leert:** een AI-startresultaat kritisch omzetten naar een eerste actief WordPress-theme dat aantoonbaar van de student is.
 
-**Instructie:** bouw één werkende lokale installatie voor, inclusief waar het theme staat en wat nooit in Git hoort.
+**Instructie:** vertrek expliciet vanuit de afgeronde Docker- en WordPress-setup van les 1. Demonstreer de theme header in `style.css`, het activeren van een theme en hoe je ziet dat `index.php` wordt geladen.
 
-**Doen:** studenten starten WordPress en MySQL, ronden de installatie af, activeren hun theme en schrijven startinstructies in de README.
+**Doen:** studenten controleren het AI-startresultaat, vullen `style.css` aan, maken een eerste eigen aanpassing, plaatsen een screenshot en activeren hun theme.
 
-**Peer-activiteit:** tweetallen wisselen README uit en proberen uitsluitend met die instructies elkaars omgeving te starten.
+**Peer-activiteit:** duo's bekijken elkaars actieve theme en laten de ander één AI-codefragment uitleggen. De peer stelt doorvragen totdat de bouwer de eigen aanpassing kan verantwoorden.
 
-**Bewijs:** lokale WordPress-site met actief theme en een geteste README.
+**Bewijs:** actief custom theme, bijgewerkte `ai-log.md` en een zichtbaar eigen verschil met het AI-startresultaat.
 
-### Les 3 - Custom theme vanaf scratch
+### Les 3 - Custom theme structureren
 
-**Student leert:** welke bestanden een WordPress-theme herkenbaar maken en hoe styles en scripts via WordPress worden geladen.
+**Student leert:** hoe templates, `functions.php`, enqueueing en de WordPress-templatehiërarchie samen een custom theme vormen.
 
-**Instructie:** demonstreer `style.css`, `functions.php`, enqueueing, `front-page.php` en de template hierarchy.
+**Instructie:** demonstreer `functions.php`, enqueueing, `front-page.php`, `page.php` en de templatehiërarchie met herkenbare testkoppen.
 
-**Doen:** studenten maken de minimale theme-bestanden, vullen de metadata aan en activeren het theme.
+**Doen:** studenten breiden hun bestaande theme uit met templates, `post-thumbnails` en een correcte WordPress-configuratie.
 
-**Peer-activiteit:** codewalk: student A wijst de bestanden aan; student B legt hun functie uit. Daarna wisselen zij.
+**Peer-activiteit:** template-speurtocht: student A opent home en over mij; student B voorspelt en controleert welk templatebestand WordPress laadt. Daarna wisselen zij.
 
-**Bewijs:** geactiveerd custom theme met eigen metadata, templates en commit.
+**Bewijs:** actief custom theme met werkende `front-page.php`, `page.php`, `functions.php` en commit.
 
 ### Les 4 - Header, footer en Loops
 

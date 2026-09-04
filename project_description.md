@@ -1,7 +1,9 @@
 ---
 layout: home
 title: Project omschrijving
-nav_order: 3
+nav_order: 19
+has_toc: true
+nav_exclude: false
 ---
 
 # Projectomschrijving - live WordPress-portfolio
