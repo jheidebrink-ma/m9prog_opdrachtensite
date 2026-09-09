@@ -33,7 +33,6 @@ Maak een nieuwe folder aan binnen in je thema folder en geef deze de naam van je
 
 ---
 ### 4- style.css
-Weet je nog hoe het werkt?  
 In dit bestand geef je aan hoe je thema heet.  
 In dit voorbeeld heb ik een nieuw thema gemaakt met de naam `M9PROG_VOORBEELD_NAAM`  
 Zie voor alle opties: [https://developer.wordpress.org/themes/core-concepts/main-stylesheet/](https://developer.wordpress.org/themes/core-concepts/main-stylesheet/)  
