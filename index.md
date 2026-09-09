@@ -14,7 +14,7 @@ AI helpt je in de eerste les om snel een eerste resultaat te maken. Daarna leer 
 ---
 
 ## Planning
-[![Planningm9.png](Planningm9.png)](Planning%20m9.pdf)
+[![Planning_m9.png](Planning_m9.png)](Planning_m9.pdf)
 
 ---
 

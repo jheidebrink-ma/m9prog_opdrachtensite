@@ -2,7 +2,8 @@
 layout: page
 title: Complete lesbrief
 nav_order: 20
-has_toc: true
+has_toc: false
+nav_exclude: true
 ---
 
 # Lesbrief M9PROG - live WordPress-portfolio
