@@ -3,7 +3,7 @@
 2,"2","7-9-2026","Custom theme: van AI naar eigen code","Werk verder in de Docker-omgeving uit les 1. Controleer het AI-startresultaat en maak er een eerste actief WordPress-theme van."
 3,"2","10-9-2026","Custom theme structureren","Breid je actieve theme uit met templates, enqueueing en de WordPress-templatehiërarchie."
 4,"3","14-9-2026","Header, footer en loops","Bouw gedeelde templates en haal WordPress-content op met de Loop."
-5,"3","17-9-2026","Sass, npm en Webpack","Compileer Bootstrap en je eigen Sass met een reproduceerbare front-end build."
+5,"3","15-9-2026","Sass, npm en Webpack","Compileer Bootstrap en je eigen Sass met een reproduceerbare front-end build."
 6,"4","21-9-2026","Contactformulier","Maak een toegankelijke contactmogelijkheid voor potentiële stagebedrijven."
 7,"4","24-9-2026","Designimplementatie","Vertaal je ontwerp naar een responsive portfolio met eigen typografie en kleuren."
 8,"5","28-9-2026","Custom post type: projecten","Maak en beheer portfolio-projecten als eigen contenttype in WordPress."

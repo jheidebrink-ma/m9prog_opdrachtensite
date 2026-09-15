@@ -33,8 +33,8 @@ Er zijn een aantal vereisten aan dit project:
 
 ---
 ### 2- Docker-configuratie toevoegen
-1. Start eerst [Docker Desktop](https://www.docker.com/products/docker-desktop/)  
-2. Navigeer naar de repo folder die je net gekloond hebt
+1. Start eerst [Docker Desktop](https://www.docker.com/products/docker-desktop/), deze moet in de achtergrond aan staan.
+2. Navigeer in de finder of Windows verkenner naar de repo folder die je net gekloond hebt
 3. Download of kopieer [docker-compose.yml](data/docker-compose.yml) naar de hoofdmap van je repository.
 4. Lees het bestand door. Zoek de drie services `wordpress`, `mariadb` en `phpmyadmin` op en benoem aan een medestudent welke taak iedere service heeft.
 
