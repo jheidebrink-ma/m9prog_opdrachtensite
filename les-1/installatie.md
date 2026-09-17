@@ -27,7 +27,8 @@ Er zijn een aantal vereisten aan dit project:
 
 ---
 ### 1- Repository
-1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m9prog-portfolio**.  
+1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m9prog-portfolio**.   
+Zie hier info over hoe je een config maakt speciaal voor github: [sshkey](sshkey)  
 2- Navigeer op je computer naar de folder waar je project straks komt te staan, _niet een nieuwe lege folder aanmaken_.   
 3- [Clone je github project](https://git-scm.com/docs/git-clone) zodat je een nieuwe folder hebt die gekoppeld is aan git en waar straks je bestanden in komen.  
 
