@@ -20,7 +20,6 @@ AI helpt je in de eerste les om snel een eerste resultaat te maken. Daarna leer 
 
 ## Voor docent en student
 
-- [Complete lesbrief](lesbrief): leerdoelen, didactiek, lesverloop en beoordeling per lesmoment.
 - [M9 Leercoach](m9-leercoach): een interactieve prompt voor uitleg, planning, feedback en debugging.
 - [Projectomschrijving](project_description): de eisen voor het live portfolio.
 
