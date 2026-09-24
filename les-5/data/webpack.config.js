@@ -40,9 +40,7 @@ module.exports = (env, argv) => {
         devtool: false,
         entry: {
             'js/main':   './src/js/main.js',
-            'js/admin':  './src/js/admin.js',
             'css/main':  './src/scss/main.scss',
-            'css/admin': './src/scss/admin.scss',
         },
         output: {
             path: outputPath,
