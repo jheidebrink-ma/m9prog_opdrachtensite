@@ -20,10 +20,15 @@ In de scss folder zit een `main.scss` bestand waarin ik bootstrap importeer en m
 In de js folder zit een `main.js` bestand waarin ik mijn eigen js code schrijf en compile naar de dist folder.
 
 ### Compile
-De compile process zorgt ervoor dat mijn JavaScript en Sass bestanden worden omgezet naar een vorm die in de browser goed werkt. 
-Dit voer ik straks uit met je `npm run build` command.
+Het compile process zorgt ervoor dat mijn JavaScript en Sass bestanden worden omgezet naar een vorm die in de browser goed werkt. 
+Dit voer ik straks uit met het `npm run build` command.  
+Voordat alle packages geladen zijn moet ik er eerst voor zorgen de package.json én de webpack.config.js in de root folder staan van je thema.  
+Het installeren van de packages doe ik met het `npm install` command.  
 
 ### bestanden
 Hier kun je een voorbeeld van de [package.json](./data/package.json) en [webpack.config.js](./data/webpack.config.js) vinden.
+
+### Opdracht
+Zorg er nu voor dat bijvoorbeeld de achtergrond er anders uit ziet.  
 
 **Resultaat:** je front-end wordt reproduceerbaar gecompileerd en heeft een eigen visuele basis.
